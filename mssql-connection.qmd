@@ -1,0 +1,54 @@
+---
+title: "Create a SQL Server Connection"
+---
+
+Use the **SQL Server (mssql)** extension in VS Code to connect, save, and reuse profiles for SQL Server or Azure SQL databases. The steps below walk through creating your first connection and include tips for common authentication modes.
+
+## Create a connection profile
+
+1. In VS Code, open the **SQL Server** view (activity bar icon with the `SQL` badge).
+2. Select **Add Connection** (➕ icon). The **Connect to Database** dialog matches the screenshot and uses the following fields:
+   - **Profile Name** – friendly label that shows up under **SQL Server ▶ Connections**.
+   - **Connection Group** – optional folder for organizing profiles. Leave `<Default>`.
+   - **Input type**
+     - Use `Parameters` (default): exposes the individual fields listed below.
+   - **Server name** – Use the named instance provided by your instructor.
+   - **Trust server certificate** – enable this field.
+   - **Authentication type** – select `SQL Login`
+   - **User name / Password** – enter the credentials provided by your instructor.
+   - **Save Password** – stores credentials securely in your OS keychain. 
+   - **Database name** – enter the name provided by your instructor..
+   - **Encrypt** – pick `Optional`.
+   - **Advanced** – not necessary for this connection.
+3. After filling the required fields (marked with `*`), click **Connect**. When prompted, save the profile. Saving makes it appear in the **SQL Server** panel so you can double-click it later; declining runs a one-off connection only.
+
+## Verify the connection
+
+- In your VS Code Extensions, open the SQL Server view if not already visible.
+- In the CONNECTIONS window, move your mouse to the name of your database, right-click and choose **New Query**.
+- Type a simple check such as:
+
+```sql
+SELECT TOP (3)
+ID_Product,
+Material_Description,
+Product_Category,
+Transfer_Price_EUR
+FROM dbo.Dim_Product
+ORDER BY ID_Product;
+```
+
+- Press `F5` or click the **Run** symbol (▶️) in the editor toolbar (at the top right of the script). 
+- The **Results** grid should return the products ordered by `ID_Product`. If VS Code prompts again for credentials, re-enter them and retry.
+- If you encounter connection issues, double-check the server name, authentication type, and credentials. Review any error messages for clues.
+
+<!-- 
+## Show schema
+
+Next, explore the database schema using a provided script:
+
+- Open the file `show_schema.sql` in the folder `sql`.
+- Select the run icon (▶️) or press `F5` to execute the script. Choose the database you connected to earlier if prompted. 
+- The results should show the tables and views in the connected database.
+- You can save the result as CSV, JSON, or Excel by clicking the appropriate icon in the results pane.
+- This will help you explore the database structure for writing your own queries later. -->

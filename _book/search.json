@@ -1,0 +1,397 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Agentic AI",
+    "section": "",
+    "text": "Welcome\nWelcome to this hands-on guide to setting up your environment and connecting to SQL Server databases using Python.\nWhat you will achieve:\n\nPrepare your operating system and developer tools.\nInstall the Microsoft SQL Server ODBC drivers and command-line utilities.\nConfigure VS Code so you can browse databases and run scripts comfortably.\nUse Python, SQLAlchemy, and pandas to connect, query, and explore data.\n\n\n\n\n\n\n\nAlong the way you will learn why each tool matters, how to verify every step, and where to look when something goes wrong.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "mssql-intro.html",
+    "href": "mssql-intro.html",
+    "title": "2  Microsoft SQL Server",
+    "section": "",
+    "text": "2.1 What It Is\nMicrosoft SQL Server is a relational database management system (RDBMS) developed by Microsoft. It stores data in structured tables, enforces transactional integrity, and provides a rich set of services for analytics, reporting, and integration.\nThe platform runs on Windows and Linux, supports on-premises and cloud deployments, and scales from lightweight edge workloads to large enterprise data warehouses.",
+    "crumbs": [
+      "Database",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Microsoft SQL Server</span>"
+    ]
+  },
+  {
+    "objectID": "mssql-intro.html#what-it-is",
+    "href": "mssql-intro.html#what-it-is",
+    "title": "2  Microsoft SQL Server",
+    "section": "",
+    "text": "Relational database engine: Implements the ANSI SQL standard with T-SQL extensions, transactional isolation levels, and ACID compliance.\nComprehensive data platform: Bundles services for business intelligence (SQL Server Analysis Services), data movement (SQL Server Integration Services), and reporting (SQL Server Reporting Services).\nManaged platform options: Powers Azure SQL offerings, including Azure SQL Database, Azure SQL Managed Instance, and SQL Server on Azure Virtual Machines.",
+    "crumbs": [
+      "Database",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Microsoft SQL Server</span>"
+    ]
+  },
+  {
+    "objectID": "mssql-intro.html#typical-use-cases",
+    "href": "mssql-intro.html#typical-use-cases",
+    "title": "2  Microsoft SQL Server",
+    "section": "2.2 Typical Use Cases",
+    "text": "2.2 Typical Use Cases\n\nLine-of-business applications that require strong transactional consistency (e.g., ERP, CRM, finance).\nAnalytical workloads such as data marts and enterprise data warehouses.\nHybrid architectures combining operational databases with near-real-time analytics through features such as In-Memory OLTP and columnstore indexes.\nData integration scenarios where SQL Server acts as a hub for ingesting, transforming, and serving data to downstream systems.",
+    "crumbs": [
+      "Database",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Microsoft SQL Server</span>"
+    ]
+  },
+  {
+    "objectID": "adventureworks.html",
+    "href": "adventureworks.html",
+    "title": "3  AdventureWorks",
+    "section": "",
+    "text": "3.1 What We’ll Build with AdventureWorks\nWe use the AdventureWorks sample database from Microsoft as our primary dataset.\nThe AdventureWorks database is a realistic, relational dataset that models a mid-sized manufacturing and sales company called Adventure Works Cycles.\nIt contains data about products, sales, customers, employees, vendors, and production processes, making it ideal for demonstrating complete, data-driven application pipelines.\nIn this course, the dataset acts as the shared backend for a collection of interactive AI-powered applications. All apps connect to a Microsoft SQL Server instance that hosts the AdventureWorks data.\nWe use the dataset to explore the full AI + data workflow — from SQL querying to intelligent front-end delivery.\nExample applications include:",
+    "crumbs": [
+      "SQL Server",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>AdventureWorks</span>"
+    ]
+  },
+  {
+    "objectID": "adventureworks.html#what-well-build-with-adventureworks",
+    "href": "adventureworks.html#what-well-build-with-adventureworks",
+    "title": "3  AdventureWorks",
+    "section": "",
+    "text": "Area\nTechnology\nDescription\n\n\n\n\nNatural-language data exploration\nGradio\nAsk questions like “What were the top 5 products by revenue in 2023?” and get Gemini-generated SQL, data, and charts.\n\n\nInteractive forecasting\nGradio / Streamlit\nBuild time-series forecasts (e.g., monthly sales by region or product line) with adjustable parameters and downloadable summaries.\n\n\nAutomated reporting\nGradio + Quarto\nGenerate AI-enhanced PDF reports directly from AdventureWorks data, complete with charts and narrative insights.\n\n\nWeb dashboards\nNext.js\nCreate modern dashboards that connect to the same SQL backend and use Gemini for intelligent query suggestions.",
+    "crumbs": [
+      "SQL Server",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>AdventureWorks</span>"
+    ]
+  },
+  {
+    "objectID": "adventureworks.html#architecture",
+    "href": "adventureworks.html#architecture",
+    "title": "3  AdventureWorks",
+    "section": "3.2 Architecture",
+    "text": "3.2 Architecture\n\n\n\n\n\nflowchart LR\n  A[Gemini API] --&gt;|SQL generation + insights| B[Gradio / Streamlit / Next.js Apps]\n  B --&gt;|Queries| C[(AdventureWorks SQL Server)]\n  C --&gt;|Results + Metadata| B\n  B --&gt;|Visuals + Reports| D[Users]\n\n\n\n\n\n\nAdventureWorks SQL Server is the single source of truth.\nGemini translates natural language into SQL and generates insights.\nThe front ends (Gradio, Streamlit, Next.js) deliver data, forecasts, and reports interactively.",
+    "crumbs": [
+      "SQL Server",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>AdventureWorks</span>"
+    ]
+  },
+  {
+    "objectID": "adventureworks.html#access-and-api-keys",
+    "href": "adventureworks.html#access-and-api-keys",
+    "title": "3  AdventureWorks",
+    "section": "3.3 Access and API Keys",
+    "text": "3.3 Access and API Keys\nAll participants will receive API keys and connection credentials to access the shared AdventureWorks database.\nThese keys provide secure, authenticated access from the different front-end applications.\n\n\n\n\n\n\nThe API keys and database connection strings will be distributed by the course instructor. Each key is personal and must not be shared publicly or stored in version control.",
+    "crumbs": [
+      "SQL Server",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>AdventureWorks</span>"
+    ]
+  },
+  {
+    "objectID": "preparation.html",
+    "href": "preparation.html",
+    "title": "4  Prepare Your Machine",
+    "section": "",
+    "text": "4.1 Windows users\nBefore installing anything, make sure your operating system and accounts are ready. A few minutes of preparation will prevent mysterious permission errors later.",
+    "crumbs": [
+      "Prepare Your Machine",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Prepare Your Machine</span>"
+    ]
+  },
+  {
+    "objectID": "preparation.html#windows-users",
+    "href": "preparation.html#windows-users",
+    "title": "4  Prepare Your Machine",
+    "section": "",
+    "text": "4.1.1 Basic requirements\n\nCheck for updates\n\nOn Windows, open Settings &gt; Windows Update.\n\nDeveloper mode\n\nOpen Windows Settings.\nGo to Update & Security &gt; For developers.\nToggle Developer Mode and accept the disclaimer. This unlocks features used by Git Bash and command-line installers.\n\n\n\n\n4.1.2 Command-line basics\nWe use Git Bash as our terminal. Download the latest Git for Windows installer from git-scm.com and complete the setup (Git Bash is included). After installation, open Git Bash from the Start menu.\n\n\n\n\n\n\nWhy Git Bash?\n\n\n\n\n\nGit Bash provides a Unix-like terminal experience on Windows, making it easier to follow along with commands that are commonly used in macOS and Linux environments.\n\n\n\nKeep the terminal window open while you work through the chapters.\n\n\n\n4.1.3 uv\nWe use uv, a strictly written Python package manager that is extremely fast. It replaces pip, poetry, and virtualenv.\nTo install uv on Windows, run this command in your terminal (PowerShell):\npowershell -ExecutionPolicy ByPass -c \"irm https://astral.sh/uv/install.ps1 | iex\"\nRestart your terminal after installation to ensure uv is recognized.",
+    "crumbs": [
+      "Prepare Your Machine",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Prepare Your Machine</span>"
+    ]
+  },
+  {
+    "objectID": "preparation.html#mac-users",
+    "href": "preparation.html#mac-users",
+    "title": "4  Prepare Your Machine",
+    "section": "4.2 Mac users",
+    "text": "4.2 Mac users\n\n4.2.1 Basic requirements\nCheck for updates: On macOS, open System Settings &gt; General &gt; Software Update.\n\n\n4.2.2 Command-line basics\nLaunch Terminal (Spotlight search for “Terminal”). Commands in this book assume the zsh shell, which is the default on modern macOS systems.\nKeep the terminal window open while you work through the chapters.\n\n\n4.2.3 Package manager\nHomebrew downloads applications, command line tools, and libraries with one command. You avoid manual downloads and it keeps everything organized.\nInstall Homebrew:\n\nOpen Terminal and run the official installer:\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\nEnter your password when prompted (you won’t see any characters while typing).\nPress RETURN/ENTER to continue\nWhen the script finishes, follow the on-screen instructions to add Homebrew to your shell profile (this step is required for brew to be found).\nClose the Terminal window.\nOpen a new Terminal, then verify the installation:\nbrew --version\nMake sure everything is up to date:\nbrew update\nUse brew upgrade to actually update installed packages.\nbrew upgrade\n\n\n\n4.2.4 uv\nWe use uv, a strictly written Python package manager that is extremely fast. It replaces pip, poetry, and virtualenv.\nTo install uv on macOS, run this command in your terminal:\ncurl -LsSf https://astral.sh/uv/install.sh | sh\nRestart your terminal after installation.",
+    "crumbs": [
+      "Prepare Your Machine",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Prepare Your Machine</span>"
+    ]
+  },
+  {
+    "objectID": "mssql-macos.html",
+    "href": "mssql-macos.html",
+    "title": "5  Server Tools for macOS",
+    "section": "",
+    "text": "5.1 Prerequisites\nThis chapter walks through installing the Microsoft SQL Server ODBC driver and command-line utilities on macOS. Apple Silicon (M1/M2/…) and Intel Macs use the same commands—Homebrew handles the architecture details for you.\nYou need to have Homebrew installed. If you haven’t set it up yet, follow the instructions on their website.",
+    "crumbs": [
+      "Prepare Your Machine",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Server Tools for macOS</span>"
+    ]
+  },
+  {
+    "objectID": "mssql-macos.html#install-the-microsoft-tap-and-drivers",
+    "href": "mssql-macos.html#install-the-microsoft-tap-and-drivers",
+    "title": "5  Server Tools for macOS",
+    "section": "5.2 Install the Microsoft tap and drivers",
+    "text": "5.2 Install the Microsoft tap and drivers\nMicrosoft publishes their macOS packages via a dedicated Homebrew tap. Add it and install the required formulas. Open your Terminal and run:\nbrew tap microsoft/mssql-release https://github.com/Microsoft/homebrew-mssql-release\nACCEPT_EULA=Y brew install msodbcsql18 mssql-tools unixodbc\n\nmsodbcsql18 is the latest Microsoft ODBC Driver for SQL Server.\nmssql-tools installs sqlcmd and bcp for command-line access.\nunixodbc provides the shared ODBC libraries Python will load.\n\n\n\n\n\n\n\nThe ACCEPT_EULA=Y prefix lets the installer know you accept the Microsoft end-user license agreement. Without it the install stops halfway through.",
+    "crumbs": [
+      "Prepare Your Machine",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Server Tools for macOS</span>"
+    ]
+  },
+  {
+    "objectID": "mssql-macos.html#add-tools-to-your-path-if-needed",
+    "href": "mssql-macos.html#add-tools-to-your-path-if-needed",
+    "title": "5  Server Tools for macOS",
+    "section": "5.3 Add tools to your PATH (if needed)",
+    "text": "5.3 Add tools to your PATH (if needed)\nSome shells require an extra step to expose the SQL Server utilities. Add the following line to ~/.zshrc or ~/.bash_profile if sqlcmd is not found after reopening Terminal:\nexport PATH=\"/opt/homebrew/opt/msodbcsql18/bin:/opt/homebrew/opt/mssql-tools/bin:$PATH\"\nIntel Macs should use /usr/local/opt/ instead of /opt/homebrew/opt/.\nReload your shell:\nsource ~/.zshrc",
+    "crumbs": [
+      "Prepare Your Machine",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Server Tools for macOS</span>"
+    ]
+  },
+  {
+    "objectID": "mssql-macos.html#test-the-installation",
+    "href": "mssql-macos.html#test-the-installation",
+    "title": "5  Server Tools for macOS",
+    "section": "5.4 Test the installation",
+    "text": "5.4 Test the installation\nConfirm that the ODBC driver registered correctly:\nodbcinst -j\nLook for lines referencing Driver Manager: unixODBC.\nYour Mac is now ready to connect to SQL Server databases from VS Code and Python.",
+    "crumbs": [
+      "Prepare Your Machine",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Server Tools for macOS</span>"
+    ]
+  },
+  {
+    "objectID": "mssql-macos.html#troubleshooting",
+    "href": "mssql-macos.html#troubleshooting",
+    "title": "5  Server Tools for macOS",
+    "section": "5.5 Troubleshooting",
+    "text": "5.5 Troubleshooting\nIf you encounter issues, you can try to download and install the packages manually from Microsoft’s website:\n\nODBC Driver for macOS",
+    "crumbs": [
+      "Prepare Your Machine",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Server Tools for macOS</span>"
+    ]
+  },
+  {
+    "objectID": "mssql-windows.html",
+    "href": "mssql-windows.html",
+    "title": "6  Server Tools for Windows",
+    "section": "",
+    "text": "6.1 ODBC Driver\nThe Microsoft ODBC Driver for SQL Server enables native connectivity from Windows applications to Microsoft SQL Server and Azure SQL databases. It includes command-line tools such as sqlcmd and bcp for executing queries and bulk copy operations.\nFollow the steps below to install the ODBC Driver (version 18) and command-line tools on your Windows machine:\nFor most users, the “Download Microsoft ODBC Driver 18 for SQL Server (x64)” installer is the right choice.",
+    "crumbs": [
+      "Prepare Your Machine",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Server Tools for Windows</span>"
+    ]
+  },
+  {
+    "objectID": "mssql-windows.html#odbc-driver",
+    "href": "mssql-windows.html#odbc-driver",
+    "title": "6  Server Tools for Windows",
+    "section": "",
+    "text": "Installation Instructions",
+    "crumbs": [
+      "Prepare Your Machine",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Server Tools for Windows</span>"
+    ]
+  },
+  {
+    "objectID": "mssql-vscode.html",
+    "href": "mssql-vscode.html",
+    "title": "7  Configure VS Code",
+    "section": "",
+    "text": "7.1 Install VS Code\nVisual Studio Code acts as your code editor, terminal, and database explorer. This chapter covers the essential extensions and workspace settings for SQL Server work.\nIf you haven’t already, install Visual Studio Code:\nLaunch VS Code once to allow it to finish installing components.",
+    "crumbs": [
+      "Prepare Your Machine",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Configure VS Code</span>"
+    ]
+  },
+  {
+    "objectID": "mssql-vscode.html#install-vs-code",
+    "href": "mssql-vscode.html#install-vs-code",
+    "title": "7  Configure VS Code",
+    "section": "",
+    "text": "macOS: Download the from code.visualstudio.com and drag Visual Studio Code into Applications.\nWindows: Download the installer and click through the setup, leaving the default options enabled (add to PATH, register the code command, etc.).",
+    "crumbs": [
+      "Prepare Your Machine",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Configure VS Code</span>"
+    ]
+  },
+  {
+    "objectID": "mssql-vscode.html#essential-extensions",
+    "href": "mssql-vscode.html#essential-extensions",
+    "title": "7  Configure VS Code",
+    "section": "7.2 Essential extensions",
+    "text": "7.2 Essential extensions\nOpen the Extensions view and install:\n\nPython (ms-python.python) – language support and linting.\nSQL Server (mssql) (ms-mssql.mssql) – database connections and query runner.\nvscode-icons (vscode-icons-team.vscode-icons) – file icons for better visual identification.",
+    "crumbs": [
+      "Prepare Your Machine",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Configure VS Code</span>"
+    ]
+  },
+  {
+    "objectID": "mssql-vscode.html#enable-the-code-command",
+    "href": "mssql-vscode.html#enable-the-code-command",
+    "title": "7  Configure VS Code",
+    "section": "7.3 Enable the code command",
+    "text": "7.3 Enable the code command\n\n7.3.1 macOS Terminal\n\nLaunch VS Code, press Cmd+Shift+P, and run Shell Command: Install ‘code’ command in PATH.\nClose any open Terminal windows, then open a new one and run\ncode --version\nto confirm the CLI is available.\nFrom the folder you want to open, run\ncode .\nto launch VS Code in that location.\n\n\n\n7.3.2 Windows (Git Bash)\n\nRun\ncode --version\nin Git Bash; if it works, you’re done.\nIf the command is missing, add VS Code’s bin directory to your Git Bash PATH by appending the snippet below to ~/.bashrc (create the file if it doesn’t exist):\nVS_CODE=\"/c/Users/$USERNAME/AppData/Local/Programs/Microsoft VS Code/bin\"\nif [ -d \"$VS_CODE\" ] && [[ \":$PATH:\" != *\":$VS_CODE:\"* ]]; then\n  PATH=\"$VS_CODE:$PATH\"\nfi\nReload Git Bash\nsource ~/.bashrc\n\nOr open a new window and run\ncode --version\nAgain. Once it prints a version number,\ncode . \nwill open VS Code from that folder.",
+    "crumbs": [
+      "Prepare Your Machine",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Configure VS Code</span>"
+    ]
+  },
+  {
+    "objectID": "mssql-vscode.html#integrated-terminal-tips",
+    "href": "mssql-vscode.html#integrated-terminal-tips",
+    "title": "7  Configure VS Code",
+    "section": "7.4 Integrated terminal tips",
+    "text": "7.4 Integrated terminal tips\n\nOpen the integrated terminal in VS Code. On Windows, set Git Bash as the default shell so every VS Code terminal matches the rest of this guide.\nSet your default terminal profile via Terminal &gt; Configure Default Profile… so that VS Code opens the same shell you used during installation.",
+    "crumbs": [
+      "Prepare Your Machine",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Configure VS Code</span>"
+    ]
+  },
+  {
+    "objectID": "mssql-connection.html",
+    "href": "mssql-connection.html",
+    "title": "8  Create a SQL Server Connection",
+    "section": "",
+    "text": "8.1 Create a connection profile\nUse the SQL Server (mssql) extension in VS Code to connect, save, and reuse profiles for SQL Server or Azure SQL databases. The steps below walk through creating your first connection and include tips for common authentication modes.",
+    "crumbs": [
+      "Prepare Your Machine",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Create a SQL Server Connection</span>"
+    ]
+  },
+  {
+    "objectID": "mssql-connection.html#create-a-connection-profile",
+    "href": "mssql-connection.html#create-a-connection-profile",
+    "title": "8  Create a SQL Server Connection",
+    "section": "",
+    "text": "In VS Code, open the SQL Server view (activity bar icon with the SQL badge).\nSelect Add Connection (➕ icon). The Connect to Database dialog matches the screenshot and uses the following fields:\n\nProfile Name – friendly label that shows up under SQL Server ▶ Connections.\nConnection Group – optional folder for organizing profiles. Leave &lt;Default&gt;.\nInput type\n\nUse Parameters (default): exposes the individual fields listed below.\n\nServer name – Use the named instance provided by your instructor.\nTrust server certificate – enable this field.\nAuthentication type – select SQL Login\nUser name / Password – enter the credentials provided by your instructor.\nSave Password – stores credentials securely in your OS keychain.\nDatabase name – enter the name provided by your instructor..\nEncrypt – pick Optional.\nAdvanced – not necessary for this connection.\n\nAfter filling the required fields (marked with *), click Connect. When prompted, save the profile. Saving makes it appear in the SQL Server panel so you can double-click it later; declining runs a one-off connection only.",
+    "crumbs": [
+      "Prepare Your Machine",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Create a SQL Server Connection</span>"
+    ]
+  },
+  {
+    "objectID": "mssql-connection.html#verify-the-connection",
+    "href": "mssql-connection.html#verify-the-connection",
+    "title": "8  Create a SQL Server Connection",
+    "section": "8.2 Verify the connection",
+    "text": "8.2 Verify the connection\n\nIn your VS Code Extensions, open the SQL Server view if not already visible.\nIn the CONNECTIONS window, move your mouse to the name of your database, right-click and choose New Query.\nType a simple check such as:\n\nSELECT TOP (3)\nID_Product,\nMaterial_Description,\nProduct_Category,\nTransfer_Price_EUR\nFROM dbo.Dim_Product\nORDER BY ID_Product;\n\nPress F5 or click the Run symbol (▶️) in the editor toolbar (at the top right of the script).\nThe Results grid should return the products ordered by ID_Product. If VS Code prompts again for credentials, re-enter them and retry.\nIf you encounter connection issues, double-check the server name, authentication type, and credentials. Review any error messages for clues.",
+    "crumbs": [
+      "Prepare Your Machine",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Create a SQL Server Connection</span>"
+    ]
+  },
+  {
+    "objectID": "mssql-example.html",
+    "href": "mssql-example.html",
+    "title": "9  Example SQL Server Connection",
+    "section": "",
+    "text": "Now that the drivers and environment variables are in place, you can connect to SQL Server from Python using SQLAlchemy.\nTo make the process smoother, all necessary files are already available in a GitHub repository. Follow the instructions to clone it and set up your environment:\nGitHub Repository: mssql-example\nIn the next section, you’ll see a detailed description of the script sql_example.py.",
+    "crumbs": [
+      "Prepare Your Machine",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Example SQL Server Connection</span>"
+    ]
+  },
+  {
+    "objectID": "sql-example.html",
+    "href": "sql-example.html",
+    "title": "10  SQL Example Script",
+    "section": "",
+    "text": "10.1 What the script does\nThis chapter walks through sql_example.py, a self-contained example that connects to SQL Server, runs a sample query, and prints the results with pandas. Use it as a template for your own analytics scripts once the database connection is working.\nThe script demonstrates an end-to-end query workflow:\nAlways execute the script through your managed environment:\nuv run guarantees that the dependencies defined in pyproject.toml are loaded. Once the connection works, you can reuse the structure for your own queries.",
+    "crumbs": [
+      "Prepare Your Machine",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>SQL Example Script</span>"
+    ]
+  },
+  {
+    "objectID": "sql-example.html#what-the-script-does",
+    "href": "sql-example.html#what-the-script-does",
+    "title": "10  SQL Example Script",
+    "section": "",
+    "text": "loads the required libraries (dotenv, sqlalchemy, pandas) and environment variables\nbuilds a secure connection string from the .env values\ncreates an engine with SQLAlchemy and verifies the database connection\nruns a sample query and prints the first rows of a table\n\n\nuv run python sql_example.py",
+    "crumbs": [
+      "Prepare Your Machine",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>SQL Example Script</span>"
+    ]
+  },
+  {
+    "objectID": "sql-example.html#step-by-step",
+    "href": "sql-example.html#step-by-step",
+    "title": "10  SQL Example Script",
+    "section": "10.2 Step by step",
+    "text": "10.2 Step by step\n\n10.2.1 1. Load libraries and parse the .env\nimport os\nimport urllib.parse\nimport pandas as pd\nfrom dotenv import load_dotenv\nfrom sqlalchemy import create_engine, text\n\nload_dotenv()\nload_dotenv() reads the connection parameters from the .env file so credentials stay out of the source code. If any of the required values (server, database, username, password) are missing, the script aborts with a clear error message—double-check the .env file first.\n\n\n10.2.2 2. Prepare connection parameters\nSERVER = os.getenv(\"MSSQL_SERVER\")\nDATABASE = os.getenv(\"MSSQL_DATABASE\")\nUSERNAME = os.getenv(\"MSSQL_USERNAME\")\nPASSWORD = os.getenv(\"MSSQL_PASSWORD\")\nDRIVER = os.getenv(\"MSSQL_DRIVER\", \"ODBC Driver 18 for SQL Server\")\nTRUST_CERT = os.getenv(\"TRUST_SERVER_CERTIFICATE\", \"false\").lower() == \"true\"\n\nparams = urllib.parse.quote_plus(\n    f\"DRIVER={{{DRIVER}}};\"\n    f\"SERVER={SERVER};\"\n    f\"DATABASE={DATABASE};\"\n    f\"UID={USERNAME};\"\n    f\"PWD={PASSWORD};\"\n    f\"TrustServerCertificate={'Yes' if TRUST_CERT else 'No'};\"\n)\n\nurllib.parse.quote_plus escapes special characters in the password so the ODBC driver accepts the connection string.\nThe TrustServerCertificate flag is controlled via the .env variable TRUST_SERVER_CERTIFICATE and defaults to off.\n\n\n\n10.2.3 3. Create the engine and test the connection\nengine = create_engine(f\"mssql+pyodbc:///?odbc_connect={params}\")\n\nwith engine.connect() as connection:\n    version = connection.execute(text(\"SELECT @@VERSION AS version\"))\n    print(\"Connection successful!\")\n    print(\"SQL Server version:\", version.scalar())\nThe engine manages the connection pool. The with block ensures the session closes properly after the query. The initial SELECT @@VERSION confirms that connectivity works and prints the SQL Server version that responded.\n\n\n10.2.4 4. Sample query with pandas\nSAMPLE_QUERY = text(\n    \"\"\"\n    SELECT TOP (10)\n           ID_Product,\n           Material_Description,\n           Product_Category,\n           Transfer_Price_EUR\n    FROM dbo.Dim_Product\n    ORDER BY ID_Product;\n    \"\"\"\n)\n\ndf = pd.read_sql(SAMPLE_QUERY, connection)\nprint(\"\\nSample data:\")\nprint(df)\npd.read_sql combines SQLAlchemy and pandas so you get a DataFrame directly. The call runs inside the same with block as the version query, meaning the connection closes automatically. Modify the SQL statement to match tables you can access. The goal is to see the data quickly without exporting to CSV first.",
+    "crumbs": [
+      "Prepare Your Machine",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>SQL Example Script</span>"
+    ]
+  },
+  {
+    "objectID": "sql-example.html#adapt-it-to-your-projects",
+    "href": "sql-example.html#adapt-it-to-your-projects",
+    "title": "10  SQL Example Script",
+    "section": "10.3 Adapt it to your projects",
+    "text": "10.3 Adapt it to your projects\n\nExplore new tables: Adjust the selected columns and the FROM clause to inspect other datasets.\nAdd additional checks: Chain multiple text() statements to run sanity checks in sequence.\nPersist results: Append df.to_csv(...) or df.to_parquet(...) if you want to store query outputs for later.\n\nKeep the structure modular: one function that returns the engine, another for common queries, and dedicated modules for heavier analytics. That approach keeps the code testable and reusable in notebooks, ETL jobs, or dashboards.",
+    "crumbs": [
+      "Prepare Your Machine",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>SQL Example Script</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "1.1 Course Schedule\nWelcome to the Agentic AI module of the Management Information Systems course!\nIn this part of the course, we will explore the cutting-edge world of Agentic Artificial Intelligence. Unlike traditional AI that simply responds to prompts, Agentic AI systems can perceive their environment, reason about tasks, and take actions to achieve specific goals.\nWe will meet for three sessions to learn, build, and present our work.",
+    "crumbs": [
+      "Introduction",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#course-schedule",
+    "href": "intro.html#course-schedule",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "Week\nDate\nTopic\nInstructor\n\n\n\n\n3\nDec. 8 (14:00-16:00)\nProject Kick-off & FundamentalsIntroduction to Agentic AI, tooling, and setting up our environment.\nProf. Dr. Jan Kirenz\n\n\n4\nDec. 15\nHands-on DevelopmentBuilding a simple agent and exploring design patterns.\nProf. Dr. Jan Kirenz\n\n\n15\nMar. 9 (14:00-16:00)\nProject PresentationFinal presentations, project reviews, and reflections.\nProf. Dr. Jan Kirenz",
+    "crumbs": [
+      "Introduction",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#the-project-multimodal-sql-analyst-agent",
+    "href": "intro.html#the-project-multimodal-sql-analyst-agent",
+    "title": "1  Introduction",
+    "section": "1.2 The Project: Multimodal SQL Analyst Agent",
+    "text": "1.2 The Project: Multimodal SQL Analyst Agent\nYou will act as AI consultants for Global Bike Inc. (GBI), a world-class bicycle manufacturer. Your mission is to build an intelligent AI agent that empowers GBI’s employees to get answers from their data instantly.\n\n1.2.1 The Challenge\nGBI has a lot of data in their SQL Server, but accessing it requires technical skills. Business users want to ask questions in plain English (or even by voice!) and get immediate answers.\n\n\n1.2.2 Your Solution\nYou will build a Multimodal SQL Analyst Agent that can:\n\nListen & Understand: Accept questions via text or voice.\nWrite Code: Automatically generate safe and correct SQL queries.\nAnalyze: Execute the query on GBI’s database.\nExplain & Visualize: Present the results with a clear text explanation and a beautiful chart.\n\nTechnologies we will use:\n\nPython: The primary programming language.\nGoogle Gemini: For the intelligence (LLM).\nGradio: To build the user interface.",
+    "crumbs": [
+      "Introduction",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#getting-started",
+    "href": "intro.html#getting-started",
+    "title": "1  Introduction",
+    "section": "1.3 Getting Started",
+    "text": "1.3 Getting Started\nTo be ready for our first session, please ensure you have the following:\n\nGoogle Account: You will need this to access Google’s AI tools.\nLaptop: Bring your own device.\nSoftware Setup: Please complete the steps in the Prepare Your Machine section before class. This includes installing Python and setting up your development environment.\n\nWe look forward to building the future of analytics with you!",
+    "crumbs": [
+      "Introduction",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "preparation.html#google-api-key",
+    "href": "preparation.html#google-api-key",
+    "title": "4  Prepare Your Machine",
+    "section": "4.3 Google API Key",
+    "text": "4.3 Google API Key\nTo use Google’s AI models (Gemini), you need an API key.\n\nGet your key: Go to Google AI Studio and click Create API key.\nCopy the key: Copy the generated key string.\nSecure your key:\n\nCreate a new file in your project folder named .env.\nOpen the file and add the following line, replacing YOUR_KEY with your actual key:\n\nGOOGLE_API_KEY=AIzaSy...\n\nImportant: Never share this key or commit the .env file to public repositories (GitHub, etc.).",
+    "crumbs": [
+      "Prepare Your Machine",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Prepare Your Machine</span>"
+    ]
+  }
+]

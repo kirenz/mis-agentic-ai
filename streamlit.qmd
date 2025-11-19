@@ -1,0 +1,9 @@
+# Streamlit
+
+Streamlit is an open-source Python library that makes it easy to create and share custom web apps for machine learning and data science.
+
+## Example Application
+
+An example Streamlit application that connects to the AdventureWorks database and displays key performance indicators (KPIs) and AI-generated insights using Gemini can be found in this GitHub repository:
+
+- [GitHub Repo](https://github.com/kirenz/streamlit-mssql)

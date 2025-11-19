@@ -1,0 +1,20 @@
+# Microsoft SQL Server
+
+Microsoft SQL Server is a relational database management system (RDBMS) developed by Microsoft. It stores data in structured tables, enforces transactional integrity, and provides a rich set of services for analytics, reporting, and integration. 
+
+The platform runs on Windows and Linux, supports on-premises and cloud deployments, and scales from lightweight edge workloads to large enterprise data warehouses.
+
+## What It Is
+
+- **Relational database engine:** Implements the ANSI SQL standard with T-SQL extensions, transactional isolation levels, and ACID compliance.
+
+- **Comprehensive data platform:** Bundles services for business intelligence (SQL Server Analysis Services), data movement (SQL Server Integration Services), and reporting (SQL Server Reporting Services).
+
+- **Managed platform options:** Powers Azure SQL offerings, including Azure SQL Database, Azure SQL Managed Instance, and SQL Server on Azure Virtual Machines.
+
+## Typical Use Cases
+
+- Line-of-business applications that require strong transactional consistency (e.g., ERP, CRM, finance).
+- Analytical workloads such as data marts and enterprise data warehouses.
+- Hybrid architectures combining operational databases with near-real-time analytics through features such as In-Memory OLTP and columnstore indexes.
+- Data integration scenarios where SQL Server acts as a hub for ingesting, transforming, and serving data to downstream systems.

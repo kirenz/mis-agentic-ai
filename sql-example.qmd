@@ -1,0 +1,104 @@
+---
+title: "SQL Example Script"
+---
+
+This chapter walks through `sql_example.py`, a self-contained example that connects to SQL Server, runs a sample query, and prints the results with `pandas`. Use it as a template for your own analytics scripts once the database connection is working.
+
+## What the script does
+
+The script demonstrates an end-to-end query workflow:
+
+- loads the required libraries (`dotenv`, `sqlalchemy`, `pandas`) and environment variables
+- builds a secure connection string from the `.env` values
+- creates an engine with `SQLAlchemy` and verifies the database connection
+- runs a sample query and prints the first rows of a table
+
+Always execute the script through your managed environment:
+
+```bash
+uv run python sql_example.py
+```
+
+`uv run` guarantees that the dependencies defined in `pyproject.toml` are loaded. Once the connection works, you can reuse the structure for your own queries.
+
+## Step by step
+
+### 1. Load libraries and parse the `.env`
+
+```python
+import os
+import urllib.parse
+import pandas as pd
+from dotenv import load_dotenv
+from sqlalchemy import create_engine, text
+
+load_dotenv()
+```
+
+`load_dotenv()` reads the connection parameters from the `.env` file so credentials stay out of the source code. If any of the required values (server, database, username, password) are missing, the script aborts with a clear error message—double-check the `.env` file first.
+
+### 2. Prepare connection parameters
+
+```python
+SERVER = os.getenv("MSSQL_SERVER")
+DATABASE = os.getenv("MSSQL_DATABASE")
+USERNAME = os.getenv("MSSQL_USERNAME")
+PASSWORD = os.getenv("MSSQL_PASSWORD")
+DRIVER = os.getenv("MSSQL_DRIVER", "ODBC Driver 18 for SQL Server")
+TRUST_CERT = os.getenv("TRUST_SERVER_CERTIFICATE", "false").lower() == "true"
+
+params = urllib.parse.quote_plus(
+    f"DRIVER={{{DRIVER}}};"
+    f"SERVER={SERVER};"
+    f"DATABASE={DATABASE};"
+    f"UID={USERNAME};"
+    f"PWD={PASSWORD};"
+    f"TrustServerCertificate={'Yes' if TRUST_CERT else 'No'};"
+)
+```
+
+- `urllib.parse.quote_plus` escapes special characters in the password so the ODBC driver accepts the connection string.
+- The `TrustServerCertificate` flag is controlled via the `.env` variable `TRUST_SERVER_CERTIFICATE` and defaults to off.
+
+### 3. Create the engine and test the connection
+
+```python
+engine = create_engine(f"mssql+pyodbc:///?odbc_connect={params}")
+
+with engine.connect() as connection:
+    version = connection.execute(text("SELECT @@VERSION AS version"))
+    print("Connection successful!")
+    print("SQL Server version:", version.scalar())
+```
+
+The engine manages the connection pool. The `with` block ensures the session closes properly after the query. The initial `SELECT @@VERSION` confirms that connectivity works and prints the SQL Server version that responded.
+
+### 4. Sample query with `pandas`
+
+```python
+SAMPLE_QUERY = text(
+    """
+    SELECT TOP (10)
+           ID_Product,
+           Material_Description,
+           Product_Category,
+           Transfer_Price_EUR
+    FROM dbo.Dim_Product
+    ORDER BY ID_Product;
+    """
+)
+
+df = pd.read_sql(SAMPLE_QUERY, connection)
+print("\nSample data:")
+print(df)
+```
+
+`pd.read_sql` combines SQLAlchemy and `pandas` so you get a DataFrame directly. The call runs inside the same `with` block as the version query, meaning the connection closes automatically. Modify the SQL statement to match tables you can access. The goal is to see the data quickly without exporting to CSV first.
+
+## Adapt it to your projects
+
+- **Explore new tables:** Adjust the selected columns and the `FROM` clause to inspect other datasets.
+- **Add additional checks:** Chain multiple `text()` statements to run sanity checks in sequence.
+- **Persist results:** Append `df.to_csv(...)` or `df.to_parquet(...)` if you want to store query outputs for later.
+
+Keep the structure modular: one function that returns the engine, another for common queries, and dedicated modules for heavier analytics. That approach keeps the code testable and reusable in notebooks, ETL jobs, or dashboards.

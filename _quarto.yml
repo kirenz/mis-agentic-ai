@@ -1,0 +1,67 @@
+project:
+  type: book
+
+lang: en
+
+execute:
+  freeze: auto
+  echo: false
+  warning: false
+
+book:
+  title: "Agentic AI"
+  subtitle: "Multimodal SQL Analyst"
+  image: "/images/logo.png"
+  favicon: "/images/logo.png"
+  search:
+    type: overlay
+  page-footer:
+    left: |
+      © [Jan Kirenz](https://www.kirenz.com/), 2025
+  
+  chapters:
+    - index.qmd
+    - part: "Introduction"
+      chapters:
+        - intro.qmd
+    - part: "Database"
+      chapters:
+        - mssql-intro.qmd
+        - adventureworks.qmd
+    - part: "Prepare Your Machine"
+      chapters:
+        - preparation.qmd
+        - mssql-macos.qmd
+        - mssql-windows.qmd
+        - mssql-vscode.qmd
+        - mssql-connection.qmd
+        - mssql-example.qmd
+        - sql-example.qmd
+    # - part: "Agentic AI"
+    #   chapters:
+    #     - agentic-ai.qmd
+    # - part: "Gradio"
+    #   chapters:
+    #     - gradio.qmd        
+
+
+number-sections: true
+
+format:
+  html:
+    toc: true
+    theme: cosmo
+    css: theme.scss
+    code-copy: true
+    highlight-style: github
+    code-overflow: wrap
+    author-meta: "Jan Kirenz"
+    callout-appearance: simple
+    include-in-header:
+      text: |
+        <style>
+        .cmd-explain {
+          font-weight: 600;
+          margin-top: 1rem;
+        }
+        </style>

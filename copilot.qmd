@@ -1,0 +1,27 @@
+
+### Custom Instructions in VS Code
+
+Enhance Copilot's chat responses by automatically providing contextual details about your workflow, tools, or project. Instead of repeating this context in every query, you can set up a custom instructions file.
+
+- 📘 [Custom instructions for GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/copilot-customization)
+
+#### Setup Steps
+
+1. Open [settings](vscode://settings/github.copilot.chat.codeGeneration.instructions) in VS Code.
+2. Click **Edit in settings.json**.
+3. Add the following entry:
+
+    ```json
+    "github.copilot.chat.codeGeneration.instructions": [
+      {
+        "file": "code-style.md"
+      }
+    ],
+    ```
+
+4. In your project root, create a `.github` folder.
+5. Inside `.github`, add two files:
+   - `copilot-instructions.md`
+   - `code-style.md`
+
+6. Write your custom instructions in these files to tailor Copilot's responses.

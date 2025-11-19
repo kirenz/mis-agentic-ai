@@ -1,0 +1,35 @@
+{
+  "index.qmd": {
+    "index.html": "d0ba28b1"
+  },
+  "intro.qmd": {
+    "intro.html": "246dd6e7"
+  },
+  "mssql-intro.qmd": {
+    "mssql-intro.html": "02cb5b26"
+  },
+  "adventureworks.qmd": {
+    "adventureworks.html": "b6c37547"
+  },
+  "preparation.qmd": {
+    "preparation.html": "1030e23c"
+  },
+  "mssql-macos.qmd": {
+    "mssql-macos.html": "c75dbb64"
+  },
+  "mssql-windows.qmd": {
+    "mssql-windows.html": "a1c1fb2f"
+  },
+  "mssql-vscode.qmd": {
+    "mssql-vscode.html": "eeea0d6b"
+  },
+  "mssql-connection.qmd": {
+    "mssql-connection.html": "7909bcd9"
+  },
+  "mssql-example.qmd": {
+    "mssql-example.html": "bc677f6e"
+  },
+  "sql-example.qmd": {
+    "sql-example.html": "d64758d0"
+  }
+}

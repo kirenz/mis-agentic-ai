@@ -1,0 +1,11 @@
+# NextJS
+
+Next.js is a React framework that enables several extra features, including server-side rendering and generating static websites for React based web applications.
+
+## Example Application
+
+An example Next.js application that connects to the AdventureWorks database and displays key performance indicators (KPIs) and AI-generated insights using Gemini can be found in this GitHub repository:
+
+- [GitHub Repo](https://github.com/kirenz/nextjs-mssql-gemini)
+
+

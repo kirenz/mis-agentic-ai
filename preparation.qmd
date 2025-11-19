@@ -1,0 +1,133 @@
+---
+title: "Prepare Your Machine"
+---
+
+Before installing anything, make sure your operating system and accounts are ready. A few minutes of preparation will prevent mysterious permission errors later.
+
+- Windows users: follow the [Windows setup instructions](#windows-users).
+- Mac users: follow the [macOS setup instructions](#mac-users).
+
+## Windows users {#windows-users}
+
+### Basic requirements
+
+1. **Check for updates**
+   - On Windows, open `Settings` > Windows Update.
+2. **Developer mode**
+   - Open Windows Settings.
+   - Go to Update & Security > For developers.
+   - Toggle Developer Mode and accept the disclaimer. This unlocks features used by Git Bash and command-line installers.
+
+### Command-line basics
+
+We use Git Bash as our terminal. Download the latest **Git for Windows** installer from [git-scm.com](https://git-scm.com/download/win) and complete the setup (Git Bash is included). After installation, open **Git Bash** from the Start menu.
+
+::: {.callout-note collapse="true" title="Why Git Bash?"}
+Git Bash provides a Unix-like terminal experience on Windows, making it easier to follow along with commands that are commonly used in macOS and Linux environments. 
+:::
+
+Keep the terminal window open while you work through the chapters.
+
+<!-- 
+### Package manager
+
+[**winget**](https://learn.microsoft.com/en-us/windows/package-manager/winget/) (Windows Package Manager) is already installed on modern Windows builds and can install packages straight from official sources.
+
+`winget` ships with Windows 10 (build 1809 or later) and all versions of Windows 11. Confirm it is ready inside Git Bash:
+
+```bash
+winget.exe --version
+```
+
+If the command is not found, install the latest [App Installer package](https://learn.microsoft.com/en-us/windows/msix/app-installer/install-update-app-installer) from the Microsoft Store, restart your machine, and try again.  -->
+
+### uv
+
+We use **uv**, a strictly written Python package manager that is extremely fast. It replaces `pip`, `poetry`, and `virtualenv`.
+
+To install uv on Windows, run this command in your terminal (PowerShell):
+
+```powershell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+Restart your terminal after installation to ensure `uv` is recognized.
+
+
+## Mac users {#mac-users}
+
+### Basic requirements
+
+**Check for updates**: On macOS, open `System Settings` > General > Software Update.
+
+### Command-line basics
+
+Launch **Terminal** (Spotlight search for "Terminal"). Commands in this book assume the `zsh` shell, which is the default on modern macOS systems.
+
+Keep the terminal window open while you work through the chapters.
+
+### Package manager
+
+[**Homebrew**](https://brew.sh/) downloads applications, command line tools, and libraries with one command. You avoid manual downloads and it keeps everything organized.
+
+Install Homebrew:
+
+1. Open Terminal and run the official installer:
+   ```bash
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   ```
+
+2. Enter your password when prompted (you won't see any characters while typing).
+
+3. Press RETURN/ENTER to continue
+
+4. When the script finishes, follow the on-screen instructions to add Homebrew to your shell profile (this step is required for `brew` to be found). 
+
+5. Close the Terminal window.
+
+6. Open a new Terminal, then verify the installation:
+   ```bash
+   brew --version
+   ```
+
+7. Make sure everything is up to date:
+   ```bash
+   brew update
+   ```
+ 
+8. Use `brew upgrade` to actually update installed packages.
+   
+   ```bash
+   brew upgrade
+   ```
+
+
+### uv
+
+We use **uv**, a strictly written Python package manager that is extremely fast. It replaces `pip`, `poetry`, and `virtualenv`.
+
+To install uv on macOS, run this command in your terminal:
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+Restart your terminal after installation.
+
+
+## Google API Key
+
+To use Google's AI models (Gemini), you need an API key.
+
+1.  **Get your key**: Go to [Google AI Studio](https://aistudio.google.com/app/apikey) and click **Create API key**.
+2.  **Copy the key**: Copy the generated key string.
+3.  **Secure your key**:
+    *   Create a new file in your project folder named `.env`.
+    *   Open the file and add the following line, replacing `YOUR_KEY` with your actual key:
+
+    ```env
+    GOOGLE_API_KEY=AIzaSy...
+    ```
+
+    *   **Important**: Never share this key or commit the `.env` file to public repositories (GitHub, etc.).
+ 

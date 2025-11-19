@@ -1,0 +1,11 @@
+---
+title: "Example SQL Server Connection"
+---
+
+Now that the drivers and environment variables are in place, you can connect to SQL Server from Python using SQLAlchemy. 
+
+To make the process smoother, all necessary files are already available in a GitHub repository. Follow the instructions to clone it and set up your environment:
+
+[GitHub Repository: mssql-example](https://github.com/kirenz/mssql-example)
+
+In the next section, you'll see a detailed description of the script `sql_example.py`.

@@ -1,0 +1,55 @@
+# AdventureWorks
+
+We use the AdventureWorks sample database from Microsoft as our primary dataset.
+
+The AdventureWorks database is a realistic, relational dataset that models a mid-sized manufacturing and sales company called *Adventure Works Cycles*.  
+
+It contains data about products, sales, customers, employees, vendors, and production processes, making it ideal for demonstrating complete, data-driven application pipelines.
+
+In this course, the dataset acts as the shared backend for a collection of interactive AI-powered applications. All apps connect to a Microsoft SQL Server instance that hosts the AdventureWorks data.
+
+
+## What We’ll Build with AdventureWorks
+
+We use the dataset to explore the full AI + data workflow — from SQL querying to intelligent front-end delivery.
+
+Example applications include:
+
+| Area | Technology | Description |
+|------|-------------|--------------|
+| Natural-language data exploration | Gradio | Ask questions like *“What were the top 5 products by revenue in 2023?”* and get Gemini-generated SQL, data, and charts. |
+| Interactive forecasting | Gradio / Streamlit | Build time-series forecasts (e.g., monthly sales by region or product line) with adjustable parameters and downloadable summaries. |
+| Automated reporting | Gradio + Quarto | Generate AI-enhanced PDF reports directly from AdventureWorks data, complete with charts and narrative insights. |
+| Web dashboards | Next.js | Create modern dashboards that connect to the same SQL backend and use Gemini for intelligent query suggestions. |
+
+
+
+
+## Architecture
+
+```{mermaid}
+flowchart LR
+  A[Gemini API] -->|SQL generation + insights| B[Gradio / Streamlit / Next.js Apps]
+  B -->|Queries| C[(AdventureWorks SQL Server)]
+  C -->|Results + Metadata| B
+  B -->|Visuals + Reports| D[Users]
+```
+
+AdventureWorks SQL Server is the single source of truth.
+
+Gemini translates natural language into SQL and generates insights.
+
+The front ends (Gradio, Streamlit, Next.js) deliver data, forecasts, and reports interactively.
+
+
+## Access and API Keys
+
+All participants will receive API keys and connection credentials to access the shared AdventureWorks database.
+
+These keys provide secure, authenticated access from the different front-end applications.
+
+::: {.callout-important}
+The API keys and database connection strings will be distributed by the course instructor.
+Each key is personal and must not be shared publicly or stored in version control.
+:::
+

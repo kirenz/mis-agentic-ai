@@ -1,0 +1,15 @@
+# Welcome {.unnumbered}
+
+Welcome to this hands-on guide to setting up your environment and connecting to SQL Server databases using Python.
+
+What you will achieve:
+
+1. Prepare your operating system and developer tools.
+2. Install the Microsoft SQL Server ODBC drivers and command-line utilities.
+3. Configure VS Code so you can browse databases and run scripts comfortably.
+4. Use Python, `SQLAlchemy`, and `pandas` to connect, query, and explore data.
+
+
+::: {.callout-tip}
+Along the way you will learn why each tool matters, how to verify every step, and where to look when something goes wrong.
+:::

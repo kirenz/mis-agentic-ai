@@ -1,0 +1,46 @@
+# Introduction
+
+Welcome to the **Agentic AI** module of the Management Information Systems course!
+
+In this part of the course, we will explore the cutting-edge world of **Agentic Artificial Intelligence**. Unlike traditional AI that simply responds to prompts, Agentic AI systems can perceive their environment, reason about tasks, and take actions to achieve specific goals.
+
+## Course Schedule
+
+We will meet for three sessions to learn, build, and present our work.
+
+| Week | Date | Topic | Instructor |
+| :--- | :--- | :--- | :--- |
+| **3** | Dec. 8 (14:00-16:00) | **Project Kick-off & Fundamentals**<br>Introduction to Agentic AI, tooling, and setting up our environment. | Prof. Dr. Jan Kirenz |
+| **4** | Dec. 15 | **Hands-on Development**<br>Building a simple agent and exploring design patterns. | Prof. Dr. Jan Kirenz |
+| **15** | Mar. 9 (14:00-16:00) | **Project Presentation**<br>Final presentations, project reviews, and reflections. | Prof. Dr. Jan Kirenz |
+
+## The Project: Multimodal SQL Analyst Agent
+
+You will act as AI consultants for **Global Bike Inc. (GBI)**, a world-class bicycle manufacturer. Your mission is to build an intelligent AI agent that empowers GBI's employees to get answers from their data instantly.
+
+### The Challenge
+GBI has a lot of data in their SQL Server, but accessing it requires technical skills. Business users want to ask questions in plain English (or even by voice!) and get immediate answers.
+
+### Your Solution
+You will build a **Multimodal SQL Analyst Agent** that can:
+
+1.  **Listen & Understand**: Accept questions via text or voice.
+2.  **Write Code**: Automatically generate safe and correct SQL queries.
+3.  **Analyze**: Execute the query on GBI's database.
+4.  **Explain & Visualize**: Present the results with a clear text explanation and a beautiful chart.
+
+**Technologies we will use:**
+
+*   **Python**: The primary programming language.
+*   **Google Gemini**: For the intelligence (LLM).
+*   **Gradio**: To build the user interface.
+
+## Getting Started
+
+To be ready for our first session, please ensure you have the following:
+
+1.  **Google Account**: You will need this to access Google's AI tools.
+2.  **Laptop**: Bring your own device.
+3.  **Software Setup**: Please complete the steps in the **[Prepare Your Machine](preparation.qmd)** section *before* class. This includes installing Python and setting up your development environment.
+
+We look forward to building the future of analytics with you!
