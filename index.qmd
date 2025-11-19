@@ -1,15 +1,118 @@
-# Welcome {.unnumbered}
+# Welcome
 
-Welcome to this hands-on guide to setting up your environment and connecting to SQL Server databases using Python.
+Welcome to the Agentic AI module of the Management Information Systems course!
 
-What you will achieve:
+In this part of the course, we will explore the world of Agentic Artificial Intelligence. Unlike traditional AI that simply responds to prompts, Agentic AI systems can perceive their environment, reason about tasks, and take actions to achieve specific goals.
 
-1. Prepare your operating system and developer tools.
-2. Install the Microsoft SQL Server ODBC drivers and command-line utilities.
-3. Configure VS Code so you can browse databases and run scripts comfortably.
-4. Use Python, `SQLAlchemy`, and `pandas` to connect, query, and explore data.
+## Course Schedule
 
+We will meet for three sessions to learn, build, and present our work.
 
-::: {.callout-tip}
-Along the way you will learn why each tool matters, how to verify every step, and where to look when something goes wrong.
-:::
+| Date | Topic |
+| -- | -- |
+| Week 3, Dec. 8 (14:00-16:00) | Project Kick-off & Fundamentals<br>Introduction to Agentic AI, tooling, and setting up our environment. |
+| Week 4, Dec. 15 (14:00-16:00) | Hands-on Development<br>Building a simple agent and exploring design patterns. |
+| Week 15, Mar. 9 (14:00-16:00) | Project Presentation<br>Final presentations, project reviews, and reflections. |
+
+## The Project: Multimodal SQL Analyst Agent
+
+You will act as AI consultants for Global Bike Inc. (GBI), a global bicycle manufacturer. Your mission is to build an AI agent that empowers GBI's employees to get answers from their data instantly.
+
+### The Challenge
+GBI has a lot of data in their Microsoft SQL Server, but accessing it requires technical skills. Business users want to ask questions in plain English and get immediate answers.
+
+### Your Solution
+You will build a Multimodal SQL Analyst Agent that can:
+
+1.  Understand: Accept questions via text.
+2.  Write Code: Automatically generate safe and correct SQL queries.
+3.  Analyze: Execute the query on GBI's database.
+4.  Explain & Visualize: Present the results with a clear text explanation and a beautiful chart.
+
+Technologies we will use:
+
+*   Python: The primary programming language.
+*   Google Gemini: For the intelligence (LLM).
+*   Gradio: To build the user interface.
+*   Microsoft SQL Server: The database.
+*   VS Code: The primary IDE.
+*   GitHub: To store and share your code.
+
+### Data & Architecture
+
+We use the AdventureWorks sales database to simulate Global Bike Inc.'s data. It is a realistic dataset modeling a bicycle manufacturer. This serves as the shared backend for our agent.
+
+The system connects the user (via Gradio) to the data (SQL Server) using Gemini as the reasoning engine.
+
+```{mermaid}
+%%| fig-align: center 
+
+%%{init: {
+  "theme": "base",
+  "flowchart": {
+    "curve": "basis",
+    "nodeSpacing": 50,
+    "rankSpacing": 50,
+    "htmlLabels": false,
+    "wrap": true,
+    "useMaxWidth": true
+  },
+  "themeVariables": {
+    "primaryColor": "#ffffff",
+    "primaryTextColor": "#374151",
+    "primaryBorderColor": "#e5e7eb",
+    "lineColor": "#9CA3AF",
+    "secondaryColor": "#f9fafb",
+    "tertiaryColor": "#ffffff",
+    "fontFamily": "system-ui",
+    "fontSize": "16px",
+    "nodeSpacing": 10,
+    "rankSpacing": 10
+  }
+}}%%
+
+flowchart LR
+    %% Increase node sizes with larger padding
+    subgraph Input[" "]
+        direction TB
+        A["User<br>Question"]
+        style A fill:#4F46E5,color:#ffffff,stroke:#4338CA,padding:20px
+    end
+
+    subgraph System[" "]
+        direction TB
+        B["Gemini<br>(Reasoning)"]
+        C["SQL Server<br>(Data)"]
+        style B fill:#ffffff,color:#374151,stroke:#e5e7eb,padding:20px
+        style C fill:#ffffff,color:#374151,stroke:#e5e7eb,padding:20px
+    end
+
+    subgraph Output[" "]
+        direction TB
+        D["Visuals<br>and Insights"]
+        style D fill:#4F46E5,color:#ffffff,stroke:#4338CA,padding:20px
+    end
+
+    %% Connections
+    A --> B
+    B -->|SQL| C
+    C -->|Data| D
+
+    %% Subgraph styling
+    style Input fill:#ffffff,stroke:#e5e7eb,color:#374151,stroke-width:1px,padding:50px
+    style System fill:#ffffff,stroke:#e5e7eb,color:#374151,stroke-width:1px,padding:50px
+    style Output fill:#ffffff,stroke:#e5e7eb,color:#374151,stroke-width:1px,padding:50px
+
+    %% Edge styling
+    linkStyle default stroke:#9CA3AF,stroke-width:2px
+```
+
+*   AdventureWorks SQL Server: The single source of truth.
+*   Gemini: Translates natural language into SQL and generates insights.
+*   Gradio: Delivers data and visualizations interactively.
+
+## Getting Started
+
+To be ready for our first session, please complete the steps in the [Prepare Your Machine](preparation.qmd) section *before* class. This includes installing Python and setting up your development environment.
+
+We look forward to building the future of analytics with you!

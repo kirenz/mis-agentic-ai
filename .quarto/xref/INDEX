@@ -31,5 +31,17 @@
   },
   "sql-example.qmd": {
     "sql-example.html": "d64758d0"
+  },
+  "google-accounts.qmd": {
+    "google-accounts.html": "93686583"
+  },
+  "windows-setup.qmd": {
+    "windows-setup.html": "2763d986"
+  },
+  "mac-setup.qmd": {
+    "mac-setup.html": "c1b5f48b"
+  },
+  "accounts.qmd": {
+    "accounts.html": "36355953"
   }
 }

@@ -10,7 +10,7 @@ execute:
 
 book:
   title: "Agentic AI"
-  subtitle: "Multimodal SQL Analyst"
+  subtitle: ""
   image: "/images/logo.png"
   favicon: "/images/logo.png"
   search:
@@ -21,17 +21,11 @@ book:
   
   chapters:
     - index.qmd
-    - part: "Introduction"
+    - part: "Preparation"
       chapters:
-        - intro.qmd
-    - part: "Database"
-      chapters:
-        - mssql-intro.qmd
-        - adventureworks.qmd
-    - part: "Prepare Your Machine"
-      chapters:
-        - preparation.qmd
-        - mssql-macos.qmd
+        - accounts.qmd
+        - windows-setup.qmd
+        - mac-setup.qmd
         - mssql-windows.qmd
         - mssql-vscode.qmd
         - mssql-connection.qmd

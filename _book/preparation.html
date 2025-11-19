@@ -8,7 +8,7 @@
 
 <meta name="author" content="Jan Kirenz">
 
-<title>4&nbsp; Prepare Your Machine – Agentic AI</title>
+<title>4&nbsp; Software Setup – Agentic AI</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -125,7 +90,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./preparation.html">Prepare Your Machine</a></li><li class="breadcrumb-item"><a href="./preparation.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prepare Your Machine</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./preparation.html">Preparation</a></li><li class="breadcrumb-item"><a href="./preparation.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Software Setup</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -151,35 +116,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Welcome</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Welcome</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Introduction</span></a>
+ <span class="menu-text">Database</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Database</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mssql-intro.html" class="sidebar-item-text sidebar-link">
@@ -196,17 +144,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Prepare Your Machine</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Preparation</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./preparation.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prepare Your Machine</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Software Setup</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -257,29 +205,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#windows-users" id="toc-windows-users" class="nav-link active" data-scroll-target="#windows-users"><span class="header-section-number">4.1</span> Windows users</a>
-  <ul class="collapse">
-  <li><a href="#basic-requirements" id="toc-basic-requirements" class="nav-link" data-scroll-target="#basic-requirements"><span class="header-section-number">4.1.1</span> Basic requirements</a></li>
-  <li><a href="#command-line-basics" id="toc-command-line-basics" class="nav-link" data-scroll-target="#command-line-basics"><span class="header-section-number">4.1.2</span> Command-line basics</a></li>
-  <li><a href="#uv" id="toc-uv" class="nav-link" data-scroll-target="#uv"><span class="header-section-number">4.1.3</span> uv</a></li>
-  </ul></li>
-  <li><a href="#mac-users" id="toc-mac-users" class="nav-link" data-scroll-target="#mac-users"><span class="header-section-number">4.2</span> Mac users</a>
-  <ul class="collapse">
-  <li><a href="#basic-requirements-1" id="toc-basic-requirements-1" class="nav-link" data-scroll-target="#basic-requirements-1"><span class="header-section-number">4.2.1</span> Basic requirements</a></li>
-  <li><a href="#command-line-basics-1" id="toc-command-line-basics-1" class="nav-link" data-scroll-target="#command-line-basics-1"><span class="header-section-number">4.2.2</span> Command-line basics</a></li>
-  <li><a href="#package-manager" id="toc-package-manager" class="nav-link" data-scroll-target="#package-manager"><span class="header-section-number">4.2.3</span> Package manager</a></li>
-  <li><a href="#uv-1" id="toc-uv-1" class="nav-link" data-scroll-target="#uv-1"><span class="header-section-number">4.2.4</span> uv</a></li>
-  </ul></li>
-  <li><a href="#google-api-key" id="toc-google-api-key" class="nav-link" data-scroll-target="#google-api-key"><span class="header-section-number">4.3</span> Google API Key</a></li>
+  <li><a href="#google-api-key" id="toc-google-api-key" class="nav-link active" data-scroll-target="#google-api-key"><span class="header-section-number">4.1</span> Google API Key</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./preparation.html">Prepare Your Machine</a></li><li class="breadcrumb-item"><a href="./preparation.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prepare Your Machine</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./preparation.html">Preparation</a></li><li class="breadcrumb-item"><a href="./preparation.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Software Setup</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prepare Your Machine</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Software Setup</span></h1>
 </div>
 
 
@@ -301,104 +236,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Windows users: follow the <a href="#windows-users">Windows setup instructions</a>.</li>
 <li>Mac users: follow the <a href="#mac-users">macOS setup instructions</a>.</li>
 </ul>
-<section id="windows-users" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="windows-users"><span class="header-section-number">4.1</span> Windows users</h2>
-<section id="basic-requirements" class="level3" data-number="4.1.1">
-<h3 data-number="4.1.1" class="anchored" data-anchor-id="basic-requirements"><span class="header-section-number">4.1.1</span> Basic requirements</h3>
-<ol type="1">
-<li><strong>Check for updates</strong>
-<ul>
-<li>On Windows, open <code>Settings</code> &gt; Windows Update.</li>
-</ul></li>
-<li><strong>Developer mode</strong>
-<ul>
-<li>Open Windows Settings.</li>
-<li>Go to Update &amp; Security &gt; For developers.</li>
-<li>Toggle Developer Mode and accept the disclaimer. This unlocks features used by Git Bash and command-line installers.</li>
-</ul></li>
-</ol>
-</section>
-<section id="command-line-basics" class="level3" data-number="4.1.2">
-<h3 data-number="4.1.2" class="anchored" data-anchor-id="command-line-basics"><span class="header-section-number">4.1.2</span> Command-line basics</h3>
-<p>We use Git Bash as our terminal. Download the latest <strong>Git for Windows</strong> installer from <a href="https://git-scm.com/download/win">git-scm.com</a> and complete the setup (Git Bash is included). After installation, open <strong>Git Bash</strong> from the Start menu.</p>
-<div class="callout callout-style-simple callout-note callout-titled" title="Why Git Bash?">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Why Git Bash?
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Git Bash provides a Unix-like terminal experience on Windows, making it easier to follow along with commands that are commonly used in macOS and Linux environments.</p>
-</div>
-</div>
-</div>
-<p>Keep the terminal window open while you work through the chapters.</p>
-<!-- 
-### Package manager
-
-[**winget**](https://learn.microsoft.com/en-us/windows/package-manager/winget/) (Windows Package Manager) is already installed on modern Windows builds and can install packages straight from official sources.
-
-`winget` ships with Windows 10 (build 1809 or later) and all versions of Windows 11. Confirm it is ready inside Git Bash:
-
-```bash
-winget.exe --version
-```
-
-If the command is not found, install the latest [App Installer package](https://learn.microsoft.com/en-us/windows/msix/app-installer/install-update-app-installer) from the Microsoft Store, restart your machine, and try again.  -->
-</section>
-<section id="uv" class="level3" data-number="4.1.3">
-<h3 data-number="4.1.3" class="anchored" data-anchor-id="uv"><span class="header-section-number">4.1.3</span> uv</h3>
-<p>We use <strong>uv</strong>, a strictly written Python package manager that is extremely fast. It replaces <code>pip</code>, <code>poetry</code>, and <code>virtualenv</code>.</p>
-<p>To install uv on Windows, run this command in your terminal (PowerShell):</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>powershell <span class="op">-</span>ExecutionPolicy ByPass <span class="op">-</span>c <span class="st">"irm https://astral.sh/uv/install.ps1 | iex"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Restart your terminal after installation to ensure <code>uv</code> is recognized.</p>
-</section>
-</section>
-<section id="mac-users" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="mac-users"><span class="header-section-number">4.2</span> Mac users</h2>
-<section id="basic-requirements-1" class="level3" data-number="4.2.1">
-<h3 data-number="4.2.1" class="anchored" data-anchor-id="basic-requirements-1"><span class="header-section-number">4.2.1</span> Basic requirements</h3>
-<p><strong>Check for updates</strong>: On macOS, open <code>System Settings</code> &gt; General &gt; Software Update.</p>
-</section>
-<section id="command-line-basics-1" class="level3" data-number="4.2.2">
-<h3 data-number="4.2.2" class="anchored" data-anchor-id="command-line-basics-1"><span class="header-section-number">4.2.2</span> Command-line basics</h3>
-<p>Launch <strong>Terminal</strong> (Spotlight search for “Terminal”). Commands in this book assume the <code>zsh</code> shell, which is the default on modern macOS systems.</p>
-<p>Keep the terminal window open while you work through the chapters.</p>
-</section>
-<section id="package-manager" class="level3" data-number="4.2.3">
-<h3 data-number="4.2.3" class="anchored" data-anchor-id="package-manager"><span class="header-section-number">4.2.3</span> Package manager</h3>
-<p><a href="https://brew.sh/"><strong>Homebrew</strong></a> downloads applications, command line tools, and libraries with one command. You avoid manual downloads and it keeps everything organized.</p>
-<p>Install Homebrew:</p>
-<ol type="1">
-<li><p>Open Terminal and run the official installer:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">/bin/bash</span> <span class="at">-c</span> <span class="st">"</span><span class="va">$(</span><span class="ex">curl</span> <span class="at">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="va">)</span><span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Enter your password when prompted (you won’t see any characters while typing).</p></li>
-<li><p>Press RETURN/ENTER to continue</p></li>
-<li><p>When the script finishes, follow the on-screen instructions to add Homebrew to your shell profile (this step is required for <code>brew</code> to be found).</p></li>
-<li><p>Close the Terminal window.</p></li>
-<li><p>Open a new Terminal, then verify the installation:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Make sure everything is up to date:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> update</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Use <code>brew upgrade</code> to actually update installed packages.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> upgrade</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-</ol>
-</section>
-<section id="uv-1" class="level3" data-number="4.2.4">
-<h3 data-number="4.2.4" class="anchored" data-anchor-id="uv-1"><span class="header-section-number">4.2.4</span> uv</h3>
-<p>We use <strong>uv</strong>, a strictly written Python package manager that is extremely fast. It replaces <code>pip</code>, <code>poetry</code>, and <code>virtualenv</code>.</p>
-<p>To install uv on macOS, run this command in your terminal:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-LsSf</span> https://astral.sh/uv/install.sh <span class="kw">|</span> <span class="fu">sh</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Restart your terminal after installation.</p>
-</section>
-</section>
-<section id="google-api-key" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="google-api-key"><span class="header-section-number">4.3</span> Google API Key</h2>
+<section id="google-api-key" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="google-api-key"><span class="header-section-number">4.1</span> Google API Key</h2>
 <p>To use Google’s AI models (Gemini), you need an API key.</p>
 <ol type="1">
 <li><strong>Get your key</strong>: Go to <a href="https://aistudio.google.com/app/apikey">Google AI Studio</a> and click <strong>Create API key</strong>.</li>

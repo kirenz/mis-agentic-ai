@@ -1,0 +1,35 @@
+---
+title: "Accounts"
+---
+
+To be ready for our first session, please ensure you have the following accounts.
+
+## Google Account
+
+You will need a Google account to access Google's AI tools:
+
+- [Create Google Account](https://www.google.com/intl/en/account/about/)
+
+
+## Google API Key
+
+To use Google's AI model Gemini, you need an API key.
+
+- Go to [Google AI Studio](https://aistudio.google.com/app/apikey) 
+- Click "Create API key" (at the bottom left of the page).
+- Follow the instructions to create the API key.
+
+We come back to this step in a later chapter.
+
+
+## GitHub Account
+
+You will need a GitHub account to access GitHub.
+
+::: {.callout-note collapse="false"}
+Use your KMITL e-mail address to create a GitHub account. If you already have an account, simply add your KMITL e-mail address to your account. This will allow you to apply for the GitHub Student Developer Pack.
+::: 
+
+- [Create GitHub Account](https://github.com/join)
+
+- You may also sign up for the [GitHub Student Developer Pack](https://education.github.com/pack) to get access to GitHub Pro for free and additional benefits like GitHub Copilot.

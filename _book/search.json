@@ -4,9 +4,9 @@
     "href": "index.html",
     "title": "Agentic AI",
     "section": "",
-    "text": "Welcome\nWelcome to this hands-on guide to setting up your environment and connecting to SQL Server databases using Python.\nWhat you will achieve:\n\nPrepare your operating system and developer tools.\nInstall the Microsoft SQL Server ODBC drivers and command-line utilities.\nConfigure VS Code so you can browse databases and run scripts comfortably.\nUse Python, SQLAlchemy, and pandas to connect, query, and explore data.\n\n\n\n\n\n\n\nAlong the way you will learn why each tool matters, how to verify every step, and where to look when something goes wrong.",
+    "text": "1 Welcome\nWelcome to the Agentic AI module of the Management Information Systems course!\nIn this part of the course, we will explore the world of Agentic Artificial Intelligence. Unlike traditional AI that simply responds to prompts, Agentic AI systems can perceive their environment, reason about tasks, and take actions to achieve specific goals.",
     "crumbs": [
-      "Welcome"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome</span>"
     ]
   },
   {
@@ -47,9 +47,9 @@
     "href": "adventureworks.html",
     "title": "3  AdventureWorks",
     "section": "",
-    "text": "3.1 What We’ll Build with AdventureWorks\nWe use the AdventureWorks sample database from Microsoft as our primary dataset.\nThe AdventureWorks database is a realistic, relational dataset that models a mid-sized manufacturing and sales company called Adventure Works Cycles.\nIt contains data about products, sales, customers, employees, vendors, and production processes, making it ideal for demonstrating complete, data-driven application pipelines.\nIn this course, the dataset acts as the shared backend for a collection of interactive AI-powered applications. All apps connect to a Microsoft SQL Server instance that hosts the AdventureWorks data.\nWe use the dataset to explore the full AI + data workflow — from SQL querying to intelligent front-end delivery.\nExample applications include:",
+    "text": "3.1 Architecture\nWe use the AdventureWorks sample database from Microsoft as our primary dataset.\nThe AdventureWorks database is a realistic, relational dataset that models a mid-sized manufacturing and sales company called Adventure Works Cycles.\nIt contains data about products, sales, customers, employees, vendors, and production processes, making it ideal for demonstrating complete, data-driven application pipelines.\nIn this course, the dataset acts as the shared backend for a collection of interactive AI-powered applications. All apps connect to a Microsoft SQL Server instance that hosts the AdventureWorks data.\nflowchart LR\n  A[Gemini API] --&gt;|SQL generation + insights| B[Gradio]\n  B --&gt;|Queries| C[(AdventureWorks SQL Server)]\n  C --&gt;|Results + Metadata| B\n  B --&gt;|Visuals + Reports| D[Users]\nAdventureWorks SQL Server is the single source of truth.\nGemini translates natural language into SQL and generates insights.\nThe front end (Gradio) deliver data, forecasts, and reports interactively.",
     "crumbs": [
-      "SQL Server",
+      "Database",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>AdventureWorks</span>"
     ]
   },
@@ -60,7 +60,7 @@
     "section": "",
     "text": "Area\nTechnology\nDescription\n\n\n\n\nNatural-language data exploration\nGradio\nAsk questions like “What were the top 5 products by revenue in 2023?” and get Gemini-generated SQL, data, and charts.\n\n\nInteractive forecasting\nGradio / Streamlit\nBuild time-series forecasts (e.g., monthly sales by region or product line) with adjustable parameters and downloadable summaries.\n\n\nAutomated reporting\nGradio + Quarto\nGenerate AI-enhanced PDF reports directly from AdventureWorks data, complete with charts and narrative insights.\n\n\nWeb dashboards\nNext.js\nCreate modern dashboards that connect to the same SQL backend and use Gemini for intelligent query suggestions.",
     "crumbs": [
-      "SQL Server",
+      "Database",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>AdventureWorks</span>"
     ]
   },
@@ -69,9 +69,9 @@
     "href": "adventureworks.html#architecture",
     "title": "3  AdventureWorks",
     "section": "3.2 Architecture",
-    "text": "3.2 Architecture\n\n\n\n\n\nflowchart LR\n  A[Gemini API] --&gt;|SQL generation + insights| B[Gradio / Streamlit / Next.js Apps]\n  B --&gt;|Queries| C[(AdventureWorks SQL Server)]\n  C --&gt;|Results + Metadata| B\n  B --&gt;|Visuals + Reports| D[Users]\n\n\n\n\n\n\nAdventureWorks SQL Server is the single source of truth.\nGemini translates natural language into SQL and generates insights.\nThe front ends (Gradio, Streamlit, Next.js) deliver data, forecasts, and reports interactively.",
+    "text": "3.2 Architecture\n\n\n\n\n\nflowchart LR\n  A[Gemini API] --&gt;|SQL generation + insights| B[Gradio]\n  B --&gt;|Queries| C[(AdventureWorks SQL Server)]\n  C --&gt;|Results + Metadata| B\n  B --&gt;|Visuals + Reports| D[Users]\n\n\n\n\n\n\nAdventureWorks SQL Server is the single source of truth.\nGemini translates natural language into SQL and generates insights.\nThe front end (Gradio) deliver data, forecasts, and reports interactively.",
     "crumbs": [
-      "SQL Server",
+      "Database",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>AdventureWorks</span>"
     ]
   },
@@ -79,44 +79,44 @@
     "objectID": "adventureworks.html#access-and-api-keys",
     "href": "adventureworks.html#access-and-api-keys",
     "title": "3  AdventureWorks",
-    "section": "3.3 Access and API Keys",
-    "text": "3.3 Access and API Keys\nAll participants will receive API keys and connection credentials to access the shared AdventureWorks database.\nThese keys provide secure, authenticated access from the different front-end applications.\n\n\n\n\n\n\nThe API keys and database connection strings will be distributed by the course instructor. Each key is personal and must not be shared publicly or stored in version control.",
+    "section": "3.2 Access and API Keys",
+    "text": "3.2 Access and API Keys\nAll participants will receive API keys and connection credentials to access the shared AdventureWorks database.\nThese keys provide secure, authenticated access from the different front-end applications.\n\n\n\n\n\n\nThe API keys and database connection strings will be distributed by the course instructor. Each key is personal and must not be shared publicly or stored in version control.",
     "crumbs": [
-      "SQL Server",
+      "Database",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>AdventureWorks</span>"
     ]
   },
   {
     "objectID": "preparation.html",
     "href": "preparation.html",
-    "title": "4  Prepare Your Machine",
+    "title": "4  Software Setup",
     "section": "",
-    "text": "4.1 Windows users\nBefore installing anything, make sure your operating system and accounts are ready. A few minutes of preparation will prevent mysterious permission errors later.",
+    "text": "4.1 Google API Key\nBefore installing anything, make sure your operating system and accounts are ready. A few minutes of preparation will prevent mysterious permission errors later.\nTo use Google’s AI models (Gemini), you need an API key.",
     "crumbs": [
-      "Prepare Your Machine",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Prepare Your Machine</span>"
+      "Preparation",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Software Setup</span>"
     ]
   },
   {
     "objectID": "preparation.html#windows-users",
     "href": "preparation.html#windows-users",
-    "title": "4  Prepare Your Machine",
+    "title": "4  Software Setup",
     "section": "",
     "text": "4.1.1 Basic requirements\n\nCheck for updates\n\nOn Windows, open Settings &gt; Windows Update.\n\nDeveloper mode\n\nOpen Windows Settings.\nGo to Update & Security &gt; For developers.\nToggle Developer Mode and accept the disclaimer. This unlocks features used by Git Bash and command-line installers.\n\n\n\n\n4.1.2 Command-line basics\nWe use Git Bash as our terminal. Download the latest Git for Windows installer from git-scm.com and complete the setup (Git Bash is included). After installation, open Git Bash from the Start menu.\n\n\n\n\n\n\nWhy Git Bash?\n\n\n\n\n\nGit Bash provides a Unix-like terminal experience on Windows, making it easier to follow along with commands that are commonly used in macOS and Linux environments.\n\n\n\nKeep the terminal window open while you work through the chapters.\n\n\n\n4.1.3 uv\nWe use uv, a strictly written Python package manager that is extremely fast. It replaces pip, poetry, and virtualenv.\nTo install uv on Windows, run this command in your terminal (PowerShell):\npowershell -ExecutionPolicy ByPass -c \"irm https://astral.sh/uv/install.ps1 | iex\"\nRestart your terminal after installation to ensure uv is recognized.",
     "crumbs": [
-      "Prepare Your Machine",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Prepare Your Machine</span>"
+      "Preparation",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Software Setup</span>"
     ]
   },
   {
     "objectID": "preparation.html#mac-users",
     "href": "preparation.html#mac-users",
-    "title": "4  Prepare Your Machine",
-    "section": "4.2 Mac users",
-    "text": "4.2 Mac users\n\n4.2.1 Basic requirements\nCheck for updates: On macOS, open System Settings &gt; General &gt; Software Update.\n\n\n4.2.2 Command-line basics\nLaunch Terminal (Spotlight search for “Terminal”). Commands in this book assume the zsh shell, which is the default on modern macOS systems.\nKeep the terminal window open while you work through the chapters.\n\n\n4.2.3 Package manager\nHomebrew downloads applications, command line tools, and libraries with one command. You avoid manual downloads and it keeps everything organized.\nInstall Homebrew:\n\nOpen Terminal and run the official installer:\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\nEnter your password when prompted (you won’t see any characters while typing).\nPress RETURN/ENTER to continue\nWhen the script finishes, follow the on-screen instructions to add Homebrew to your shell profile (this step is required for brew to be found).\nClose the Terminal window.\nOpen a new Terminal, then verify the installation:\nbrew --version\nMake sure everything is up to date:\nbrew update\nUse brew upgrade to actually update installed packages.\nbrew upgrade\n\n\n\n4.2.4 uv\nWe use uv, a strictly written Python package manager that is extremely fast. It replaces pip, poetry, and virtualenv.\nTo install uv on macOS, run this command in your terminal:\ncurl -LsSf https://astral.sh/uv/install.sh | sh\nRestart your terminal after installation.",
+    "title": "4  Software Setup",
+    "section": "",
+    "text": "4.1.1 Basic requirements\nCheck for updates: On macOS, open System Settings &gt; General &gt; Software Update.\n\n\n4.1.2 Command-line basics\nLaunch Terminal (Spotlight search for “Terminal”). Commands in this book assume the zsh shell, which is the default on modern macOS systems.\nKeep the terminal window open while you work through the chapters.\n\n\n4.1.3 Package manager\nHomebrew downloads applications, command line tools, and libraries with one command. You avoid manual downloads and it keeps everything organized.\nInstall Homebrew:\n\nOpen Terminal and run the official installer:\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\nEnter your password when prompted (you won’t see any characters while typing).\nPress RETURN/ENTER to continue\nWhen the script finishes, follow the on-screen instructions to add Homebrew to your shell profile (this step is required for brew to be found).\nClose the Terminal window.\nOpen a new Terminal, then verify the installation:\nbrew --version\nMake sure everything is up to date:\nbrew update\nUse brew upgrade to actually update installed packages.\nbrew upgrade\n\n\n\n4.1.4 uv\nWe use uv, a strictly written Python package manager that is extremely fast. It replaces pip, poetry, and virtualenv.\nTo install uv on macOS, run this command in your terminal:\ncurl -LsSf https://astral.sh/uv/install.sh | sh\nRestart your terminal after installation.",
     "crumbs": [
-      "Prepare Your Machine",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Prepare Your Machine</span>"
+      "Preparation",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Software Setup</span>"
     ]
   },
   {
@@ -126,7 +126,7 @@
     "section": "",
     "text": "5.1 Prerequisites\nThis chapter walks through installing the Microsoft SQL Server ODBC driver and command-line utilities on macOS. Apple Silicon (M1/M2/…) and Intel Macs use the same commands—Homebrew handles the architecture details for you.\nYou need to have Homebrew installed. If you haven’t set it up yet, follow the instructions on their website.",
     "crumbs": [
-      "Prepare Your Machine",
+      "Preparation",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Server Tools for macOS</span>"
     ]
   },
@@ -137,7 +137,7 @@
     "section": "5.2 Install the Microsoft tap and drivers",
     "text": "5.2 Install the Microsoft tap and drivers\nMicrosoft publishes their macOS packages via a dedicated Homebrew tap. Add it and install the required formulas. Open your Terminal and run:\nbrew tap microsoft/mssql-release https://github.com/Microsoft/homebrew-mssql-release\nACCEPT_EULA=Y brew install msodbcsql18 mssql-tools unixodbc\n\nmsodbcsql18 is the latest Microsoft ODBC Driver for SQL Server.\nmssql-tools installs sqlcmd and bcp for command-line access.\nunixodbc provides the shared ODBC libraries Python will load.\n\n\n\n\n\n\n\nThe ACCEPT_EULA=Y prefix lets the installer know you accept the Microsoft end-user license agreement. Without it the install stops halfway through.",
     "crumbs": [
-      "Prepare Your Machine",
+      "Preparation",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Server Tools for macOS</span>"
     ]
   },
@@ -148,7 +148,7 @@
     "section": "5.3 Add tools to your PATH (if needed)",
     "text": "5.3 Add tools to your PATH (if needed)\nSome shells require an extra step to expose the SQL Server utilities. Add the following line to ~/.zshrc or ~/.bash_profile if sqlcmd is not found after reopening Terminal:\nexport PATH=\"/opt/homebrew/opt/msodbcsql18/bin:/opt/homebrew/opt/mssql-tools/bin:$PATH\"\nIntel Macs should use /usr/local/opt/ instead of /opt/homebrew/opt/.\nReload your shell:\nsource ~/.zshrc",
     "crumbs": [
-      "Prepare Your Machine",
+      "Preparation",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Server Tools for macOS</span>"
     ]
   },
@@ -159,7 +159,7 @@
     "section": "5.4 Test the installation",
     "text": "5.4 Test the installation\nConfirm that the ODBC driver registered correctly:\nodbcinst -j\nLook for lines referencing Driver Manager: unixODBC.\nYour Mac is now ready to connect to SQL Server databases from VS Code and Python.",
     "crumbs": [
-      "Prepare Your Machine",
+      "Preparation",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Server Tools for macOS</span>"
     ]
   },
@@ -170,7 +170,7 @@
     "section": "5.5 Troubleshooting",
     "text": "5.5 Troubleshooting\nIf you encounter issues, you can try to download and install the packages manually from Microsoft’s website:\n\nODBC Driver for macOS",
     "crumbs": [
-      "Prepare Your Machine",
+      "Preparation",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Server Tools for macOS</span>"
     ]
   },
@@ -366,7 +366,7 @@
     "href": "intro.html#the-project-multimodal-sql-analyst-agent",
     "title": "1  Introduction",
     "section": "1.2 The Project: Multimodal SQL Analyst Agent",
-    "text": "1.2 The Project: Multimodal SQL Analyst Agent\nYou will act as AI consultants for Global Bike Inc. (GBI), a world-class bicycle manufacturer. Your mission is to build an intelligent AI agent that empowers GBI’s employees to get answers from their data instantly.\n\n1.2.1 The Challenge\nGBI has a lot of data in their SQL Server, but accessing it requires technical skills. Business users want to ask questions in plain English (or even by voice!) and get immediate answers.\n\n\n1.2.2 Your Solution\nYou will build a Multimodal SQL Analyst Agent that can:\n\nListen & Understand: Accept questions via text or voice.\nWrite Code: Automatically generate safe and correct SQL queries.\nAnalyze: Execute the query on GBI’s database.\nExplain & Visualize: Present the results with a clear text explanation and a beautiful chart.\n\nTechnologies we will use:\n\nPython: The primary programming language.\nGoogle Gemini: For the intelligence (LLM).\nGradio: To build the user interface.",
+    "text": "1.2 The Project: Multimodal SQL Analyst Agent\nYou will act as AI consultants for Global Bike Inc. (GBI), a world-class bicycle manufacturer. Your mission is to build an intelligent AI agent that empowers GBI’s employees to get answers from their data instantly.\n\n1.2.1 The Challenge\nGBI has a lot of data in their SQL Server, but accessing it requires technical skills. Business users want to ask questions in plain English and get immediate answers.\n\n\n1.2.2 Your Solution\nYou will build a Multimodal SQL Analyst Agent that can:\n\nUnderstand: Accept questions via text.\nWrite Code: Automatically generate safe and correct SQL queries.\nAnalyze: Execute the query on GBI’s database.\nExplain & Visualize: Present the results with a clear text explanation and a beautiful chart.\n\nTechnologies we will use:\n\nPython: The primary programming language.\nGoogle Gemini: For the intelligence (LLM).\nGradio: To build the user interface.",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
@@ -386,12 +386,261 @@
   {
     "objectID": "preparation.html#google-api-key",
     "href": "preparation.html#google-api-key",
-    "title": "4  Prepare Your Machine",
-    "section": "4.3 Google API Key",
-    "text": "4.3 Google API Key\nTo use Google’s AI models (Gemini), you need an API key.\n\nGet your key: Go to Google AI Studio and click Create API key.\nCopy the key: Copy the generated key string.\nSecure your key:\n\nCreate a new file in your project folder named .env.\nOpen the file and add the following line, replacing YOUR_KEY with your actual key:\n\nGOOGLE_API_KEY=AIzaSy...\n\nImportant: Never share this key or commit the .env file to public repositories (GitHub, etc.).",
+    "title": "4  Software Setup",
+    "section": "",
+    "text": "Get your key: Go to Google AI Studio and click Create API key.\nCopy the key: Copy the generated key string.\nSecure your key:\n\nCreate a new file in your project folder named .env.\nOpen the file and add the following line, replacing YOUR_KEY with your actual key:\n\nGOOGLE_API_KEY=AIzaSy...\n\nImportant: Never share this key or commit the .env file to public repositories (GitHub, etc.).",
     "crumbs": [
-      "Prepare Your Machine",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Prepare Your Machine</span>"
+      "Preparation",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Software Setup</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#where-to-start",
+    "href": "index.html#where-to-start",
+    "title": "Agentic AI",
+    "section": "Where to Start",
+    "text": "Where to Start\n\nRead the Introduction to understand the project and schedule.\nGo to Prepare Your Machine to set up your tools.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#course-schedule",
+    "href": "index.html#course-schedule",
+    "title": "Agentic AI",
+    "section": "1.1 Course Schedule",
+    "text": "1.1 Course Schedule\nWe will meet for three sessions to learn, build, and present our work.\n\n\n\n\n\n\n\nDate\nTopic\n\n\n\n\nWeek 3, Dec. 8 (14:00-16:00)\nProject Kick-off & FundamentalsIntroduction to Agentic AI, tooling, and setting up our environment.\n\n\nWeek 4, Dec. 15 (14:00-16:00)\nHands-on DevelopmentBuilding a simple agent and exploring design patterns.\n\n\nWeek 15, Mar. 9 (14:00-16:00)\nProject PresentationFinal presentations, project reviews, and reflections.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#the-project-multimodal-sql-analyst-agent",
+    "href": "index.html#the-project-multimodal-sql-analyst-agent",
+    "title": "Agentic AI",
+    "section": "1.2 The Project: Multimodal SQL Analyst Agent",
+    "text": "1.2 The Project: Multimodal SQL Analyst Agent\nYou will act as AI consultants for Global Bike Inc. (GBI), a global bicycle manufacturer. Your mission is to build an AI agent that empowers GBI’s employees to get answers from their data instantly.\n\n1.2.1 The Challenge\nGBI has a lot of data in their Microsoft SQL Server, but accessing it requires technical skills. Business users want to ask questions in plain English and get immediate answers.\n\n\n1.2.2 Your Solution\nYou will build a Multimodal SQL Analyst Agent that can:\n\nUnderstand: Accept questions via text.\nWrite Code: Automatically generate safe and correct SQL queries.\nAnalyze: Execute the query on GBI’s database.\nExplain & Visualize: Present the results with a clear text explanation and a beautiful chart.\n\nTechnologies we will use:\n\nPython: The primary programming language.\nGoogle Gemini: For the intelligence (LLM).\nGradio: To build the user interface.\nMicrosoft SQL Server: The database.\nVS Code: The primary IDE.\nGitHub: To store and share your code.\n\n\n\n1.2.3 Data & Architecture\nWe use the AdventureWorks sales database to simulate Global Bike Inc.’s data. It is a realistic dataset modeling a bicycle manufacturer. This serves as the shared backend for our agent.\nThe system connects the user (via Gradio) to the data (SQL Server) using Gemini as the reasoning engine.\n\n\n\n\n\n%%{init: {\n  \"theme\": \"base\",\n  \"flowchart\": {\n    \"curve\": \"basis\",\n    \"nodeSpacing\": 50,\n    \"rankSpacing\": 50,\n    \"htmlLabels\": false,\n    \"wrap\": true,\n    \"useMaxWidth\": true\n  },\n  \"themeVariables\": {\n    \"primaryColor\": \"#ffffff\",\n    \"primaryTextColor\": \"#374151\",\n    \"primaryBorderColor\": \"#e5e7eb\",\n    \"lineColor\": \"#9CA3AF\",\n    \"secondaryColor\": \"#f9fafb\",\n    \"tertiaryColor\": \"#ffffff\",\n    \"fontFamily\": \"system-ui\",\n    \"fontSize\": \"16px\",\n    \"nodeSpacing\": 10,\n    \"rankSpacing\": 10\n  }\n}}%%\n\nflowchart LR\n    %% Increase node sizes with larger padding\n    subgraph Input[\" \"]\n        direction TB\n        A[\"User&lt;br&gt;Question\"]\n        style A fill:#4F46E5,color:#ffffff,stroke:#4338CA,padding:20px\n    end\n\n    subgraph System[\" \"]\n        direction TB\n        B[\"Gemini&lt;br&gt;(Reasoning)\"]\n        C[\"SQL Server&lt;br&gt;(Data)\"]\n        style B fill:#ffffff,color:#374151,stroke:#e5e7eb,padding:20px\n        style C fill:#ffffff,color:#374151,stroke:#e5e7eb,padding:20px\n    end\n\n    subgraph Output[\" \"]\n        direction TB\n        D[\"Visuals&lt;br&gt;and Insights\"]\n        style D fill:#4F46E5,color:#ffffff,stroke:#4338CA,padding:20px\n    end\n\n    %% Connections\n    A --&gt; B\n    B --&gt;|SQL| C\n    C --&gt;|Data| D\n\n    %% Subgraph styling\n    style Input fill:#ffffff,stroke:#e5e7eb,color:#374151,stroke-width:1px,padding:50px\n    style System fill:#ffffff,stroke:#e5e7eb,color:#374151,stroke-width:1px,padding:50px\n    style Output fill:#ffffff,stroke:#e5e7eb,color:#374151,stroke-width:1px,padding:50px\n\n    %% Edge styling\n    linkStyle default stroke:#9CA3AF,stroke-width:2px\n\n\n\n\n\n\n\nAdventureWorks SQL Server: The single source of truth.\nGemini: Translates natural language into SQL and generates insights.\nGradio: Delivers data and visualizations interactively.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#getting-started",
+    "href": "index.html#getting-started",
+    "title": "Agentic AI",
+    "section": "1.3 Getting Started",
+    "text": "1.3 Getting Started\nTo be ready for our first session, please complete the steps in the Prepare Your Machine section before class. This includes installing Python and setting up your development environment.\nWe look forward to building the future of analytics with you!",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome</span>"
+    ]
+  },
+  {
+    "objectID": "google-accounts.html",
+    "href": "google-accounts.html",
+    "title": "2  Software Setup",
+    "section": "",
+    "text": "2.1 Google API Key\nBefore installing anything, make sure your operating system and accounts are ready. A few minutes of preparation will prevent mysterious permission errors later.\nTo use Google’s AI models (Gemini), you need an API key.",
+    "crumbs": [
+      "Preparation",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Software Setup</span>"
+    ]
+  },
+  {
+    "objectID": "google-accounts.html#google-api-key",
+    "href": "google-accounts.html#google-api-key",
+    "title": "2  Software Setup",
+    "section": "",
+    "text": "Get your key: Go to Google AI Studio and click Create API key.\nCopy the key: Copy the generated key string.\nSecure your key:\n\nCreate a new file in your project folder named .env.\nOpen the file and add the following line, replacing YOUR_KEY with your actual key:\n\nGOOGLE_API_KEY=AIzaSy...\n\nImportant: Never share this key or commit the .env file to public repositories (GitHub, etc.).",
+    "crumbs": [
+      "Preparation",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Software Setup</span>"
+    ]
+  },
+  {
+    "objectID": "windows-setup.html",
+    "href": "windows-setup.html",
+    "title": "3  Windows Setup",
+    "section": "",
+    "text": "3.1 Basic requirements\nIf you are using Windows, follow these steps.\nFirst, make sure your system is up to date.\nNext, enable Developer Mode:",
+    "crumbs": [
+      "Preparation",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Windows Setup</span>"
+    ]
+  },
+  {
+    "objectID": "mac-setup.html",
+    "href": "mac-setup.html",
+    "title": "4  Mac Setup",
+    "section": "",
+    "text": "4.1 Basic requirements\nIf you are using Mac, follow these steps.\nFirst, make sure your system is up to date.\nOpen System Settings &gt; General &gt; Software Update.",
+    "crumbs": [
+      "Preparation",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Mac Setup</span>"
+    ]
+  },
+  {
+    "objectID": "mac-setup.html#mac-users",
+    "href": "mac-setup.html#mac-users",
+    "title": "4  Mac Setup",
+    "section": "4.2 Mac users",
+    "text": "4.2 Mac users\n\n4.2.1 Basic requirements\nCheck for updates: On macOS, open System Settings &gt; General &gt; Software Update.\n\n\n4.2.2 Command-line basics\nLaunch Terminal (Spotlight search for “Terminal”). Commands in this book assume the zsh shell, which is the default on modern macOS systems.\nKeep the terminal window open while you work through the chapters.\n\n\n4.2.3 Package manager\nHomebrew downloads applications, command line tools, and libraries with one command. You avoid manual downloads and it keeps everything organized.\nInstall Homebrew:\n\nOpen Terminal and run the official installer:\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\nEnter your password when prompted (you won’t see any characters while typing).\nPress RETURN/ENTER to continue\nWhen the script finishes, follow the on-screen instructions to add Homebrew to your shell profile (this step is required for brew to be found).\nClose the Terminal window.\nOpen a new Terminal, then verify the installation:\nbrew --version\nMake sure everything is up to date:\nbrew update\nUse brew upgrade to actually update installed packages.\nbrew upgrade\n\n\n\n4.2.4 uv\nWe use uv, a Python package manager that is extremely fast. It replaces pip, poetry, and virtualenv.\nTo install uv, follow this guide",
+    "crumbs": [
+      "Preparation",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Mac Setup</span>"
+    ]
+  },
+  {
+    "objectID": "accounts.html",
+    "href": "accounts.html",
+    "title": "2  Accounts",
+    "section": "",
+    "text": "2.1 Google Account\nTo be ready for our first session, please ensure you have the following accounts.\nYou will need a Google account to access Google’s AI tools:",
+    "crumbs": [
+      "Preparation",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Accounts</span>"
+    ]
+  },
+  {
+    "objectID": "accounts.html#google-api-key",
+    "href": "accounts.html#google-api-key",
+    "title": "2  Accounts",
+    "section": "2.2 Google API Key",
+    "text": "2.2 Google API Key\nTo use Google’s AI model Gemini, you need an API key.\n\nGo to Google AI Studio\nClick “Create API key” (at the bottom left of the page).\nFollow the instructions to create the API key.\n\nWe come back to this step in a later chapter.",
+    "crumbs": [
+      "Preparation",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Accounts</span>"
+    ]
+  },
+  {
+    "objectID": "accounts.html#google-account",
+    "href": "accounts.html#google-account",
+    "title": "2  Accounts",
+    "section": "",
+    "text": "Create Google Account",
+    "crumbs": [
+      "Preparation",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Accounts</span>"
+    ]
+  },
+  {
+    "objectID": "accounts.html#github-account",
+    "href": "accounts.html#github-account",
+    "title": "2  Accounts",
+    "section": "2.3 GitHub Account",
+    "text": "2.3 GitHub Account\nYou will need a GitHub account to access GitHub.\n\n\n\n\n\n\nUse your KMITL e-mail address to create a GitHub account. If you already have an account, simply add your KMITL e-mail address to your account. This will allow you to apply for the GitHub Student Developer Pack.\n\n\n\n\nCreate GitHub Account\nYou may also sign up for the GitHub Student Developer Pack to get access to GitHub Pro for free and additional benefits like GitHub Copilot.",
+    "crumbs": [
+      "Preparation",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Accounts</span>"
+    ]
+  },
+  {
+    "objectID": "windows-setup.html#basic-requirements",
+    "href": "windows-setup.html#basic-requirements",
+    "title": "3  Windows Setup",
+    "section": "",
+    "text": "Open Settings &gt; Windows Update.\n\n\n\nOpen Settings &gt; Update & Security &gt; For developers.\nToggle Developer Mode and accept the disclaimer.",
+    "crumbs": [
+      "Preparation",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Windows Setup</span>"
+    ]
+  },
+  {
+    "objectID": "windows-setup.html#command-line-basics",
+    "href": "windows-setup.html#command-line-basics",
+    "title": "3  Windows Setup",
+    "section": "3.2 Command-line basics",
+    "text": "3.2 Command-line basics\nWe use Git Bash as our terminal. Download the latest Git for Windows installer from git-scm.com and complete the setup (Git Bash is included). After installation, open Git Bash from the Start menu.\n\n\n\n\n\n\nWhy Git Bash?\n\n\n\n\n\nGit Bash provides a Unix-like terminal experience on Windows, making it easier to follow along with commands that are commonly used in macOS and Linux environments.\n\n\n\nKeep the terminal window open while you work through the chapters.\n\n3.2.1 uv\nWe use uv, a Python package manager that is extremely fast. It replaces pip, poetry, and virtualenv.\nTo install uv, follow this guide",
+    "crumbs": [
+      "Preparation",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Windows Setup</span>"
+    ]
+  },
+  {
+    "objectID": "mac-setup.html#basic-requirements",
+    "href": "mac-setup.html#basic-requirements",
+    "title": "4  Mac Setup",
+    "section": "",
+    "text": "Open System Settings &gt; General &gt; Software Update.",
+    "crumbs": [
+      "Preparation",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Mac Setup</span>"
+    ]
+  },
+  {
+    "objectID": "mac-setup.html#xcode",
+    "href": "mac-setup.html#xcode",
+    "title": "4  Mac Setup",
+    "section": "4.3 Xcode",
+    "text": "4.3 Xcode\nApple’s Xcode command line tools are required to build and run some of the code.\nInstall Xcode command line tools:\nxcode-select --install\nIf you get the following message, you can skip this step:\nxcode-select: note: Command line tools are already installed. Use “Software Update” in System Settings or the softwareupdate command line interface to install updates",
+    "crumbs": [
+      "Preparation",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Mac Setup</span>"
+    ]
+  },
+  {
+    "objectID": "mac-setup.html#command-line-basics",
+    "href": "mac-setup.html#command-line-basics",
+    "title": "4  Mac Setup",
+    "section": "4.2 Command-line basics",
+    "text": "4.2 Command-line basics\nLaunch Terminal (Spotlight search for “Terminal”).\nCommands in this book assume the zsh shell, which is the default on modern macOS systems.\nKeep the terminal window open while you work through the chapters.",
+    "crumbs": [
+      "Preparation",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Mac Setup</span>"
+    ]
+  },
+  {
+    "objectID": "mac-setup.html#package-manager",
+    "href": "mac-setup.html#package-manager",
+    "title": "4  Mac Setup",
+    "section": "4.4 Package manager",
+    "text": "4.4 Package manager\nHomebrew downloads applications, command line tools, and libraries with one command. You avoid manual downloads and it keeps everything organized.\n\n4.4.1 Install Homebrew\n\nOpen Terminal and run the official installer:\n\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\n\nEnter your password when prompted (you won’t see any characters while typing).\nPress ENTER to continue\nWhen the script finishes, follow the on-screen instructions to add Homebrew to your shell profile (this step is required for brew to be found).\nClose the Terminal window.\nOpen a new Terminal, then verify the installation:\n\nbrew --version\n\n\n4.4.2 Update Homebrew\nIf you already have Homebrew installed, make sure everything is up to date:\nbrew update\nUse brew upgrade to actually update installed packages.\nbrew upgrade",
+    "crumbs": [
+      "Preparation",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Mac Setup</span>"
+    ]
+  },
+  {
+    "objectID": "mac-setup.html#uv",
+    "href": "mac-setup.html#uv",
+    "title": "4  Mac Setup",
+    "section": "4.5 uv",
+    "text": "4.5 uv\nWe use uv, a Python package manager that is extremely fast. It replaces pip, poetry, and virtualenv.\nTo install uv, follow this guide",
+    "crumbs": [
+      "Preparation",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Mac Setup</span>"
+    ]
+  },
+  {
+    "objectID": "mac-setup.html#server-tools",
+    "href": "mac-setup.html#server-tools",
+    "title": "4  Mac Setup",
+    "section": "4.6 Server Tools",
+    "text": "4.6 Server Tools\nWe need to install some drivers for Microsoft SQL Server.\n\n4.6.1 Install Server Tools\nOpen your Terminal and run:\nbrew tap microsoft/mssql-release https://github.com/Microsoft/homebrew-mssql-release\nACCEPT_EULA=Y brew install msodbcsql18 mssql-tools unixodbc\n\nmsodbcsql18 is the latest Microsoft ODBC Driver for SQL Server.\nmssql-tools installs sqlcmd and bcp for command-line access.\nunixodbc provides the shared ODBC libraries Python will load.\n\n\n\n\n\n\n\nThe ACCEPT_EULA=Y prefix lets the installer know you accept the Microsoft end-user license agreement. Without it the install stops halfway through.\n\n\n\n\nClose and reopen Terminal.\n\n\n\n4.6.2 Test the installation\nConfirm that the ODBC driver registered correctly:\nodbcinst -j\nLook for lines referencing Driver Manager: unixODBC.\nYour Mac is now ready to connect to SQL Server databases from VS Code and Python.\n\n\n4.6.3 Troubleshooting\nSome shells require an extra step to expose the SQL Server utilities. Add the following line to ~/.zshrc or ~/.bash_profile if sqlcmd is not found after reopening Terminal:\nexport PATH=\"/opt/homebrew/opt/msodbcsql18/bin:/opt/homebrew/opt/mssql-tools/bin:$PATH\"\nIntel Macs should use /usr/local/opt/ instead of /opt/homebrew/opt/.\nReload your shell:\nsource ~/.zshrc",
+    "crumbs": [
+      "Preparation",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Mac Setup</span>"
+    ]
+  },
+  {
+    "objectID": "mac-setup.html#troubleshooting-1",
+    "href": "mac-setup.html#troubleshooting-1",
+    "title": "4  Mac Setup",
+    "section": "4.7 Troubleshooting",
+    "text": "4.7 Troubleshooting\nIf you encounter issues, you can try to download and install the packages manually from Microsoft’s website:\n\nODBC Driver for macOS",
+    "crumbs": [
+      "Preparation",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Mac Setup</span>"
+    ]
+  },
+  {
+    "objectID": "windows-setup.html#server-tools",
+    "href": "windows-setup.html#server-tools",
+    "title": "3  Windows Setup",
+    "section": "3.3 Server Tools",
+    "text": "3.3 Server Tools\nThe Microsoft ODBC Driver for SQL Server enables native connectivity from Windows applications to Microsoft SQL Server and Azure SQL databases.\nFollow the steps below to install the ODBC Driver (version 18) and command-line tools on your Windows machine:\n\nInstallation Instructions\n\nFor most users, the “Download Microsoft ODBC Driver 18 for SQL Server (x64)” installer is the right choice.",
+    "crumbs": [
+      "Preparation",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Windows Setup</span>"
     ]
   }
 ]

@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./intro.html" rel="next">
+<link href="./accounts.html" rel="next">
 <link href=".//images/logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -69,6 +69,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 <style>
 .cmd-explain {
   font-weight: 600;
@@ -89,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Welcome</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Welcome</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -115,13 +118,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Welcome</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Welcome</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Introduction</span></a>
+ <span class="menu-text">Preparation</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -129,48 +132,20 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Database</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./mssql-intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Microsoft SQL Server</span></span></a>
+  <a href="./accounts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Accounts</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./adventureworks.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">AdventureWorks</span></span></a>
+  <a href="./windows-setup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Windows Setup</span></span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Prepare Your Machine</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./preparation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prepare Your Machine</span></span></a>
+  <a href="./mac-setup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mac Setup</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -221,7 +196,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a></li>
+  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome"><span class="header-section-number">1</span> Welcome</a>
+  <ul class="collapse">
+  <li><a href="#course-schedule" id="toc-course-schedule" class="nav-link" data-scroll-target="#course-schedule"><span class="header-section-number">1.1</span> Course Schedule</a></li>
+  <li><a href="#the-project-multimodal-sql-analyst-agent" id="toc-the-project-multimodal-sql-analyst-agent" class="nav-link" data-scroll-target="#the-project-multimodal-sql-analyst-agent"><span class="header-section-number">1.2</span> The Project: Multimodal SQL Analyst Agent</a>
+  <ul class="collapse">
+  <li><a href="#the-challenge" id="toc-the-challenge" class="nav-link" data-scroll-target="#the-challenge"><span class="header-section-number">1.2.1</span> The Challenge</a></li>
+  <li><a href="#your-solution" id="toc-your-solution" class="nav-link" data-scroll-target="#your-solution"><span class="header-section-number">1.2.2</span> Your Solution</a></li>
+  <li><a href="#data-architecture" id="toc-data-architecture" class="nav-link" data-scroll-target="#data-architecture"><span class="header-section-number">1.2.3</span> Data &amp; Architecture</a></li>
+  </ul></li>
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started"><span class="header-section-number">1.3</span> Getting Started</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -231,7 +216,6 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Agentic AI</h1>
-<p class="subtitle lead">Multimodal SQL Analyst</p>
 </div>
 
 
@@ -248,28 +232,153 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="welcome" class="level1 unnumbered">
-<h1 class="unnumbered">Welcome</h1>
-<p>Welcome to this hands-on guide to setting up your environment and connecting to SQL Server databases using Python.</p>
-<p>What you will achieve:</p>
+<section id="welcome" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Welcome</h1>
+<p>Welcome to the Agentic AI module of the Management Information Systems course!</p>
+<p>In this part of the course, we will explore the world of Agentic Artificial Intelligence. Unlike traditional AI that simply responds to prompts, Agentic AI systems can perceive their environment, reason about tasks, and take actions to achieve specific goals.</p>
+<section id="course-schedule" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="course-schedule"><span class="header-section-number">1.1</span> Course Schedule</h2>
+<p>We will meet for three sessions to learn, build, and present our work.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Date</th>
+<th>Topic</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Week 3, Dec.&nbsp;8 (14:00-16:00)</td>
+<td>Project Kick-off &amp; Fundamentals<br>Introduction to Agentic AI, tooling, and setting up our environment.</td>
+</tr>
+<tr class="even">
+<td>Week 4, Dec.&nbsp;15 (14:00-16:00)</td>
+<td>Hands-on Development<br>Building a simple agent and exploring design patterns.</td>
+</tr>
+<tr class="odd">
+<td>Week 15, Mar.&nbsp;9 (14:00-16:00)</td>
+<td>Project Presentation<br>Final presentations, project reviews, and reflections.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="the-project-multimodal-sql-analyst-agent" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="the-project-multimodal-sql-analyst-agent"><span class="header-section-number">1.2</span> The Project: Multimodal SQL Analyst Agent</h2>
+<p>You will act as AI consultants for Global Bike Inc.&nbsp;(GBI), a global bicycle manufacturer. Your mission is to build an AI agent that empowers GBI’s employees to get answers from their data instantly.</p>
+<section id="the-challenge" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="the-challenge"><span class="header-section-number">1.2.1</span> The Challenge</h3>
+<p>GBI has a lot of data in their Microsoft SQL Server, but accessing it requires technical skills. Business users want to ask questions in plain English and get immediate answers.</p>
+</section>
+<section id="your-solution" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="your-solution"><span class="header-section-number">1.2.2</span> Your Solution</h3>
+<p>You will build a Multimodal SQL Analyst Agent that can:</p>
 <ol type="1">
-<li>Prepare your operating system and developer tools.</li>
-<li>Install the Microsoft SQL Server ODBC drivers and command-line utilities.</li>
-<li>Configure VS Code so you can browse databases and run scripts comfortably.</li>
-<li>Use Python, <code>SQLAlchemy</code>, and <code>pandas</code> to connect, query, and explore data.</li>
+<li>Understand: Accept questions via text.</li>
+<li>Write Code: Automatically generate safe and correct SQL queries.</li>
+<li>Analyze: Execute the query on GBI’s database.</li>
+<li>Explain &amp; Visualize: Present the results with a clear text explanation and a beautiful chart.</li>
 </ol>
-<div class="callout callout-style-simple callout-tip">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<p>Technologies we will use:</p>
+<ul>
+<li>Python: The primary programming language.</li>
+<li>Google Gemini: For the intelligence (LLM).</li>
+<li>Gradio: To build the user interface.</li>
+<li>Microsoft SQL Server: The database.</li>
+<li>VS Code: The primary IDE.</li>
+<li>GitHub: To store and share your code.</li>
+</ul>
+</section>
+<section id="data-architecture" class="level3" data-number="1.2.3">
+<h3 data-number="1.2.3" class="anchored" data-anchor-id="data-architecture"><span class="header-section-number">1.2.3</span> Data &amp; Architecture</h3>
+<p>We use the AdventureWorks sales database to simulate Global Bike Inc.’s data. It is a realistic dataset modeling a bicycle manufacturer. This serves as the shared backend for our agent.</p>
+<p>The system connects the user (via Gradio) to the data (SQL Server) using Gemini as the reasoning engine.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {
+  "theme": "base",
+  "flowchart": {
+    "curve": "basis",
+    "nodeSpacing": 50,
+    "rankSpacing": 50,
+    "htmlLabels": false,
+    "wrap": true,
+    "useMaxWidth": true
+  },
+  "themeVariables": {
+    "primaryColor": "#ffffff",
+    "primaryTextColor": "#374151",
+    "primaryBorderColor": "#e5e7eb",
+    "lineColor": "#9CA3AF",
+    "secondaryColor": "#f9fafb",
+    "tertiaryColor": "#ffffff",
+    "fontFamily": "system-ui",
+    "fontSize": "16px",
+    "nodeSpacing": 10,
+    "rankSpacing": 10
+  }
+}}%%
+
+flowchart LR
+    %% Increase node sizes with larger padding
+    subgraph Input[" "]
+        direction TB
+        A["User&lt;br&gt;Question"]
+        style A fill:#4F46E5,color:#ffffff,stroke:#4338CA,padding:20px
+    end
+
+    subgraph System[" "]
+        direction TB
+        B["Gemini&lt;br&gt;(Reasoning)"]
+        C["SQL Server&lt;br&gt;(Data)"]
+        style B fill:#ffffff,color:#374151,stroke:#e5e7eb,padding:20px
+        style C fill:#ffffff,color:#374151,stroke:#e5e7eb,padding:20px
+    end
+
+    subgraph Output[" "]
+        direction TB
+        D["Visuals&lt;br&gt;and Insights"]
+        style D fill:#4F46E5,color:#ffffff,stroke:#4338CA,padding:20px
+    end
+
+    %% Connections
+    A --&gt; B
+    B --&gt;|SQL| C
+    C --&gt;|Data| D
+
+    %% Subgraph styling
+    style Input fill:#ffffff,stroke:#e5e7eb,color:#374151,stroke-width:1px,padding:50px
+    style System fill:#ffffff,stroke:#e5e7eb,color:#374151,stroke-width:1px,padding:50px
+    style Output fill:#ffffff,stroke:#e5e7eb,color:#374151,stroke-width:1px,padding:50px
+
+    %% Edge styling
+    linkStyle default stroke:#9CA3AF,stroke-width:2px
+</pre>
 </div>
-<div class="callout-body-container">
-<p>Along the way you will learn why each tool matters, how to verify every step, and where to look when something goes wrong.</p>
+<p></p></figure><p></p>
 </div>
 </div>
 </div>
+<ul>
+<li>AdventureWorks SQL Server: The single source of truth.</li>
+<li>Gemini: Translates natural language into SQL and generates insights.</li>
+<li>Gradio: Delivers data and visualizations interactively.</li>
+</ul>
+</section>
+</section>
+<section id="getting-started" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="getting-started"><span class="header-section-number">1.3</span> Getting Started</h2>
+<p>To be ready for our first session, please complete the steps in the <a href="preparation.qmd">Prepare Your Machine</a> section <em>before</em> class. This includes installing Python and setting up your development environment.</p>
+<p>We look forward to building the future of analytics with you!</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -676,8 +785,8 @@ ul.task-list li input[type="checkbox"] {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./accounts.html" class="pagination-link" aria-label="Accounts">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Accounts</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

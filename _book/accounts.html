@@ -8,7 +8,7 @@
 
 <meta name="author" content="Jan Kirenz">
 
-<title>5&nbsp; Server Tools for macOS – Agentic AI</title>
+<title>2&nbsp; Accounts – Agentic AI</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,41 +21,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -66,8 +31,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./mssql-windows.html" rel="next">
-<link href="./mac-setup.html" rel="prev">
+<link href="./windows-setup.html" rel="next">
+<link href="./index.html" rel="prev">
 <link href=".//images/logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -125,7 +90,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./accounts.html">Preparation</a></li><li class="breadcrumb-item"><a href="./mssql-macos.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Server Tools for macOS</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./accounts.html">Preparation</a></li><li class="breadcrumb-item"><a href="./accounts.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Accounts</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -165,7 +130,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./accounts.html" class="sidebar-item-text sidebar-link">
+  <a href="./accounts.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Accounts</span></span></a>
   </div>
 </li>
@@ -183,7 +148,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./mssql-macos.html" class="sidebar-item-text sidebar-link active">
+  <a href="./mssql-macos.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Server Tools for macOS</span></span></a>
   </div>
 </li>
@@ -229,20 +194,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link active" data-scroll-target="#prerequisites"><span class="header-section-number">5.1</span> Prerequisites</a></li>
-  <li><a href="#install-the-microsoft-tap-and-drivers" id="toc-install-the-microsoft-tap-and-drivers" class="nav-link" data-scroll-target="#install-the-microsoft-tap-and-drivers"><span class="header-section-number">5.2</span> Install the Microsoft tap and drivers</a></li>
-  <li><a href="#add-tools-to-your-path-if-needed" id="toc-add-tools-to-your-path-if-needed" class="nav-link" data-scroll-target="#add-tools-to-your-path-if-needed"><span class="header-section-number">5.3</span> Add tools to your PATH (if needed)</a></li>
-  <li><a href="#test-the-installation" id="toc-test-the-installation" class="nav-link" data-scroll-target="#test-the-installation"><span class="header-section-number">5.4</span> Test the installation</a></li>
-  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting"><span class="header-section-number">5.5</span> Troubleshooting</a></li>
+  <li><a href="#google-account" id="toc-google-account" class="nav-link active" data-scroll-target="#google-account"><span class="header-section-number">2.1</span> Google Account</a></li>
+  <li><a href="#google-api-key" id="toc-google-api-key" class="nav-link" data-scroll-target="#google-api-key"><span class="header-section-number">2.2</span> Google API Key</a></li>
+  <li><a href="#github-account" id="toc-github-account" class="nav-link" data-scroll-target="#github-account"><span class="header-section-number">2.3</span> GitHub Account</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./accounts.html">Preparation</a></li><li class="breadcrumb-item"><a href="./mssql-macos.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Server Tools for macOS</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./accounts.html">Preparation</a></li><li class="breadcrumb-item"><a href="./accounts.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Accounts</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Server Tools for macOS</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Accounts</span></h1>
 </div>
 
 
@@ -259,52 +222,40 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This chapter walks through installing the Microsoft SQL Server ODBC driver and command-line utilities on macOS. Apple Silicon (M1/M2/…) and Intel Macs use the same commands—Homebrew handles the architecture details for you.</p>
-<section id="prerequisites" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="prerequisites"><span class="header-section-number">5.1</span> Prerequisites</h2>
-<p>You need to have <a href="https://brew.sh/">Homebrew</a> installed. If you haven’t set it up yet, follow the instructions on their website.</p>
-</section>
-<section id="install-the-microsoft-tap-and-drivers" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="install-the-microsoft-tap-and-drivers"><span class="header-section-number">5.2</span> Install the Microsoft tap and drivers</h2>
-<p>Microsoft publishes their macOS packages via a dedicated Homebrew tap. Add it and install the required formulas. Open your Terminal and run:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> tap microsoft/mssql-release https://github.com/Microsoft/homebrew-mssql-release</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="va">ACCEPT_EULA</span><span class="op">=</span>Y <span class="ex">brew</span> install msodbcsql18 mssql-tools unixodbc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>To be ready for our first session, please ensure you have the following accounts.</p>
+<section id="google-account" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="google-account"><span class="header-section-number">2.1</span> Google Account</h2>
+<p>You will need a Google account to access Google’s AI tools:</p>
 <ul>
-<li><code>msodbcsql18</code> is the latest Microsoft ODBC Driver for SQL Server.</li>
-<li><code>mssql-tools</code> installs <code>sqlcmd</code> and <code>bcp</code> for command-line access.</li>
-<li><code>unixodbc</code> provides the shared ODBC libraries Python will load.</li>
+<li><a href="https://www.google.com/intl/en/account/about/">Create Google Account</a></li>
 </ul>
-<div class="callout callout-style-simple callout-important">
+</section>
+<section id="google-api-key" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="google-api-key"><span class="header-section-number">2.2</span> Google API Key</h2>
+<p>To use Google’s AI model Gemini, you need an API key.</p>
+<ul>
+<li>Go to <a href="https://aistudio.google.com/app/apikey">Google AI Studio</a></li>
+<li>Click “Create API key” (at the bottom left of the page).</li>
+<li>Follow the instructions to create the API key.</li>
+</ul>
+<p>We come back to this step in a later chapter.</p>
+</section>
+<section id="github-account" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="github-account"><span class="header-section-number">2.3</span> GitHub Account</h2>
+<p>You will need a GitHub account to access GitHub.</p>
+<div class="callout callout-style-simple callout-note">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>The <code>ACCEPT_EULA=Y</code> prefix lets the installer know you accept the Microsoft end-user license agreement. Without it the install stops halfway through.</p>
+<p>Use your KMITL e-mail address to create a GitHub account. If you already have an account, simply add your KMITL e-mail address to your account. This will allow you to apply for the GitHub Student Developer Pack.</p>
 </div>
 </div>
 </div>
-</section>
-<section id="add-tools-to-your-path-if-needed" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="add-tools-to-your-path-if-needed"><span class="header-section-number">5.3</span> Add tools to your PATH (if needed)</h2>
-<p>Some shells require an extra step to expose the SQL Server utilities. Add the following line to <code>~/.zshrc</code> or <code>~/.bash_profile</code> if <code>sqlcmd</code> is not found after reopening Terminal:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">PATH</span><span class="op">=</span><span class="st">"/opt/homebrew/opt/msodbcsql18/bin:/opt/homebrew/opt/mssql-tools/bin:</span><span class="va">$PATH</span><span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Intel Macs should use <code>/usr/local/opt/</code> instead of <code>/opt/homebrew/opt/</code>.</p>
-<p>Reload your shell:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> ~/.zshrc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="test-the-installation" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="test-the-installation"><span class="header-section-number">5.4</span> Test the installation</h2>
-<p>Confirm that the ODBC driver registered correctly:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">odbcinst</span> <span class="at">-j</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Look for lines referencing <code>Driver Manager: unixODBC</code>.</p>
-<p>Your Mac is now ready to connect to SQL Server databases from VS Code and Python.</p>
-</section>
-<section id="troubleshooting" class="level2" data-number="5.5">
-<h2 data-number="5.5" class="anchored" data-anchor-id="troubleshooting"><span class="header-section-number">5.5</span> Troubleshooting</h2>
-<p>If you encounter issues, you can try to download and install the packages manually from Microsoft’s website:</p>
 <ul>
-<li><a href="https://learn.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver17#download-for-linux-and-macos">ODBC Driver for macOS</a></li>
+<li><p><a href="https://github.com/join">Create GitHub Account</a></p></li>
+<li><p>You may also sign up for the <a href="https://education.github.com/pack">GitHub Student Developer Pack</a> to get access to GitHub Pro for free and additional benefits like GitHub Copilot.</p></li>
 </ul>
 
 
@@ -712,13 +663,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./mac-setup.html" class="pagination-link" aria-label="Mac Setup">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mac Setup</span></span>
+      <a href="./index.html" class="pagination-link" aria-label="Welcome">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Welcome</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./mssql-windows.html" class="pagination-link" aria-label="Server Tools for Windows">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Server Tools for Windows</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./windows-setup.html" class="pagination-link" aria-label="Windows Setup">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Windows Setup</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
