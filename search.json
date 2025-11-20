@@ -4,9 +4,9 @@
     "href": "index.html",
     "title": "Agentic AI",
     "section": "",
-    "text": "1 Welcome\nWelcome to the Agentic AI module of the Management Information Systems course!\nIn this part of the course, we will explore the world of Agentic Artificial Intelligence. Unlike traditional AI that simply responds to prompts, Agentic AI systems can perceive their environment, reason about tasks, and take actions to achieve specific goals.",
+    "text": "1 Syllabus\nWelcome to the Agentic AI module of the Management Information Systems course!\nIn this part of the course, we will explore the world of Agentic Artificial Intelligence. Unlike traditional AI that simply responds to prompts, Agentic AI systems can perceive their environment, reason about tasks, and take actions to achieve specific goals.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Syllabus</span>"
     ]
   },
   {
@@ -16,7 +16,7 @@
     "section": "1.1 Course Schedule",
     "text": "1.1 Course Schedule\nWe will meet for three sessions to learn, build, and present our work.\n\n\n\n\n\n\n\nDate\nTopic\n\n\n\n\nWeek 3, Dec. 8 (14:00-16:00)\nProject Kick-off & FundamentalsIntroduction to Agentic AI, tooling, and setting up our environment.\n\n\nWeek 4, Dec. 15 (14:00-16:00)\nHands-on DevelopmentBuilding a simple agent and exploring design patterns.\n\n\nWeek 15, Mar. 9 (14:00-16:00)\nProject PresentationFinal presentations, project reviews, and reflections.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Syllabus</span>"
     ]
   },
   {
@@ -26,7 +26,7 @@
     "section": "1.2 The Project: SQL Analyst Agent",
     "text": "1.2 The Project: SQL Analyst Agent\n\n1.2.1 Objective\nAs AI consultants to Global Bike Inc. (GBI), the objective is to design and implement a Python-based generative AI solution that enables self-service analytics through an agent capable of generating SQL from natural language. The implementation should use Python as the primary language. All components must be included in a GitHub repository.\n\n\n1.2.2 The Challenge\nGBI has a lot of data in their Microsoft SQL Server, but accessing it requires technical skills. Business users want to ask questions in plain English and get immediate answers.\n\n\n1.2.3 The Solution\nBuild an AI agent that turns text questions from GBI into safe, correct SQL, executes the query on GBI’s Microsoft SQL Server, and automatically produces both a suitable visualization and a plain-language explanation. The user interface displays the generated SQL, a data table, the visualization, and the explanation.\nThe end-to-end interaction can follow, as an example, the following path:\n\nUser Input: A user poses a question by text.\nText-to-SQL: The text question is converted by a schema-aware text-to-SQL model into a read-only, parameterized SQL statement.\nExecution: The statement is executed against the SQL Server with timeouts, row limits, and guardrails in place.\nAnalysis: The resulting dataset is routed to:\n\nA visualization component that selects an appropriate chart based on the data shape.\nAn explanation component that generates a faithful narrative grounded in the returned numbers.\n\nPresentation: The interface then presents the generated SQL, a paginated data table, the selected visualization, and an explanatory summary.\n\nNote: This flow is provided to illustrate the intended user experience; you may refine it as needed while preserving the core capability of safe text-to-SQL, execution, visualization, and explanation.\n\n\n1.2.4 Data & Architecture\nWe use the AdventureWorks sales database to simulate Global Bike Inc.’s data. It is a realistic dataset modeling a bicycle manufacturer. This serves as the shared backend for our agent.\nThe system connects the user (via Gradio) to the data (SQL Server) using Gemini as the reasoning engine.\n\n\n\n\n\n%%{init: {\n  \"theme\": \"base\",\n  \"flowchart\": {\n    \"curve\": \"basis\",\n    \"nodeSpacing\": 50,\n    \"rankSpacing\": 50,\n    \"htmlLabels\": false,\n    \"wrap\": true,\n    \"useMaxWidth\": true\n  },\n  \"themeVariables\": {\n    \"primaryColor\": \"#ffffff\",\n    \"primaryTextColor\": \"#374151\",\n    \"primaryBorderColor\": \"#e5e7eb\",\n    \"lineColor\": \"#9CA3AF\",\n    \"secondaryColor\": \"#f9fafb\",\n    \"tertiaryColor\": \"#ffffff\",\n    \"fontFamily\": \"system-ui\",\n    \"fontSize\": \"16px\",\n    \"nodeSpacing\": 10,\n    \"rankSpacing\": 10\n  }\n}}%%\n\nflowchart LR\n    %% Increase node sizes with larger padding\n    subgraph Input[\" \"]\n        direction TB\n        A[\"User&lt;br&gt;Question\"]\n        style A fill:#4F46E5,color:#ffffff,stroke:#4338CA,padding:20px\n    end\n\n    subgraph System[\" \"]\n        direction TB\n        B[\"Gemini&lt;br&gt;(Reasoning)\"]\n        C[\"SQL Server&lt;br&gt;(Data)\"]\n        style B fill:#ffffff,color:#374151,stroke:#e5e7eb,padding:20px\n        style C fill:#ffffff,color:#374151,stroke:#e5e7eb,padding:20px\n    end\n\n    subgraph Output[\" \"]\n        direction TB\n        D[\"Visuals&lt;br&gt;and Insights\"]\n        style D fill:#4F46E5,color:#ffffff,stroke:#4338CA,padding:20px\n    end\n\n    %% Connections\n    A --&gt; B\n    B --&gt;|SQL| C\n    C --&gt;|Data| D\n\n    %% Subgraph styling\n    style Input fill:#ffffff,stroke:#e5e7eb,color:#374151,stroke-width:1px,padding:50px\n    style System fill:#ffffff,stroke:#e5e7eb,color:#374151,stroke-width:1px,padding:50px\n    style Output fill:#ffffff,stroke:#e5e7eb,color:#374151,stroke-width:1px,padding:50px\n\n    %% Edge styling\n    linkStyle default stroke:#9CA3AF,stroke-width:2px\n\n\n\n\n\n\n\nAdventureWorks SQL Server: The single source of truth.\nGemini: Translates natural language into SQL and generates insights.\nGradio: Delivers data and visualizations interactively.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Syllabus</span>"
     ]
   },
   {
@@ -36,7 +36,7 @@
     "section": "1.3 Deliverables",
     "text": "1.3 Deliverables\nDeliverables include a GitHub repository containing:\n\nAll code (agents, guardrails, database connector, and UI).\nConfiguration and prompt templates.\nReproducible setup instructions using uv python package manager.\nA lightweight test suite that exercises benchmark questions and safety checks.\nA short explanation (one page) describing the architecture, prompts, safety measures, and evaluation procedure.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Syllabus</span>"
     ]
   },
   {
@@ -46,7 +46,7 @@
     "section": "1.4 Expected Business Impact",
     "text": "1.4 Expected Business Impact\nA single natural-language interface that:\n\nReduces analyst bottlenecks.\nShortens time-to-insight for sales.\nStandardizes how data is queried, visualized, and explained across GBI.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Syllabus</span>"
     ]
   },
   {
@@ -56,7 +56,7 @@
     "section": "1.5 Technologies",
     "text": "1.5 Technologies\n\nPython: The primary programming language.\nGoogle Gemini: For the intelligence (LLM).\nGradio: To build the user interface.\nMicrosoft SQL Server: The database.\nVS Code: The primary IDE.\nGitHub: To store and share your code.\nuv: For Python package management.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Syllabus</span>"
     ]
   },
   {
@@ -66,7 +66,7 @@
     "section": "1.6 Getting Started",
     "text": "1.6 Getting Started\nTo be ready for our first session, please complete the steps in the Prepare Your Machine section before class. This includes installing Python and setting up your development environment.\nWe look forward to building the future of analytics with you!",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Syllabus</span>"
     ]
   },
   {
@@ -140,7 +140,7 @@
     "href": "windows-setup.html#command-line-basics",
     "title": "3  Windows Setup",
     "section": "3.2 Command-line basics",
-    "text": "3.2 Command-line basics\nWe use Git Bash as our terminal. Download the latest Git for Windows installer from git-scm.com and complete the setup (Git Bash is included). After installation, open Git Bash from the Start menu.\n\n\n\n\n\n\nWhy Git Bash?\n\n\n\n\n\nGit Bash provides a Unix-like terminal experience on Windows, making it easier to follow along with commands that are commonly used in macOS and Linux environments.\n\n\n\nKeep the terminal window open while you work through the chapters.\n\n3.2.1 uv\nWe use uv, a Python package manager that is extremely fast. It replaces pip, poetry, and virtualenv.\nTo install uv, follow this guide",
+    "text": "3.2 Command-line basics\nWe use Git Bash as our terminal. Download the latest Git for Windows installer from git-scm.com and complete the setup (Git Bash is included). After installation, open Git Bash from the Start menu.\n\n\n\n\n\n\nNoteWhy Git Bash?\n\n\n\n\n\nGit Bash provides a Unix-like terminal experience on Windows, making it easier to follow along with commands that are commonly used in macOS and Linux environments.\n\n\n\nKeep the terminal window open while you work through the chapters.\n\n3.2.1 uv\nWe use uv, a Python package manager that is extremely fast. It replaces pip, poetry, and virtualenv.\nTo install uv, follow this guide",
     "crumbs": [
       "Preparation",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Windows Setup</span>"
