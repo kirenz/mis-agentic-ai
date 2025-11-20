@@ -44,7 +44,6 @@ The end-to-end interaction can follow, as an example, the following path:
 
 We use the AdventureWorks sales database to simulate Global Bike Inc.'s data. It is a realistic dataset modeling a bicycle manufacturer. This serves as the shared backend for our agent.
 
-The system connects the user (via Gradio) to the data (SQL Server) using Gemini as the reasoning engine.
 
 ```{mermaid}
 %%| fig-align: center 
@@ -109,6 +108,8 @@ flowchart LR
     linkStyle default stroke:#9CA3AF,stroke-width:2px
 ```
 
+
+*  The system connects the user (via Gradio) to the data (SQL Server) using Gemini as the reasoning engine.
 *   AdventureWorks SQL Server: The single source of truth.
 *   Gemini: Translates natural language into SQL and generates insights.
 *   Gradio: Delivers data and visualizations interactively.
