@@ -140,7 +140,7 @@
     "href": "windows-setup.html#command-line-basics",
     "title": "3  Windows",
     "section": "3.2 Command-line basics",
-    "text": "3.2 Command-line basics\nWe use Git Bash as our terminal. Download the latest Git for Windows installer from git-scm.com and complete the setup (Git Bash is included). After installation, open Git Bash from the Start menu.\n\n\n\n\n\n\nNoteWhy Git Bash?\n\n\n\n\n\nGit Bash provides a Unix-like terminal experience on Windows, making it easier to follow along with commands that are commonly used in macOS and Linux environments.\n\n\n\nKeep the terminal window open while you work through the chapters.\n\n3.2.1 uv\nWe use uv, a Python package manager that is extremely fast. It replaces pip, poetry, and virtualenv.\nTo install uv, follow this guide",
+    "text": "3.2 Command-line basics\nWe use Git Bash as our terminal. Download the latest Git for Windows installer from git-scm.com and complete the setup (Git Bash is included). After installation, open Git Bash from the Start menu.\n\n\n\n\n\n\nWhy Git Bash?\n\n\n\n\n\nGit Bash provides a Unix-like terminal experience on Windows, making it easier to follow along with commands that are commonly used in macOS and Linux environments.\n\n\n\nKeep the terminal window open while you work through the chapters.\n\n3.2.1 uv\nWe use uv, a Python package manager that is extremely fast. It replaces pip, poetry, and virtualenv.\nTo install uv, follow this guide",
     "crumbs": [
       "Preparation",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Windows</span>"
