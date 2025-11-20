@@ -28,8 +28,6 @@ book:
         - mac-setup.qmd
         - mssql-vscode.qmd
         - mssql-connection.qmd
-        - mssql-example.qmd
-        - sql-example.qmd
     # - part: "Agentic AI"
     #   chapters:
     #     - agentic-ai.qmd

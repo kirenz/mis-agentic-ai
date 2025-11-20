@@ -8,7 +8,7 @@
 
 <meta name="author" content="Jan Kirenz">
 
-<title>6&nbsp; Create a SQL Server Connection – Agentic AI</title>
+<title>6&nbsp; Server Connection – Agentic AI</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,7 +66,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./mssql-example.html" rel="next">
 <link href="./mssql-vscode.html" rel="prev">
 <link href=".//images/logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
@@ -125,7 +124,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./accounts.html">Preparation</a></li><li class="breadcrumb-item"><a href="./mssql-connection.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Create a SQL Server Connection</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./accounts.html">Preparation</a></li><li class="breadcrumb-item"><a href="./mssql-connection.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Server Connection</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -151,7 +150,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Welcome</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Syllabus</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -190,19 +189,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mssql-connection.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Create a SQL Server Connection</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./mssql-example.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Example SQL Server Connection</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./sql-example.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">SQL Example Script</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Server Connection</span></span></a>
   </div>
 </li>
       </ul>
@@ -217,17 +204,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#create-a-connection-profile" id="toc-create-a-connection-profile" class="nav-link active" data-scroll-target="#create-a-connection-profile"><span class="header-section-number">6.1</span> Create a connection profile</a></li>
-  <li><a href="#verify-the-connection" id="toc-verify-the-connection" class="nav-link" data-scroll-target="#verify-the-connection"><span class="header-section-number">6.2</span> Verify the connection</a></li>
+  <li><a href="#vs-code-extension" id="toc-vs-code-extension" class="nav-link active" data-scroll-target="#vs-code-extension"><span class="header-section-number">6.1</span> VS Code extension</a>
+  <ul class="collapse">
+  <li><a href="#create-a-connection-profile" id="toc-create-a-connection-profile" class="nav-link" data-scroll-target="#create-a-connection-profile"><span class="header-section-number">6.1.1</span> Create a connection profile</a></li>
+  <li><a href="#verify-the-connection" id="toc-verify-the-connection" class="nav-link" data-scroll-target="#verify-the-connection"><span class="header-section-number">6.1.2</span> Verify the connection</a></li>
+  </ul></li>
+  <li><a href="#python-server-connection" id="toc-python-server-connection" class="nav-link" data-scroll-target="#python-server-connection"><span class="header-section-number">6.2</span> Python Server Connection</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./accounts.html">Preparation</a></li><li class="breadcrumb-item"><a href="./mssql-connection.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Create a SQL Server Connection</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./accounts.html">Preparation</a></li><li class="breadcrumb-item"><a href="./mssql-connection.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Server Connection</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Create a SQL Server Connection</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Server Connection</span></h1>
 </div>
 
 
@@ -244,36 +235,40 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Use the <strong>SQL Server (mssql)</strong> extension in VS Code to connect, save, and reuse profiles for SQL Server or Azure SQL databases. The steps below walk through creating your first connection and include tips for common authentication modes.</p>
-<section id="create-a-connection-profile" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="create-a-connection-profile"><span class="header-section-number">6.1</span> Create a connection profile</h2>
+<p>We can connect to SQL Server using the SQL Server extension in VS Code or via Python scripts. We will discuss both methods in this section.</p>
+<section id="vs-code-extension" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="vs-code-extension"><span class="header-section-number">6.1</span> VS Code extension</h2>
+<p>Use the SQL Server extension in VS Code to connect, save, and reuse profiles for SQL Server or Azure SQL databases. The steps below walk through creating your first connection and include tips for common authentication modes.</p>
+<section id="create-a-connection-profile" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="create-a-connection-profile"><span class="header-section-number">6.1.1</span> Create a connection profile</h3>
 <ol type="1">
-<li>In VS Code, open the <strong>SQL Server</strong> view (activity bar icon with the <code>SQL</code> badge).</li>
-<li>Select <strong>Add Connection</strong> (➕ icon). The <strong>Connect to Database</strong> dialog matches the screenshot and uses the following fields:
+<li>In VS Code, open the SQL Server view (activity bar icon with the <code>SQL</code> badge).</li>
+<li>Select Add Connection (➕ icon). The Connect to Database dialog matches the screenshot and uses the following fields:
 <ul>
-<li><strong>Profile Name</strong> – friendly label that shows up under <strong>SQL Server ▶ Connections</strong>.</li>
-<li><strong>Connection Group</strong> – optional folder for organizing profiles. Leave <code>&lt;Default&gt;</code>.</li>
-<li><strong>Input type</strong>
+<li>Profile Name – friendly label that shows up under SQL Server ▶ Connections.</li>
+<li>Connection Group – optional folder for organizing profiles. Leave <code>&lt;Default&gt;</code>.</li>
+<li>Input type
 <ul>
 <li>Use <code>Parameters</code> (default): exposes the individual fields listed below.</li>
 </ul></li>
-<li><strong>Server name</strong> – Use the named instance provided by your instructor.</li>
-<li><strong>Trust server certificate</strong> – enable this field.</li>
-<li><strong>Authentication type</strong> – select <code>SQL Login</code></li>
-<li><strong>User name / Password</strong> – enter the credentials provided by your instructor.</li>
-<li><strong>Save Password</strong> – stores credentials securely in your OS keychain.</li>
-<li><strong>Database name</strong> – enter the name provided by your instructor..</li>
-<li><strong>Encrypt</strong> – pick <code>Optional</code>.</li>
-<li><strong>Advanced</strong> – not necessary for this connection.</li>
+<li>Server name – Use the named instance provided by your instructor.</li>
+<li>Trust server certificate – enable this field.</li>
+<li>Authentication type – select <code>SQL Login</code></li>
+<li>User name / Password – enter the credentials provided by your instructor.</li>
+<li>Save Password – stores credentials securely in your OS keychain.</li>
+<li>Database name – enter the name provided by your instructor..</li>
+<li>Encrypt – pick <code>Optional</code>.</li>
+<li>Advanced – not necessary for this connection.</li>
 </ul></li>
-<li>After filling the required fields (marked with <code>*</code>), click <strong>Connect</strong>. When prompted, save the profile. Saving makes it appear in the <strong>SQL Server</strong> panel so you can double-click it later; declining runs a one-off connection only.</li>
+<li>After filling the required fields (marked with <code>*</code>), click Connect. When prompted, save the profile. Saving makes it appear in the SQL Server panel so you can double-click it later; declining runs a one-off connection only.</li>
 </ol>
 </section>
-<section id="verify-the-connection" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="verify-the-connection"><span class="header-section-number">6.2</span> Verify the connection</h2>
+<section id="verify-the-connection" class="level3" data-number="6.1.2">
+<h3 data-number="6.1.2" class="anchored" data-anchor-id="verify-the-connection"><span class="header-section-number">6.1.2</span> Verify the connection</h3>
+<p>Next, verify the connection:</p>
 <ul>
 <li>In your VS Code Extensions, open the SQL Server view if not already visible.</li>
-<li>In the CONNECTIONS window, move your mouse to the name of your database, right-click and choose <strong>New Query</strong>.</li>
+<li>In the CONNECTIONS window, move your mouse to the name of your database, right-click and choose New Query.</li>
 <li>Type a simple check such as:</li>
 </ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> TOP (<span class="dv">3</span>)</span>
@@ -284,8 +279,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> dbo.Dim_Product</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="kw">ORDER</span> <span class="kw">BY</span> ID_Product;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li>Press <code>F5</code> or click the <strong>Run</strong> symbol (▶️) in the editor toolbar (at the top right of the script).</li>
-<li>The <strong>Results</strong> grid should return the products ordered by <code>ID_Product</code>. If VS Code prompts again for credentials, re-enter them and retry.</li>
+<li>Press <code>F5</code> or click the Run symbol (▶️) in the editor toolbar (at the top right of the script).</li>
+<li>The Results grid should return the products ordered by <code>ID_Product</code>. If VS Code prompts again for credentials, re-enter them and retry.</li>
 <li>If you encounter connection issues, double-check the server name, authentication type, and credentials. Review any error messages for clues.</li>
 </ul>
 <!-- 
@@ -298,6 +293,13 @@ Next, explore the database schema using a provided script:
 - The results should show the tables and views in the connected database.
 - You can save the result as CSV, JSON, or Excel by clicking the appropriate icon in the results pane.
 - This will help you explore the database structure for writing your own queries later. -->
+</section>
+</section>
+<section id="python-server-connection" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="python-server-connection"><span class="header-section-number">6.2</span> Python Server Connection</h2>
+<p>You can also connect to SQL Server from Python using SQLAlchemy.</p>
+<p>To make the process smoother, all necessary files are already available in a GitHub repository. Follow the instructions to clone it and set up your environment:</p>
+<p><a href="https://github.com/kirenz/mssql-example">GitHub Repository: mssql-example</a></p>
 
 
 </section>
@@ -709,9 +711,6 @@ Next, explore the database schema using a provided script:
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./mssql-example.html" class="pagination-link" aria-label="Example SQL Server Connection">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Example SQL Server Connection</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

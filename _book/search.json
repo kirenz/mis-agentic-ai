@@ -64,7 +64,7 @@
     "href": "index.html#getting-started",
     "title": "Agentic AI",
     "section": "1.6 Getting Started",
-    "text": "1.6 Getting Started\nTo be ready for our first session, please complete the steps in the Prepare Your Machine section before class. This includes installing Python and setting up your development environment.\nWe look forward to building the future of analytics with you!",
+    "text": "1.6 Getting Started\nTo be ready for our first session, please complete the steps in the Preparation chapter before class. This includes installing software and setting up your development environment.\nWe look forward to building the future of analytics with you!",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Syllabus</span>"
     ]
@@ -116,111 +116,111 @@
   {
     "objectID": "windows-setup.html",
     "href": "windows-setup.html",
-    "title": "3  Windows Setup",
+    "title": "3  Windows",
     "section": "",
     "text": "3.1 Basic requirements\nIf you are using Windows, follow these steps.\nFirst, make sure your system is up to date.\nNext, enable Developer Mode:",
     "crumbs": [
       "Preparation",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Windows Setup</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Windows</span>"
     ]
   },
   {
     "objectID": "windows-setup.html#basic-requirements",
     "href": "windows-setup.html#basic-requirements",
-    "title": "3  Windows Setup",
+    "title": "3  Windows",
     "section": "",
     "text": "Open Settings &gt; Windows Update.\n\n\n\nOpen Settings &gt; Update & Security &gt; For developers.\nToggle Developer Mode and accept the disclaimer.",
     "crumbs": [
       "Preparation",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Windows Setup</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Windows</span>"
     ]
   },
   {
     "objectID": "windows-setup.html#command-line-basics",
     "href": "windows-setup.html#command-line-basics",
-    "title": "3  Windows Setup",
+    "title": "3  Windows",
     "section": "3.2 Command-line basics",
     "text": "3.2 Command-line basics\nWe use Git Bash as our terminal. Download the latest Git for Windows installer from git-scm.com and complete the setup (Git Bash is included). After installation, open Git Bash from the Start menu.\n\n\n\n\n\n\nWhy Git Bash?\n\n\n\n\n\nGit Bash provides a Unix-like terminal experience on Windows, making it easier to follow along with commands that are commonly used in macOS and Linux environments.\n\n\n\nKeep the terminal window open while you work through the chapters.\n\n3.2.1 uv\nWe use uv, a Python package manager that is extremely fast. It replaces pip, poetry, and virtualenv.\nTo install uv, follow this guide",
     "crumbs": [
       "Preparation",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Windows Setup</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Windows</span>"
     ]
   },
   {
     "objectID": "windows-setup.html#server-tools",
     "href": "windows-setup.html#server-tools",
-    "title": "3  Windows Setup",
+    "title": "3  Windows",
     "section": "3.3 Server Tools",
     "text": "3.3 Server Tools\nThe Microsoft ODBC Driver for SQL Server enables native connectivity from Windows applications to Microsoft SQL Server and Azure SQL databases.\nFollow the steps below to install the ODBC Driver (version 18) and command-line tools on your Windows machine:\n\nInstallation Instructions\n\nFor most users, the “Download Microsoft ODBC Driver 18 for SQL Server (x64)” installer is the right choice.",
     "crumbs": [
       "Preparation",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Windows Setup</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Windows</span>"
     ]
   },
   {
     "objectID": "mac-setup.html",
     "href": "mac-setup.html",
-    "title": "4  Mac Setup",
+    "title": "4  macOS",
     "section": "",
     "text": "4.1 Basic requirements\nIf you are using Mac, follow these steps.\nFirst, make sure your system is up to date.\nOpen System Settings &gt; General &gt; Software Update.",
     "crumbs": [
       "Preparation",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Mac Setup</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>macOS</span>"
     ]
   },
   {
     "objectID": "mac-setup.html#command-line-basics",
     "href": "mac-setup.html#command-line-basics",
-    "title": "4  Mac Setup",
+    "title": "4  macOS",
     "section": "4.2 Command-line basics",
     "text": "4.2 Command-line basics\nLaunch Terminal (Spotlight search for “Terminal”).\nCommands in this book assume the zsh shell, which is the default on modern macOS systems.\nKeep the terminal window open while you work through the chapters.",
     "crumbs": [
       "Preparation",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Mac Setup</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>macOS</span>"
     ]
   },
   {
     "objectID": "mac-setup.html#xcode",
     "href": "mac-setup.html#xcode",
-    "title": "4  Mac Setup",
+    "title": "4  macOS",
     "section": "4.3 Xcode",
     "text": "4.3 Xcode\nApple’s Xcode command line tools are required to build and run some of the code.\nInstall Xcode command line tools:\nxcode-select --install\nIf you get the following message, you can skip this step:\nxcode-select: note: Command line tools are already installed. Use “Software Update” in System Settings or the softwareupdate command line interface to install updates",
     "crumbs": [
       "Preparation",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Mac Setup</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>macOS</span>"
     ]
   },
   {
     "objectID": "mac-setup.html#package-manager",
     "href": "mac-setup.html#package-manager",
-    "title": "4  Mac Setup",
+    "title": "4  macOS",
     "section": "4.4 Package manager",
     "text": "4.4 Package manager\nHomebrew downloads applications, command line tools, and libraries with one command. You avoid manual downloads and it keeps everything organized.\n\n4.4.1 Install Homebrew\n\nOpen Terminal and run the official installer:\n\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\n\nEnter your password when prompted (you won’t see any characters while typing).\nPress ENTER to continue\nWhen the script finishes, follow the on-screen instructions to add Homebrew to your shell profile (this step is required for brew to be found).\nClose the Terminal window.\nOpen a new Terminal, then verify the installation:\n\nbrew --version\n\n\n4.4.2 Update Homebrew\nIf you already have Homebrew installed, make sure everything is up to date:\nbrew update\nUse brew upgrade to actually update installed packages.\nbrew upgrade",
     "crumbs": [
       "Preparation",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Mac Setup</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>macOS</span>"
     ]
   },
   {
     "objectID": "mac-setup.html#uv",
     "href": "mac-setup.html#uv",
-    "title": "4  Mac Setup",
+    "title": "4  macOS",
     "section": "4.5 uv",
     "text": "4.5 uv\nWe use uv, a Python package manager that is extremely fast. It replaces pip, poetry, and virtualenv.\nTo install uv, follow this guide",
     "crumbs": [
       "Preparation",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Mac Setup</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>macOS</span>"
     ]
   },
   {
     "objectID": "mac-setup.html#server-tools",
     "href": "mac-setup.html#server-tools",
-    "title": "4  Mac Setup",
+    "title": "4  macOS",
     "section": "4.6 Server Tools",
     "text": "4.6 Server Tools\nWe need to install some drivers for Microsoft SQL Server.\n\n4.6.1 Install Server Tools\nOpen your Terminal and run:\nbrew tap microsoft/mssql-release https://github.com/Microsoft/homebrew-mssql-release\nACCEPT_EULA=Y brew install msodbcsql18 mssql-tools unixodbc\n\nmsodbcsql18 is the latest Microsoft ODBC Driver for SQL Server.\nmssql-tools installs sqlcmd and bcp for command-line access.\nunixodbc provides the shared ODBC libraries Python will load.\n\n\n\n\n\n\n\nThe ACCEPT_EULA=Y prefix lets the installer know you accept the Microsoft end-user license agreement. Without it the install stops halfway through.\n\n\n\n\nClose and reopen Terminal.\n\n\n\n4.6.2 Test the installation\nConfirm that the ODBC driver registered correctly:\nodbcinst -j\nLook for lines referencing Driver Manager: unixODBC.\nYour Mac is now ready to connect to SQL Server databases from VS Code and Python.\n\n\n4.6.3 Troubleshooting\nSome shells require an extra step to expose the SQL Server utilities. Add the following line to ~/.zshrc or ~/.bash_profile if sqlcmd is not found after reopening Terminal:\nexport PATH=\"/opt/homebrew/opt/msodbcsql18/bin:/opt/homebrew/opt/mssql-tools/bin:$PATH\"\nIntel Macs should use /usr/local/opt/ instead of /opt/homebrew/opt/.\nReload your shell:\nsource ~/.zshrc",
     "crumbs": [
       "Preparation",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Mac Setup</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>macOS</span>"
     ]
   },
   {
@@ -261,7 +261,7 @@
     "href": "mssql-vscode.html#enable-the-code-command",
     "title": "5  VS Code",
     "section": "5.3 Enable the code command",
-    "text": "5.3 Enable the code command\n\n5.3.1 macOS Terminal\n\nLaunch VS Code, press Cmd+Shift+P, and run Shell Command: Install ‘code’ command in PATH.\nClose any open Terminal windows, then open a new one and run\ncode --version\nto confirm the CLI is available.\nFrom the folder you want to open, run\ncode .\nto launch VS Code in that location.\n\n\n\n5.3.2 Windows (Git Bash)\n\nRun\ncode --version\nin Git Bash; if it works, you’re done.\nIf the command is missing, add VS Code’s bin directory to your Git Bash PATH by appending the snippet below to ~/.bashrc (create the file if it doesn’t exist):\nVS_CODE=\"/c/Users/$USERNAME/AppData/Local/Programs/Microsoft VS Code/bin\"\nif [ -d \"$VS_CODE\" ] && [[ \":$PATH:\" != *\":$VS_CODE:\"* ]]; then\n  PATH=\"$VS_CODE:$PATH\"\nfi\nReload Git Bash\nsource ~/.bashrc\n\nOr open a new window and run\ncode --version\nAgain. Once it prints a version number,\ncode . \nwill open VS Code from that folder.",
+    "text": "5.3 Enable the code command\n\n5.3.1 macOS Terminal\n\nLaunch VS Code, press Cmd+Shift+P, and run Shell Command: Install ‘code’ command in PATH.\nClose any open Terminal windows, then open a new one and run\ncode --version\nto confirm the CLI is available.\nFrom the folder you want to open, run\ncode .\nto launch VS Code in that location.\n\n\n\n5.3.2 Windows\n\nFrom the folder you want to open, run this in Git Bash\ncode .\nto launch VS Code in that location.\nIf the command is missing, add VS Code’s bin directory to your Git Bash PATH by appending the snippet below to ~/.bashrc (create the file if it doesn’t exist):\nVS_CODE=\"/c/Users/$USERNAME/AppData/Local/Programs/Microsoft VS Code/bin\"\nif [ -d \"$VS_CODE\" ] && [[ \":$PATH:\" != *\":$VS_CODE:\"* ]]; then\n  PATH=\"$VS_CODE:$PATH\"\nfi\nReload Git Bash\nsource ~/.bashrc\nTry again:\ncode .",
     "crumbs": [
       "Preparation",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>VS Code</span>"
@@ -281,34 +281,34 @@
   {
     "objectID": "mssql-connection.html",
     "href": "mssql-connection.html",
-    "title": "6  Create a SQL Server Connection",
+    "title": "6  Server Connection",
     "section": "",
-    "text": "6.1 Create a connection profile\nUse the SQL Server (mssql) extension in VS Code to connect, save, and reuse profiles for SQL Server or Azure SQL databases. The steps below walk through creating your first connection and include tips for common authentication modes.",
+    "text": "6.1 VS Code extension\nWe can connect to SQL Server using the SQL Server extension in VS Code or via Python scripts. We will discuss both methods in this section.\nUse the SQL Server extension in VS Code to connect, save, and reuse profiles for SQL Server or Azure SQL databases. The steps below walk through creating your first connection and include tips for common authentication modes.",
     "crumbs": [
       "Preparation",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Create a SQL Server Connection</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Server Connection</span>"
     ]
   },
   {
     "objectID": "mssql-connection.html#create-a-connection-profile",
     "href": "mssql-connection.html#create-a-connection-profile",
-    "title": "6  Create a SQL Server Connection",
-    "section": "",
-    "text": "In VS Code, open the SQL Server view (activity bar icon with the SQL badge).\nSelect Add Connection (➕ icon). The Connect to Database dialog matches the screenshot and uses the following fields:\n\nProfile Name – friendly label that shows up under SQL Server ▶ Connections.\nConnection Group – optional folder for organizing profiles. Leave &lt;Default&gt;.\nInput type\n\nUse Parameters (default): exposes the individual fields listed below.\n\nServer name – Use the named instance provided by your instructor.\nTrust server certificate – enable this field.\nAuthentication type – select SQL Login\nUser name / Password – enter the credentials provided by your instructor.\nSave Password – stores credentials securely in your OS keychain.\nDatabase name – enter the name provided by your instructor..\nEncrypt – pick Optional.\nAdvanced – not necessary for this connection.\n\nAfter filling the required fields (marked with *), click Connect. When prompted, save the profile. Saving makes it appear in the SQL Server panel so you can double-click it later; declining runs a one-off connection only.",
+    "title": "6  Server Connection",
+    "section": "6.2 Create a connection profile",
+    "text": "6.2 Create a connection profile\n\nIn VS Code, open the SQL Server view (activity bar icon with the SQL badge).\nSelect Add Connection (➕ icon). The Connect to Database dialog matches the screenshot and uses the following fields:\n\nProfile Name – friendly label that shows up under SQL Server ▶ Connections.\nConnection Group – optional folder for organizing profiles. Leave &lt;Default&gt;.\nInput type\n\nUse Parameters (default): exposes the individual fields listed below.\n\nServer name – Use the named instance provided by your instructor.\nTrust server certificate – enable this field.\nAuthentication type – select SQL Login\nUser name / Password – enter the credentials provided by your instructor.\nSave Password – stores credentials securely in your OS keychain.\nDatabase name – enter the name provided by your instructor..\nEncrypt – pick Optional.\nAdvanced – not necessary for this connection.\n\nAfter filling the required fields (marked with *), click Connect. When prompted, save the profile. Saving makes it appear in the SQL Server panel so you can double-click it later; declining runs a one-off connection only.",
     "crumbs": [
       "Preparation",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Create a SQL Server Connection</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Server Connection</span>"
     ]
   },
   {
     "objectID": "mssql-connection.html#verify-the-connection",
     "href": "mssql-connection.html#verify-the-connection",
-    "title": "6  Create a SQL Server Connection",
-    "section": "6.2 Verify the connection",
-    "text": "6.2 Verify the connection\n\nIn your VS Code Extensions, open the SQL Server view if not already visible.\nIn the CONNECTIONS window, move your mouse to the name of your database, right-click and choose New Query.\nType a simple check such as:\n\nSELECT TOP (3)\nID_Product,\nMaterial_Description,\nProduct_Category,\nTransfer_Price_EUR\nFROM dbo.Dim_Product\nORDER BY ID_Product;\n\nPress F5 or click the Run symbol (▶️) in the editor toolbar (at the top right of the script).\nThe Results grid should return the products ordered by ID_Product. If VS Code prompts again for credentials, re-enter them and retry.\nIf you encounter connection issues, double-check the server name, authentication type, and credentials. Review any error messages for clues.",
+    "title": "6  Server Connection",
+    "section": "6.3 Verify the connection",
+    "text": "6.3 Verify the connection\n\nIn your VS Code Extensions, open the SQL Server view if not already visible.\nIn the CONNECTIONS window, move your mouse to the name of your database, right-click and choose New Query.\nType a simple check such as:\n\nSELECT TOP (3)\nID_Product,\nMaterial_Description,\nProduct_Category,\nTransfer_Price_EUR\nFROM dbo.Dim_Product\nORDER BY ID_Product;\n\nPress F5 or click the Run symbol (▶️) in the editor toolbar (at the top right of the script).\nThe Results grid should return the products ordered by ID_Product. If VS Code prompts again for credentials, re-enter them and retry.\nIf you encounter connection issues, double-check the server name, authentication type, and credentials. Review any error messages for clues.",
     "crumbs": [
       "Preparation",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Create a SQL Server Connection</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Server Connection</span>"
     ]
   },
   {
@@ -364,6 +364,28 @@
     "crumbs": [
       "Preparation",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>SQL Example Script</span>"
+    ]
+  },
+  {
+    "objectID": "mssql-connection.html#python-server-connection",
+    "href": "mssql-connection.html#python-server-connection",
+    "title": "6  Server Connection",
+    "section": "6.2 Python Server Connection",
+    "text": "6.2 Python Server Connection\nYou can also connect to SQL Server from Python using SQLAlchemy.\nTo make the process smoother, all necessary files are already available in a GitHub repository. Follow the instructions to clone it and set up your environment:\nGitHub Repository: mssql-example",
+    "crumbs": [
+      "Preparation",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Server Connection</span>"
+    ]
+  },
+  {
+    "objectID": "mssql-connection.html#vs-code-extension",
+    "href": "mssql-connection.html#vs-code-extension",
+    "title": "6  Server Connection",
+    "section": "",
+    "text": "6.1.1 Create a connection profile\n\nIn VS Code, open the SQL Server view (activity bar icon with the SQL badge).\nSelect Add Connection (➕ icon). The Connect to Database dialog matches the screenshot and uses the following fields:\n\nProfile Name – friendly label that shows up under SQL Server ▶ Connections.\nConnection Group – optional folder for organizing profiles. Leave &lt;Default&gt;.\nInput type\n\nUse Parameters (default): exposes the individual fields listed below.\n\nServer name – Use the named instance provided by your instructor.\nTrust server certificate – enable this field.\nAuthentication type – select SQL Login\nUser name / Password – enter the credentials provided by your instructor.\nSave Password – stores credentials securely in your OS keychain.\nDatabase name – enter the name provided by your instructor..\nEncrypt – pick Optional.\nAdvanced – not necessary for this connection.\n\nAfter filling the required fields (marked with *), click Connect. When prompted, save the profile. Saving makes it appear in the SQL Server panel so you can double-click it later; declining runs a one-off connection only.\n\n\n\n6.1.2 Verify the connection\nNext, verify the connection:\n\nIn your VS Code Extensions, open the SQL Server view if not already visible.\nIn the CONNECTIONS window, move your mouse to the name of your database, right-click and choose New Query.\nType a simple check such as:\n\nSELECT TOP (3)\nID_Product,\nMaterial_Description,\nProduct_Category,\nTransfer_Price_EUR\nFROM dbo.Dim_Product\nORDER BY ID_Product;\n\nPress F5 or click the Run symbol (▶️) in the editor toolbar (at the top right of the script).\nThe Results grid should return the products ordered by ID_Product. If VS Code prompts again for credentials, re-enter them and retry.\nIf you encounter connection issues, double-check the server name, authentication type, and credentials. Review any error messages for clues.",
+    "crumbs": [
+      "Preparation",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Server Connection</span>"
     ]
   }
 ]

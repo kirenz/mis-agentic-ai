@@ -152,6 +152,6 @@ A single natural-language interface that:
 
 ## Getting Started
 
-To be ready for our first session, please complete the steps in the [Prepare Your Machine](preparation.qmd) section *before* class. This includes installing Python and setting up your development environment.
+To be ready for our first session, please complete the steps in the *Preparation* chapter *before* class. This includes installing software and setting up your development environment.
 
 We look forward to building the future of analytics with you!

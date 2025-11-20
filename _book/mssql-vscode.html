@@ -151,7 +151,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Welcome</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Syllabus</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -172,13 +172,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./windows-setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Windows Setup</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Windows</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mac-setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mac Setup</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">macOS</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -190,19 +190,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mssql-connection.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Create a SQL Server Connection</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./mssql-example.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Example SQL Server Connection</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./sql-example.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">SQL Example Script</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Server Connection</span></span></a>
   </div>
 </li>
       </ul>
@@ -222,7 +210,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#enable-the-code-command" id="toc-enable-the-code-command" class="nav-link" data-scroll-target="#enable-the-code-command"><span class="header-section-number">5.3</span> Enable the <code>code</code> command</a>
   <ul class="collapse">
   <li><a href="#macos-terminal" id="toc-macos-terminal" class="nav-link" data-scroll-target="#macos-terminal"><span class="header-section-number">5.3.1</span> macOS Terminal</a></li>
-  <li><a href="#windows-git-bash" id="toc-windows-git-bash" class="nav-link" data-scroll-target="#windows-git-bash"><span class="header-section-number">5.3.2</span> Windows (Git Bash)</a></li>
+  <li><a href="#windows" id="toc-windows" class="nav-link" data-scroll-target="#windows"><span class="header-section-number">5.3.2</span> Windows</a></li>
   </ul></li>
   <li><a href="#integrated-terminal-tips" id="toc-integrated-terminal-tips" class="nav-link" data-scroll-target="#integrated-terminal-tips"><span class="header-section-number">5.4</span> Integrated terminal tips</a></li>
   </ul>
@@ -255,8 +243,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="5.1" class="anchored" data-anchor-id="install-vs-code"><span class="header-section-number">5.1</span> Install VS Code</h2>
 <p>If you haven’t already, install Visual Studio Code:</p>
 <ul>
-<li><strong>macOS:</strong> Download the from <a href="https://code.visualstudio.com/insiders/#osx">code.visualstudio.com</a> and drag <strong>Visual Studio Code</strong> into <code>Applications</code>.</li>
-<li><strong>Windows:</strong> <a href="https://code.visualstudio.com/insiders/#win">Download the installer</a> and click through the setup, leaving the default options enabled (add to PATH, register the code command, etc.).</li>
+<li>macOS: Download the from <a href="https://code.visualstudio.com/insiders/#osx">code.visualstudio.com</a> and drag Visual Studio Code into <code>Applications</code>.</li>
+<li>Windows: <a href="https://code.visualstudio.com/insiders/#win">Download the installer</a> and click through the setup, leaving the default options enabled (add to PATH, register the code command, etc.).</li>
 </ul>
 <p>Launch VS Code once to allow it to finish installing components.</p>
 </section>
@@ -264,9 +252,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="5.2" class="anchored" data-anchor-id="essential-extensions"><span class="header-section-number">5.2</span> Essential extensions</h2>
 <p>Open the Extensions view and install:</p>
 <ol type="1">
-<li><strong>Python</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">ms-python.python</a>) – language support and linting.</li>
-<li><strong>SQL Server (mssql)</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql">ms-mssql.mssql</a>) – database connections and query runner.</li>
-<li><strong>vscode-icons</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons">vscode-icons-team.vscode-icons</a>) – file icons for better visual identification.</li>
+<li>Python (<a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">ms-python.python</a>) – language support and linting.</li>
+<li>SQL Server (mssql) (<a href="https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql">ms-mssql.mssql</a>) – database connections and query runner.</li>
+<li>vscode-icons (<a href="https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons">vscode-icons-team.vscode-icons</a>) – file icons for better visual identification.</li>
 </ol>
 </section>
 <section id="enable-the-code-command" class="level2" data-number="5.3">
@@ -274,7 +262,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="macos-terminal" class="level3" data-number="5.3.1">
 <h3 data-number="5.3.1" class="anchored" data-anchor-id="macos-terminal"><span class="header-section-number">5.3.1</span> macOS Terminal</h3>
 <ul>
-<li><p>Launch VS Code, press <code>Cmd+Shift+P</code>, and run <strong>Shell Command: Install ‘code’ command in PATH</strong>.</p></li>
+<li><p>Launch VS Code, press <code>Cmd+Shift+P</code>, and run Shell Command: Install ‘code’ command in PATH.</p></li>
 <li><p>Close any open Terminal windows, then open a new one and run</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">code</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>to confirm the CLI is available.</p></li>
@@ -283,12 +271,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>to launch VS Code in that location.</p></li>
 </ul>
 </section>
-<section id="windows-git-bash" class="level3" data-number="5.3.2">
-<h3 data-number="5.3.2" class="anchored" data-anchor-id="windows-git-bash"><span class="header-section-number">5.3.2</span> Windows (Git Bash)</h3>
+<section id="windows" class="level3" data-number="5.3.2">
+<h3 data-number="5.3.2" class="anchored" data-anchor-id="windows"><span class="header-section-number">5.3.2</span> Windows</h3>
 <ul>
-<li><p>Run</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">code</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>in Git Bash; if it works, you’re done.</p></li>
+<li><p>From the folder you want to open, run this in Git Bash</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">code</span> .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>to launch VS Code in that location.</p></li>
 <li><p>If the command is missing, add VS Code’s <code>bin</code> directory to your Git Bash PATH by appending the snippet below to <code>~/.bashrc</code> (create the file if it doesn’t exist):</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="va">VS_CODE</span><span class="op">=</span><span class="st">"/c/Users/</span><span class="va">$USERNAME</span><span class="st">/AppData/Local/Programs/Microsoft VS Code/bin"</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="bu">[</span> <span class="ot">-d</span> <span class="st">"</span><span class="va">$VS_CODE</span><span class="st">"</span> <span class="bu">]</span> <span class="kw">&amp;&amp;</span> <span class="kw">[[</span> <span class="st">":</span><span class="va">$PATH</span><span class="st">:"</span> <span class="ot">!=</span> <span class="pp">*</span><span class="st">":</span><span class="va">$VS_CODE</span><span class="st">:"</span><span class="pp">*</span> <span class="kw">]];</span> <span class="cf">then</span></span>
@@ -296,19 +284,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="cf">fi</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p>Reload Git Bash</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> ~/.bashrc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Try again:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">code</span> .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ul>
-<p>Or open a new window and run</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">code</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Again. Once it prints a version number,</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">code</span> . </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>will open VS Code from that folder.</p>
 </section>
 </section>
 <section id="integrated-terminal-tips" class="level2" data-number="5.4">
 <h2 data-number="5.4" class="anchored" data-anchor-id="integrated-terminal-tips"><span class="header-section-number">5.4</span> Integrated terminal tips</h2>
 <ul>
 <li><p>Open the integrated terminal in VS Code. On Windows, set Git Bash as the default shell so every VS Code terminal matches the rest of this guide.</p></li>
-<li><p>Set your default terminal profile via <strong>Terminal</strong> &gt; <strong>Configure Default Profile…</strong> so that VS Code opens the same shell you used during installation.</p></li>
+<li><p>Set your default terminal profile via Terminal &gt; Configure Default Profile… so that VS Code opens the same shell you used during installation.</p></li>
 </ul>
 
 
@@ -716,13 +701,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./mac-setup.html" class="pagination-link" aria-label="Mac Setup">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mac Setup</span></span>
+      <a href="./mac-setup.html" class="pagination-link" aria-label="macOS">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">macOS</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./mssql-connection.html" class="pagination-link" aria-label="Create a SQL Server Connection">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Create a SQL Server Connection</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./mssql-connection.html" class="pagination-link" aria-label="Server Connection">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Server Connection</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -1,5 +1,5 @@
 ---
-title: "Mac Setup"
+title: "macOS"
 ---
 
 If you are using Mac, follow these steps.

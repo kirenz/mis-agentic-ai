@@ -8,8 +8,8 @@ Visual Studio Code acts as your code editor, terminal, and database explorer. Th
 
 If you haven't already, install Visual Studio Code:
 
-- **macOS:** Download the from [code.visualstudio.com](https://code.visualstudio.com/insiders/#osx) and drag **Visual Studio Code** into `Applications`.
-- **Windows:** [Download the installer](https://code.visualstudio.com/insiders/#win) and click through the setup, leaving the default options enabled (add to PATH, register the code command, etc.).
+- macOS: Download the from [code.visualstudio.com](https://code.visualstudio.com/insiders/#osx) and drag Visual Studio Code into `Applications`.
+- Windows: [Download the installer](https://code.visualstudio.com/insiders/#win) and click through the setup, leaving the default options enabled (add to PATH, register the code command, etc.).
 
 Launch VS Code once to allow it to finish installing components.
 
@@ -17,9 +17,9 @@ Launch VS Code once to allow it to finish installing components.
 
 Open the Extensions view and install:
 
-1. **Python** ([ms-python.python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)) – language support and linting.
-2. **SQL Server (mssql)** ([ms-mssql.mssql](https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql)) – database connections and query runner.
-3. **vscode-icons** ([vscode-icons-team.vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)) – file icons for better visual identification.
+1. Python ([ms-python.python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)) – language support and linting.
+2. SQL Server (mssql) ([ms-mssql.mssql](https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql)) – database connections and query runner.
+3. vscode-icons ([vscode-icons-team.vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)) – file icons for better visual identification.
 
 
 
@@ -27,7 +27,7 @@ Open the Extensions view and install:
 
 ### macOS Terminal
 
-- Launch VS Code, press `Cmd+Shift+P`, and run **Shell Command: Install 'code' command in PATH**.
+- Launch VS Code, press `Cmd+Shift+P`, and run Shell Command: Install 'code' command in PATH.
 - Close any open Terminal windows, then open a new one and run
 
   ```bash
@@ -43,15 +43,15 @@ Open the Extensions view and install:
   ```
   to launch VS Code in that location.
 
-### Windows (Git Bash)
+### Windows
 
-- Run 
+- From the folder you want to open, run this in Git Bash
 
   ```bash
-  code --version
-  ``` 
+  code .
+  ```
 
-  in Git Bash; if it works, you're done.
+  to launch VS Code in that location.  
 
 - If the command is missing, add VS Code's `bin` directory to your Git Bash PATH by appending the snippet below to `~/.bashrc` (create the file if it doesn't exist):
 
@@ -67,25 +67,15 @@ Open the Extensions view and install:
   ```bash
   source ~/.bashrc
   ```
+- Try again:
 
- Or open a new window and run 
-
- 
   ```bash
-  code --version
+  code .
   ```
-
-  Again. Once it prints a version number, 
-  
-  ```bash
-  code . 
-  ```
-
-  will open VS Code from that folder.
 
 
 ## Integrated terminal tips
 
 - Open the integrated terminal in VS Code. On Windows, set Git Bash as the default shell so every VS Code terminal matches the rest of this guide.
 
-- Set your default terminal profile via **Terminal** > **Configure Default Profile…** so that VS Code opens the same shell you used during installation.
+- Set your default terminal profile via Terminal > Configure Default Profile… so that VS Code opens the same shell you used during installation.
