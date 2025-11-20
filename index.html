@@ -289,7 +289,6 @@ ul.task-list li input[type="checkbox"] {
 <section id="data-architecture" class="level3" data-number="1.2.4">
 <h3 data-number="1.2.4" class="anchored" data-anchor-id="data-architecture"><span class="header-section-number">1.2.4</span> Data &amp; Architecture</h3>
 <p>We use the AdventureWorks sales database to simulate Global Bike Inc.’s data. It is a realistic dataset modeling a bicycle manufacturer. This serves as the shared backend for our agent.</p>
-<p>The system connects the user (via Gradio) to the data (SQL Server) using Gemini as the reasoning engine.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div>
@@ -360,6 +359,7 @@ flowchart LR
 </div>
 </div>
 <ul>
+<li>The system connects the user (via Gradio) to the data (SQL Server) using Gemini as the reasoning engine.</li>
 <li>AdventureWorks SQL Server: The single source of truth.</li>
 <li>Gemini: Translates natural language into SQL and generates insights.</li>
 <li>Gradio: Delivers data and visualizations interactively.</li>
