@@ -1,30 +1,14 @@
-# Syllabus
+# Project Description
 
-Welcome to the Agentic AI module of the Management Information Systems course!
-
-In this part of the course, we will explore the world of Agentic Artificial Intelligence. Unlike traditional AI that simply responds to prompts, Agentic AI systems can perceive their environment, reason about tasks, and take actions to achieve specific goals.
-
-## Course Schedule
-
-We will meet for three sessions to learn, build, and present our work.
-
-| Date | Topic |
-| -- | -- |
-| Week 3, Dec. 8 (14:00-16:00) | Project Kick-off & Fundamentals<br>Introduction to Agentic AI, tooling, and setting up our environment. |
-| Week 4, Dec. 15 (14:00-16:00) | Hands-on Development<br>Building a simple agent and exploring design patterns. |
-| Week 15, Mar. 9 (14:00-16:00) | Project Presentation<br>Final presentations, project reviews, and reflections. |
-
-## The Project: SQL Analyst Agent
-
-### Objective
+## Objective
 
 As AI consultants to Global Bike Inc. (GBI), the objective is to design and implement a Python-based generative AI solution that enables self-service analytics through an agent capable of generating SQL from natural language. The implementation should use Python as the primary language. All components must be included in a GitHub repository.
 
-### The Challenge
+## The Challenge
 
 GBI has a lot of data in their Microsoft SQL Server, but accessing it requires technical skills. Business users want to ask questions in plain English and get immediate answers.
 
-### The Solution
+## The Solution
 
 Build an AI agent that turns text questions from GBI into safe, correct SQL, executes the query on GBI’s Microsoft SQL Server, and automatically produces both a suitable visualization and a plain-language explanation. The user interface displays the generated SQL, a data table, the visualization, and the explanation.
 
@@ -39,79 +23,6 @@ The end-to-end interaction can follow, as an example, the following path:
 5.  **Presentation**: The interface then presents the generated SQL, a paginated data table, the selected visualization, and an explanatory summary.
 
 *Note: This flow is provided to illustrate the intended user experience; you may refine it as needed while preserving the core capability of safe text-to-SQL, execution, visualization, and explanation.*
-
-### Data & Architecture
-
-We use the AdventureWorks sales database to simulate Global Bike Inc.'s data. It is a realistic dataset modeling a bicycle manufacturer. This serves as the shared backend for our agent.
-
-The system connects the user (via Gradio) to the data (SQL Server) using Gemini as the reasoning engine.
-
-```{mermaid}
-%%| fig-align: center 
-
-%%{init: {
-  "theme": "base",
-  "flowchart": {
-    "curve": "basis",
-    "nodeSpacing": 50,
-    "rankSpacing": 50,
-    "htmlLabels": false,
-    "wrap": true,
-    "useMaxWidth": true
-  },
-  "themeVariables": {
-    "primaryColor": "#ffffff",
-    "primaryTextColor": "#374151",
-    "primaryBorderColor": "#e5e7eb",
-    "lineColor": "#9CA3AF",
-    "secondaryColor": "#f9fafb",
-    "tertiaryColor": "#ffffff",
-    "fontFamily": "system-ui",
-    "fontSize": "16px",
-    "nodeSpacing": 10,
-    "rankSpacing": 10
-  }
-}}%%
-
-flowchart LR
-    %% Increase node sizes with larger padding
-    subgraph Input[" "]
-        direction TB
-        A["User<br>Question"]
-        style A fill:#4F46E5,color:#ffffff,stroke:#4338CA,padding:20px
-    end
-
-    subgraph System[" "]
-        direction TB
-        B["Gemini<br>(Reasoning)"]
-        C["SQL Server<br>(Data)"]
-        style B fill:#ffffff,color:#374151,stroke:#e5e7eb,padding:20px
-        style C fill:#ffffff,color:#374151,stroke:#e5e7eb,padding:20px
-    end
-
-    subgraph Output[" "]
-        direction TB
-        D["Visuals<br>and Insights"]
-        style D fill:#4F46E5,color:#ffffff,stroke:#4338CA,padding:20px
-    end
-
-    %% Connections
-    A --> B
-    B -->|SQL| C
-    C -->|Data| D
-
-    %% Subgraph styling
-    style Input fill:#ffffff,stroke:#e5e7eb,color:#374151,stroke-width:1px,padding:50px
-    style System fill:#ffffff,stroke:#e5e7eb,color:#374151,stroke-width:1px,padding:50px
-    style Output fill:#ffffff,stroke:#e5e7eb,color:#374151,stroke-width:1px,padding:50px
-
-    %% Edge styling
-    linkStyle default stroke:#9CA3AF,stroke-width:2px
-```
-
-*   AdventureWorks SQL Server: The single source of truth.
-*   Gemini: Translates natural language into SQL and generates insights.
-*   Gradio: Delivers data and visualizations interactively.
 
 ## Deliverables
 

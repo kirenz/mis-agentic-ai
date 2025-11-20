@@ -1,5 +1,5 @@
 ---
-title: "Configure VS Code"
+title: "VS Code"
 ---
 
 Visual Studio Code acts as your code editor, terminal, and database explorer. This chapter covers the essential extensions and workspace settings for SQL Server work.
@@ -20,6 +20,7 @@ Open the Extensions view and install:
 1. **Python** ([ms-python.python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)) – language support and linting.
 2. **SQL Server (mssql)** ([ms-mssql.mssql](https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql)) – database connections and query runner.
 3. **vscode-icons** ([vscode-icons-team.vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)) – file icons for better visual identification.
+
 
 
 ## Enable the `code` command

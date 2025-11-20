@@ -8,7 +8,7 @@
 
 <meta name="author" content="Jan Kirenz">
 
-<title>7&nbsp; Configure VS Code – Agentic AI</title>
+<title>5&nbsp; VS Code – Agentic AI</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,7 +67,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./mssql-connection.html" rel="next">
-<link href="./mssql-windows.html" rel="prev">
+<link href="./mac-setup.html" rel="prev">
 <link href=".//images/logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -125,7 +125,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./preparation.html">Prepare Your Machine</a></li><li class="breadcrumb-item"><a href="./mssql-vscode.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Configure VS Code</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./accounts.html">Preparation</a></li><li class="breadcrumb-item"><a href="./mssql-vscode.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">VS Code</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -151,13 +151,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Welcome</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Welcome</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Introduction</span></a>
+ <span class="menu-text">Preparation</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -165,84 +165,44 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">intro.html</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">SQL Server</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./mssql-intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Microsoft SQL Server</span></span></a>
+  <a href="./accounts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Accounts</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./adventureworks.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">AdventureWorks</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Prepare Your Machine</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./preparation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prepare Your Machine</span></span></a>
+  <a href="./windows-setup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Windows Setup</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./mssql-macos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Server Tools for macOS</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./mssql-windows.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Server Tools for Windows</span></span></a>
+  <a href="./mac-setup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mac Setup</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mssql-vscode.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Configure VS Code</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">VS Code</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mssql-connection.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Create a SQL Server Connection</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Create a SQL Server Connection</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mssql-example.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Example SQL Server Connection</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Example SQL Server Connection</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sql-example.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">SQL Example Script</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">SQL Example Script</span></span></a>
   </div>
 </li>
       </ul>
@@ -257,23 +217,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#install-vs-code" id="toc-install-vs-code" class="nav-link active" data-scroll-target="#install-vs-code"><span class="header-section-number">7.1</span> Install VS Code</a></li>
-  <li><a href="#essential-extensions" id="toc-essential-extensions" class="nav-link" data-scroll-target="#essential-extensions"><span class="header-section-number">7.2</span> Essential extensions</a></li>
-  <li><a href="#enable-the-code-command" id="toc-enable-the-code-command" class="nav-link" data-scroll-target="#enable-the-code-command"><span class="header-section-number">7.3</span> Enable the <code>code</code> command</a>
+  <li><a href="#install-vs-code" id="toc-install-vs-code" class="nav-link active" data-scroll-target="#install-vs-code"><span class="header-section-number">5.1</span> Install VS Code</a></li>
+  <li><a href="#essential-extensions" id="toc-essential-extensions" class="nav-link" data-scroll-target="#essential-extensions"><span class="header-section-number">5.2</span> Essential extensions</a></li>
+  <li><a href="#enable-the-code-command" id="toc-enable-the-code-command" class="nav-link" data-scroll-target="#enable-the-code-command"><span class="header-section-number">5.3</span> Enable the <code>code</code> command</a>
   <ul class="collapse">
-  <li><a href="#macos-terminal" id="toc-macos-terminal" class="nav-link" data-scroll-target="#macos-terminal"><span class="header-section-number">7.3.1</span> macOS Terminal</a></li>
-  <li><a href="#windows-git-bash" id="toc-windows-git-bash" class="nav-link" data-scroll-target="#windows-git-bash"><span class="header-section-number">7.3.2</span> Windows (Git Bash)</a></li>
+  <li><a href="#macos-terminal" id="toc-macos-terminal" class="nav-link" data-scroll-target="#macos-terminal"><span class="header-section-number">5.3.1</span> macOS Terminal</a></li>
+  <li><a href="#windows-git-bash" id="toc-windows-git-bash" class="nav-link" data-scroll-target="#windows-git-bash"><span class="header-section-number">5.3.2</span> Windows (Git Bash)</a></li>
   </ul></li>
-  <li><a href="#integrated-terminal-tips" id="toc-integrated-terminal-tips" class="nav-link" data-scroll-target="#integrated-terminal-tips"><span class="header-section-number">7.4</span> Integrated terminal tips</a></li>
+  <li><a href="#integrated-terminal-tips" id="toc-integrated-terminal-tips" class="nav-link" data-scroll-target="#integrated-terminal-tips"><span class="header-section-number">5.4</span> Integrated terminal tips</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./preparation.html">Prepare Your Machine</a></li><li class="breadcrumb-item"><a href="./mssql-vscode.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Configure VS Code</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./accounts.html">Preparation</a></li><li class="breadcrumb-item"><a href="./mssql-vscode.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">VS Code</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Configure VS Code</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">VS Code</span></h1>
 </div>
 
 
@@ -291,8 +251,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>Visual Studio Code acts as your code editor, terminal, and database explorer. This chapter covers the essential extensions and workspace settings for SQL Server work.</p>
-<section id="install-vs-code" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="install-vs-code"><span class="header-section-number">7.1</span> Install VS Code</h2>
+<section id="install-vs-code" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="install-vs-code"><span class="header-section-number">5.1</span> Install VS Code</h2>
 <p>If you haven’t already, install Visual Studio Code:</p>
 <ul>
 <li><strong>macOS:</strong> Download the from <a href="https://code.visualstudio.com/insiders/#osx">code.visualstudio.com</a> and drag <strong>Visual Studio Code</strong> into <code>Applications</code>.</li>
@@ -300,8 +260,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <p>Launch VS Code once to allow it to finish installing components.</p>
 </section>
-<section id="essential-extensions" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="essential-extensions"><span class="header-section-number">7.2</span> Essential extensions</h2>
+<section id="essential-extensions" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="essential-extensions"><span class="header-section-number">5.2</span> Essential extensions</h2>
 <p>Open the Extensions view and install:</p>
 <ol type="1">
 <li><strong>Python</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">ms-python.python</a>) – language support and linting.</li>
@@ -309,10 +269,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>vscode-icons</strong> (<a href="https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons">vscode-icons-team.vscode-icons</a>) – file icons for better visual identification.</li>
 </ol>
 </section>
-<section id="enable-the-code-command" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="enable-the-code-command"><span class="header-section-number">7.3</span> Enable the <code>code</code> command</h2>
-<section id="macos-terminal" class="level3" data-number="7.3.1">
-<h3 data-number="7.3.1" class="anchored" data-anchor-id="macos-terminal"><span class="header-section-number">7.3.1</span> macOS Terminal</h3>
+<section id="enable-the-code-command" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="enable-the-code-command"><span class="header-section-number">5.3</span> Enable the <code>code</code> command</h2>
+<section id="macos-terminal" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="macos-terminal"><span class="header-section-number">5.3.1</span> macOS Terminal</h3>
 <ul>
 <li><p>Launch VS Code, press <code>Cmd+Shift+P</code>, and run <strong>Shell Command: Install ‘code’ command in PATH</strong>.</p></li>
 <li><p>Close any open Terminal windows, then open a new one and run</p>
@@ -323,8 +283,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>to launch VS Code in that location.</p></li>
 </ul>
 </section>
-<section id="windows-git-bash" class="level3" data-number="7.3.2">
-<h3 data-number="7.3.2" class="anchored" data-anchor-id="windows-git-bash"><span class="header-section-number">7.3.2</span> Windows (Git Bash)</h3>
+<section id="windows-git-bash" class="level3" data-number="5.3.2">
+<h3 data-number="5.3.2" class="anchored" data-anchor-id="windows-git-bash"><span class="header-section-number">5.3.2</span> Windows (Git Bash)</h3>
 <ul>
 <li><p>Run</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">code</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -344,8 +304,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>will open VS Code from that folder.</p>
 </section>
 </section>
-<section id="integrated-terminal-tips" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="integrated-terminal-tips"><span class="header-section-number">7.4</span> Integrated terminal tips</h2>
+<section id="integrated-terminal-tips" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="integrated-terminal-tips"><span class="header-section-number">5.4</span> Integrated terminal tips</h2>
 <ul>
 <li><p>Open the integrated terminal in VS Code. On Windows, set Git Bash as the default shell so every VS Code terminal matches the rest of this guide.</p></li>
 <li><p>Set your default terminal profile via <strong>Terminal</strong> &gt; <strong>Configure Default Profile…</strong> so that VS Code opens the same shell you used during installation.</p></li>
@@ -756,13 +716,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./mssql-windows.html" class="pagination-link" aria-label="Server Tools for Windows">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Server Tools for Windows</span></span>
+      <a href="./mac-setup.html" class="pagination-link" aria-label="Mac Setup">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mac Setup</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./mssql-connection.html" class="pagination-link" aria-label="Create a SQL Server Connection">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Create a SQL Server Connection</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Create a SQL Server Connection</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
