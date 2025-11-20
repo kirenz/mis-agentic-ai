@@ -8,7 +8,7 @@
 
 <meta name="author" content="Jan Kirenz">
 
-<title>10&nbsp; SQL Example Script – Agentic AI</title>
+<title>4&nbsp; Mac Setup – Agentic AI</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,7 +66,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./mssql-example.html" rel="prev">
+<link href="./mssql-vscode.html" rel="next">
+<link href="./windows-setup.html" rel="prev">
 <link href=".//images/logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -124,7 +125,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./preparation.html">Prepare Your Machine</a></li><li class="breadcrumb-item"><a href="./sql-example.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">SQL Example Script</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./accounts.html">Preparation</a></li><li class="breadcrumb-item"><a href="./mac-setup.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mac Setup</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -150,13 +151,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Welcome</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Welcome</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Introduction</span></a>
+ <span class="menu-text">Preparation</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -164,84 +165,44 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">intro.html</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">SQL Server</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./mssql-intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Microsoft SQL Server</span></span></a>
+  <a href="./accounts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Accounts</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./adventureworks.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">AdventureWorks</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Prepare Your Machine</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./preparation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prepare Your Machine</span></span></a>
+  <a href="./windows-setup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Windows Setup</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./mssql-macos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Server Tools for macOS</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./mssql-windows.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Server Tools for Windows</span></span></a>
+  <a href="./mac-setup.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mac Setup</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mssql-vscode.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Configure VS Code</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">VS Code</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mssql-connection.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Create a SQL Server Connection</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Create a SQL Server Connection</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mssql-example.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Example SQL Server Connection</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Example SQL Server Connection</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sql-example.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">SQL Example Script</span></span></a>
+  <a href="./sql-example.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">SQL Example Script</span></span></a>
   </div>
 </li>
       </ul>
@@ -256,24 +217,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#what-the-script-does" id="toc-what-the-script-does" class="nav-link active" data-scroll-target="#what-the-script-does"><span class="header-section-number">10.1</span> What the script does</a></li>
-  <li><a href="#step-by-step" id="toc-step-by-step" class="nav-link" data-scroll-target="#step-by-step"><span class="header-section-number">10.2</span> Step by step</a>
+  <li><a href="#basic-requirements" id="toc-basic-requirements" class="nav-link active" data-scroll-target="#basic-requirements"><span class="header-section-number">4.1</span> Basic requirements</a></li>
+  <li><a href="#command-line-basics" id="toc-command-line-basics" class="nav-link" data-scroll-target="#command-line-basics"><span class="header-section-number">4.2</span> Command-line basics</a></li>
+  <li><a href="#xcode" id="toc-xcode" class="nav-link" data-scroll-target="#xcode"><span class="header-section-number">4.3</span> Xcode</a></li>
+  <li><a href="#package-manager" id="toc-package-manager" class="nav-link" data-scroll-target="#package-manager"><span class="header-section-number">4.4</span> Package manager</a>
   <ul class="collapse">
-  <li><a href="#load-libraries-and-parse-the-.env" id="toc-load-libraries-and-parse-the-.env" class="nav-link" data-scroll-target="#load-libraries-and-parse-the-.env"><span class="header-section-number">10.2.1</span> 1. Load libraries and parse the <code>.env</code></a></li>
-  <li><a href="#prepare-connection-parameters" id="toc-prepare-connection-parameters" class="nav-link" data-scroll-target="#prepare-connection-parameters"><span class="header-section-number">10.2.2</span> 2. Prepare connection parameters</a></li>
-  <li><a href="#create-the-engine-and-test-the-connection" id="toc-create-the-engine-and-test-the-connection" class="nav-link" data-scroll-target="#create-the-engine-and-test-the-connection"><span class="header-section-number">10.2.3</span> 3. Create the engine and test the connection</a></li>
-  <li><a href="#sample-query-with-pandas" id="toc-sample-query-with-pandas" class="nav-link" data-scroll-target="#sample-query-with-pandas"><span class="header-section-number">10.2.4</span> 4. Sample query with <code>pandas</code></a></li>
+  <li><a href="#install-homebrew" id="toc-install-homebrew" class="nav-link" data-scroll-target="#install-homebrew"><span class="header-section-number">4.4.1</span> Install Homebrew</a></li>
+  <li><a href="#update-homebrew" id="toc-update-homebrew" class="nav-link" data-scroll-target="#update-homebrew"><span class="header-section-number">4.4.2</span> Update Homebrew</a></li>
   </ul></li>
-  <li><a href="#adapt-it-to-your-projects" id="toc-adapt-it-to-your-projects" class="nav-link" data-scroll-target="#adapt-it-to-your-projects"><span class="header-section-number">10.3</span> Adapt it to your projects</a></li>
+  <li><a href="#uv" id="toc-uv" class="nav-link" data-scroll-target="#uv"><span class="header-section-number">4.5</span> uv</a></li>
+  <li><a href="#server-tools" id="toc-server-tools" class="nav-link" data-scroll-target="#server-tools"><span class="header-section-number">4.6</span> Server Tools</a>
+  <ul class="collapse">
+  <li><a href="#install-server-tools" id="toc-install-server-tools" class="nav-link" data-scroll-target="#install-server-tools"><span class="header-section-number">4.6.1</span> Install Server Tools</a></li>
+  <li><a href="#test-the-installation" id="toc-test-the-installation" class="nav-link" data-scroll-target="#test-the-installation"><span class="header-section-number">4.6.2</span> Test the installation</a></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting"><span class="header-section-number">4.6.3</span> Troubleshooting</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./preparation.html">Prepare Your Machine</a></li><li class="breadcrumb-item"><a href="./sql-example.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">SQL Example Script</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./accounts.html">Preparation</a></li><li class="breadcrumb-item"><a href="./mac-setup.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mac Setup</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">SQL Example Script</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mac Setup</span></h1>
 </div>
 
 
@@ -290,95 +257,101 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This chapter walks through <code>sql_example.py</code>, a self-contained example that connects to SQL Server, runs a sample query, and prints the results with <code>pandas</code>. Use it as a template for your own analytics scripts once the database connection is working.</p>
-<section id="what-the-script-does" class="level2" data-number="10.1">
-<h2 data-number="10.1" class="anchored" data-anchor-id="what-the-script-does"><span class="header-section-number">10.1</span> What the script does</h2>
-<p>The script demonstrates an end-to-end query workflow:</p>
+<p>If you are using Mac, follow these steps.</p>
+<section id="basic-requirements" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="basic-requirements"><span class="header-section-number">4.1</span> Basic requirements</h2>
+<p>First, make sure your system is up to date.</p>
+<p>Open <code>System Settings</code> &gt; General &gt; Software Update.</p>
+</section>
+<section id="command-line-basics" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="command-line-basics"><span class="header-section-number">4.2</span> Command-line basics</h2>
+<p>Launch <strong>Terminal</strong> (Spotlight search for “Terminal”).</p>
+<p>Commands in this book assume the <code>zsh</code> shell, which is the default on modern macOS systems.</p>
+<p>Keep the terminal window open while you work through the chapters.</p>
+</section>
+<section id="xcode" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="xcode"><span class="header-section-number">4.3</span> Xcode</h2>
+<p>Apple’s Xcode command line tools are required to build and run some of the code.</p>
+<p>Install Xcode command line tools:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">xcode-select</span> <span class="at">--install</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>If you get the following message, you can skip this step:</p>
+<p><em>xcode-select: note: Command line tools are already installed. Use “Software Update” in System Settings or the softwareupdate command line interface to install updates</em></p>
+</section>
+<section id="package-manager" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="package-manager"><span class="header-section-number">4.4</span> Package manager</h2>
+<p><a href="https://brew.sh/"><strong>Homebrew</strong></a> downloads applications, command line tools, and libraries with one command. You avoid manual downloads and it keeps everything organized.</p>
+<section id="install-homebrew" class="level3" data-number="4.4.1">
+<h3 data-number="4.4.1" class="anchored" data-anchor-id="install-homebrew"><span class="header-section-number">4.4.1</span> Install Homebrew</h3>
+<ol type="1">
+<li>Open Terminal and run the official installer:</li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">/bin/bash</span> <span class="at">-c</span> <span class="st">"</span><span class="va">$(</span><span class="ex">curl</span> <span class="at">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="va">)</span><span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="2" type="1">
+<li><p>Enter your password when prompted (you won’t see any characters while typing).</p></li>
+<li><p>Press ENTER to continue</p></li>
+<li><p>When the script finishes, follow the on-screen instructions to add Homebrew to your shell profile (this step is required for <code>brew</code> to be found).</p></li>
+<li><p>Close the Terminal window.</p></li>
+<li><p>Open a new Terminal, then verify the installation:</p></li>
+</ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="update-homebrew" class="level3" data-number="4.4.2">
+<h3 data-number="4.4.2" class="anchored" data-anchor-id="update-homebrew"><span class="header-section-number">4.4.2</span> Update Homebrew</h3>
+<p>If you already have Homebrew installed, make sure everything is up to date:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> update</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Use <code>brew upgrade</code> to actually update installed packages.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> upgrade</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="uv" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="uv"><span class="header-section-number">4.5</span> uv</h2>
+<p>We use <strong>uv</strong>, a Python package manager that is extremely fast. It replaces <code>pip</code>, <code>poetry</code>, and <code>virtualenv</code>.</p>
+<p>To install uv, follow <a href="https://github.com/kirenz/uv-setup">this guide</a></p>
+</section>
+<section id="server-tools" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="server-tools"><span class="header-section-number">4.6</span> Server Tools</h2>
+<p>We need to install some drivers for Microsoft SQL Server.</p>
+<section id="install-server-tools" class="level3" data-number="4.6.1">
+<h3 data-number="4.6.1" class="anchored" data-anchor-id="install-server-tools"><span class="header-section-number">4.6.1</span> Install Server Tools</h3>
+<p>Open your Terminal and run:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> tap microsoft/mssql-release https://github.com/Microsoft/homebrew-mssql-release</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="va">ACCEPT_EULA</span><span class="op">=</span>Y <span class="ex">brew</span> install msodbcsql18 mssql-tools unixodbc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li>loads the required libraries (<code>dotenv</code>, <code>sqlalchemy</code>, <code>pandas</code>) and environment variables</li>
-<li>builds a secure connection string from the <code>.env</code> values</li>
-<li>creates an engine with <code>SQLAlchemy</code> and verifies the database connection</li>
-<li>runs a sample query and prints the first rows of a table</li>
+<li><code>msodbcsql18</code> is the latest Microsoft ODBC Driver for SQL Server.</li>
+<li><code>mssql-tools</code> installs <code>sqlcmd</code> and <code>bcp</code> for command-line access.</li>
+<li><code>unixodbc</code> provides the shared ODBC libraries Python will load.</li>
 </ul>
-<p>Always execute the script through your managed environment:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> run python sql_example.py</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><code>uv run</code> guarantees that the dependencies defined in <code>pyproject.toml</code> are loaded. Once the connection works, you can reuse the structure for your own queries.</p>
-</section>
-<section id="step-by-step" class="level2" data-number="10.2">
-<h2 data-number="10.2" class="anchored" data-anchor-id="step-by-step"><span class="header-section-number">10.2</span> Step by step</h2>
-<section id="load-libraries-and-parse-the-.env" class="level3" data-number="10.2.1">
-<h3 data-number="10.2.1" class="anchored" data-anchor-id="load-libraries-and-parse-the-.env"><span class="header-section-number">10.2.1</span> 1. Load libraries and parse the <code>.env</code></h3>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> urllib.parse</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sqlalchemy <span class="im">import</span> create_engine, text</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>load_dotenv()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><code>load_dotenv()</code> reads the connection parameters from the <code>.env</code> file so credentials stay out of the source code. If any of the required values (server, database, username, password) are missing, the script aborts with a clear error message—double-check the <code>.env</code> file first.</p>
-</section>
-<section id="prepare-connection-parameters" class="level3" data-number="10.2.2">
-<h3 data-number="10.2.2" class="anchored" data-anchor-id="prepare-connection-parameters"><span class="header-section-number">10.2.2</span> 2. Prepare connection parameters</h3>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>SERVER <span class="op">=</span> os.getenv(<span class="st">"MSSQL_SERVER"</span>)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>DATABASE <span class="op">=</span> os.getenv(<span class="st">"MSSQL_DATABASE"</span>)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>USERNAME <span class="op">=</span> os.getenv(<span class="st">"MSSQL_USERNAME"</span>)</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>PASSWORD <span class="op">=</span> os.getenv(<span class="st">"MSSQL_PASSWORD"</span>)</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>DRIVER <span class="op">=</span> os.getenv(<span class="st">"MSSQL_DRIVER"</span>, <span class="st">"ODBC Driver 18 for SQL Server"</span>)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>TRUST_CERT <span class="op">=</span> os.getenv(<span class="st">"TRUST_SERVER_CERTIFICATE"</span>, <span class="st">"false"</span>).lower() <span class="op">==</span> <span class="st">"true"</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>params <span class="op">=</span> urllib.parse.quote_plus(</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f"DRIVER=</span><span class="ch">{{</span><span class="sc">{</span>DRIVER<span class="sc">}</span><span class="ch">}}</span><span class="ss">;"</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f"SERVER=</span><span class="sc">{</span>SERVER<span class="sc">}</span><span class="ss">;"</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f"DATABASE=</span><span class="sc">{</span>DATABASE<span class="sc">}</span><span class="ss">;"</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f"UID=</span><span class="sc">{</span>USERNAME<span class="sc">}</span><span class="ss">;"</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f"PWD=</span><span class="sc">{</span>PASSWORD<span class="sc">}</span><span class="ss">;"</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f"TrustServerCertificate=</span><span class="sc">{</span><span class="st">'Yes'</span> <span class="cf">if</span> TRUST_CERT <span class="cf">else</span> <span class="st">'No'</span><span class="sc">}</span><span class="ss">;"</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The <code>ACCEPT_EULA=Y</code> prefix lets the installer know you accept the Microsoft end-user license agreement. Without it the install stops halfway through.</p>
+</div>
+</div>
+</div>
 <ul>
-<li><code>urllib.parse.quote_plus</code> escapes special characters in the password so the ODBC driver accepts the connection string.</li>
-<li>The <code>TrustServerCertificate</code> flag is controlled via the <code>.env</code> variable <code>TRUST_SERVER_CERTIFICATE</code> and defaults to off.</li>
+<li>Close and reopen Terminal.</li>
 </ul>
 </section>
-<section id="create-the-engine-and-test-the-connection" class="level3" data-number="10.2.3">
-<h3 data-number="10.2.3" class="anchored" data-anchor-id="create-the-engine-and-test-the-connection"><span class="header-section-number">10.2.3</span> 3. Create the engine and test the connection</h3>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>engine <span class="op">=</span> create_engine(<span class="ss">f"mssql+pyodbc:///?odbc_connect=</span><span class="sc">{</span>params<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> engine.<span class="ex">connect</span>() <span class="im">as</span> connection:</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    version <span class="op">=</span> connection.execute(text(<span class="st">"SELECT @@VERSION AS version"</span>))</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Connection successful!"</span>)</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"SQL Server version:"</span>, version.scalar())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>The engine manages the connection pool. The <code>with</code> block ensures the session closes properly after the query. The initial <code>SELECT @@VERSION</code> confirms that connectivity works and prints the SQL Server version that responded.</p>
+<section id="test-the-installation" class="level3" data-number="4.6.2">
+<h3 data-number="4.6.2" class="anchored" data-anchor-id="test-the-installation"><span class="header-section-number">4.6.2</span> Test the installation</h3>
+<p>Confirm that the ODBC driver registered correctly:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">odbcinst</span> <span class="at">-j</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Look for lines referencing <code>Driver Manager: unixODBC</code>.</p>
+<p>Your Mac is now ready to connect to SQL Server databases from VS Code and Python.</p>
 </section>
-<section id="sample-query-with-pandas" class="level3" data-number="10.2.4">
-<h3 data-number="10.2.4" class="anchored" data-anchor-id="sample-query-with-pandas"><span class="header-section-number">10.2.4</span> 4. Sample query with <code>pandas</code></h3>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>SAMPLE_QUERY <span class="op">=</span> text(</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"""</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="st">    SELECT TOP (10)</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="st">           ID_Product,</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="st">           Material_Description,</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="st">           Product_Category,</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="st">           Transfer_Price_EUR</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="st">    FROM dbo.Dim_Product</span></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="st">    ORDER BY ID_Product;</span></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="st">    """</span></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_sql(SAMPLE_QUERY, connection)</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Sample data:"</span>)</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><code>pd.read_sql</code> combines SQLAlchemy and <code>pandas</code> so you get a DataFrame directly. The call runs inside the same <code>with</code> block as the version query, meaning the connection closes automatically. Modify the SQL statement to match tables you can access. The goal is to see the data quickly without exporting to CSV first.</p>
-</section>
-</section>
-<section id="adapt-it-to-your-projects" class="level2" data-number="10.3">
-<h2 data-number="10.3" class="anchored" data-anchor-id="adapt-it-to-your-projects"><span class="header-section-number">10.3</span> Adapt it to your projects</h2>
-<ul>
-<li><strong>Explore new tables:</strong> Adjust the selected columns and the <code>FROM</code> clause to inspect other datasets.</li>
-<li><strong>Add additional checks:</strong> Chain multiple <code>text()</code> statements to run sanity checks in sequence.</li>
-<li><strong>Persist results:</strong> Append <code>df.to_csv(...)</code> or <code>df.to_parquet(...)</code> if you want to store query outputs for later.</li>
-</ul>
-<p>Keep the structure modular: one function that returns the engine, another for common queries, and dedicated modules for heavier analytics. That approach keeps the code testable and reusable in notebooks, ETL jobs, or dashboards.</p>
+<section id="troubleshooting" class="level3" data-number="4.6.3">
+<h3 data-number="4.6.3" class="anchored" data-anchor-id="troubleshooting"><span class="header-section-number">4.6.3</span> Troubleshooting</h3>
+<p>Some shells require an extra step to expose the SQL Server utilities. Add the following line to <code>~/.zshrc</code> or <code>~/.bash_profile</code> if <code>sqlcmd</code> is not found after reopening Terminal:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">PATH</span><span class="op">=</span><span class="st">"/opt/homebrew/opt/msodbcsql18/bin:/opt/homebrew/opt/mssql-tools/bin:</span><span class="va">$PATH</span><span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Intel Macs should use <code>/usr/local/opt/</code> instead of <code>/opt/homebrew/opt/</code>.</p>
+<p>Reload your shell:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> ~/.zshrc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -783,11 +756,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./mssql-example.html" class="pagination-link" aria-label="Example SQL Server Connection">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Example SQL Server Connection</span></span>
+      <a href="./windows-setup.html" class="pagination-link" aria-label="Windows Setup">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Windows Setup</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./mssql-vscode.html" class="pagination-link" aria-label="VS Code">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">VS Code</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
