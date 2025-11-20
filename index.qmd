@@ -2,7 +2,7 @@
 
 Welcome to the Agentic AI module of the Management Information Systems course!
 
-In this part of the course, we will explore the world of Agentic Artificial Intelligence. Unlike traditional AI that simply responds to prompts, Agentic AI systems can perceive their environment, reason about tasks, and take actions to achieve specific goals.
+In this part of the course, we will explore the world of Agentic Artificial Intelligence. Unlike traditional generaive AI that simply responds to prompts, Agentic AI systems can perceive their environment, reason about tasks, and take actions to achieve specific goals.
 
 ## Course Schedule
 
@@ -18,31 +18,19 @@ We will meet for three sessions to learn, build, and present our work.
 
 ### Objective
 
-As AI consultants to Global Bike Inc. (GBI), the objective is to design and implement a Python-based generative AI solution that enables self-service analytics through an agent capable of generating SQL from natural language. The implementation should use Python as the primary language. All components must be included in a GitHub repository.
+As AI consultants to Global Bike Inc. (GBI), the objective is to design and implement a Python-based generative AI solution that enables self-service analytics through an agent capable of generating SQL from natural language. 
+
+The implementation should use Python as the primary language. All components must be included in a GitHub repository.
 
 ### The Challenge
 
-GBI has a lot of data in their Microsoft SQL Server, but accessing it requires technical skills. Business users want to ask questions in plain English and get immediate answers.
+GBI has a lot of data in their Microsoft SQL Server, but accessing it requires technical skills. Business users want to ask questions in plain English and get immediate answers. 
 
 ### The Solution
 
 Build an AI agent that turns text questions from GBI into safe, correct SQL, executes the query on GBI’s Microsoft SQL Server, and automatically produces both a suitable visualization and a plain-language explanation. The user interface displays the generated SQL, a data table, the visualization, and the explanation.
 
 The end-to-end interaction can follow, as an example, the following path:
-
-1.  **User Input**: A user poses a question by text.
-2.  **Text-to-SQL**: The text question is converted by a schema-aware text-to-SQL model into a read-only, parameterized SQL statement.
-3.  **Execution**: The statement is executed against the SQL Server with timeouts, row limits, and guardrails in place.
-4.  **Analysis**: The resulting dataset is routed to:
-    *   A **visualization component** that selects an appropriate chart based on the data shape.
-    *   An **explanation component** that generates a faithful narrative grounded in the returned numbers.
-5.  **Presentation**: The interface then presents the generated SQL, a paginated data table, the selected visualization, and an explanatory summary.
-
-*Note: This flow is provided to illustrate the intended user experience; you may refine it as needed while preserving the core capability of safe text-to-SQL, execution, visualization, and explanation.*
-
-### Data & Architecture
-
-We use the AdventureWorks sales database to simulate Global Bike Inc.'s data. It is a realistic dataset modeling a bicycle manufacturer. This serves as the shared backend for our agent.
 
 
 ```{mermaid}
@@ -52,8 +40,8 @@ We use the AdventureWorks sales database to simulate Global Bike Inc.'s data. It
   "theme": "base",
   "flowchart": {
     "curve": "basis",
-    "nodeSpacing": 50,
-    "rankSpacing": 50,
+    "nodeSpacing": 80,
+    "rankSpacing": 80,
     "htmlLabels": false,
     "wrap": true,
     "useMaxWidth": true
@@ -61,58 +49,79 @@ We use the AdventureWorks sales database to simulate Global Bike Inc.'s data. It
   "themeVariables": {
     "primaryColor": "#ffffff",
     "primaryTextColor": "#374151",
-    "primaryBorderColor": "#e5e7eb",
-    "lineColor": "#9CA3AF",
+    "primaryBorderColor": "#4F46E5",
+    "lineColor": "#4F46E5",
     "secondaryColor": "#f9fafb",
     "tertiaryColor": "#ffffff",
     "fontFamily": "system-ui",
-    "fontSize": "16px",
-    "nodeSpacing": 10,
-    "rankSpacing": 10
+    "fontSize": "24px",
+    "nodeSpacing": 80,
+    "rankSpacing": 80
   }
 }}%%
 
 flowchart LR
     %% Increase node sizes with larger padding
-    subgraph Input[" "]
+    subgraph UserInterface["👤<br><br>User<br>Interface<br> Gradio"]
         direction TB
-        A["User<br>Question"]
-        style A fill:#4F46E5,color:#ffffff,stroke:#4338CA,padding:20px
+        A["1️⃣ Input: Natural Language Question (Text)"]
+        F["6️⃣ Output: SQL Query, Data Table, Visualization and Explanation"]
+        style A fill:#4F46E5,color:#ffffff,stroke:#4338CA,stroke-width:3px,padding:30px
+        style F fill:#4F46E5,color:#ffffff,stroke:#4338CA,stroke-width:3px,padding:30px
     end
 
-    subgraph System[" "]
+    subgraph AI2["🧠 Agent #1"]
         direction TB
-        B["Gemini<br>(Reasoning)"]
-        C["SQL Server<br>(Data)"]
-        style B fill:#ffffff,color:#374151,stroke:#e5e7eb,padding:20px
-        style C fill:#ffffff,color:#374151,stroke:#e5e7eb,padding:20px
+        B2["2️⃣ Natural Language to SQL"]
+        style B2 fill:#ffffff,color:#374151,stroke:#9CA3AF,stroke-width:2px,padding:30px
     end
 
-    subgraph Output[" "]
+    subgraph Database["Database (SQL-Server)"]
         direction TB
-        D["Visuals<br>and Insights"]
-        style D fill:#4F46E5,color:#ffffff,stroke:#4338CA,padding:20px
+        C["3️⃣ SQL Query Execution Data Retrieval"]
+        style C fill:#4F46E5,color:#ffffff,stroke:#4338CA,stroke-width:3px,padding:30px
+    end
+    
+    subgraph AI3["🧠 Agent #2"]
+        direction TB
+        D1["4️⃣ Chart Type Selection"]
+        style D1 fill:#ffffff,color:#374151,stroke:#9CA3AF,stroke-width:2px,padding:30px
     end
 
-    %% Connections
-    A --> B
-    B -->|SQL| C
-    C -->|Data| D
+    subgraph AI4["🧠 Agent #3"]
+        direction TB
+        D2["5️⃣ Data Explanation"]
+        style D2 fill:#ffffff,color:#374151,stroke:#9CA3AF,stroke-width:2px,padding:30px
+    end
 
-    %% Subgraph styling
-    style Input fill:#ffffff,stroke:#e5e7eb,color:#374151,stroke-width:1px,padding:50px
-    style System fill:#ffffff,stroke:#e5e7eb,color:#374151,stroke-width:1px,padding:50px
-    style Output fill:#ffffff,stroke:#e5e7eb,color:#374151,stroke-width:1px,padding:50px
+    %% Connection flow showing complete loop
 
-    %% Edge styling
-    linkStyle default stroke:#9CA3AF,stroke-width:2px
+    A -->|"Text"| B2
+    B2 --> C
+    C --> D1
+    C --> D2
+    D1 --> F
+    D2 --> F
+
+    %% Modern styling with different border visibility levels
+    style UserInterface fill:#ffffff,stroke:#4F46E5,color:#374151,stroke-width:3px,padding:50px,font-size:25px
+    style AI2 fill:#ffffff,stroke:#9CA3AF,color:#374151,stroke-width:1px,padding:50px
+    style Database fill:#ffffff,stroke:#4F46E5,color:#374151,stroke-width:3px,padding:50px, font-size:25px
+    style AI3 fill:#ffffff,stroke:#9CA3AF,color:#374151,stroke-width:1px,padding:50px
+    style AI4 fill:#ffffff,stroke:#9CA3AF,color:#374151,stroke-width:1px,padding:50px
+
+    %% Edge styling - make AI borders less prominent
+    linkStyle default stroke:#4F46E5,stroke-width:2px
 ```
 
+1.  User Input: A user poses a question by text.
+2.  Text-to-SQL: The text question is converted into a SQL statement.
+3.  Execution: The statement is executed against the SQL Server and the resulting dataset is routed to:
+4. A visualization component that selects an appropriate chart based on the data shape.
+5. An explanation component that generates a  narrative grounded in the returned numbers.
+6. Presentation: The interface then presents the generated SQL, a paginated data table, the selected visualization, and an explanatory summary.
 
-*  The system connects the user (via Gradio) to the data (SQL Server) using Gemini as the reasoning engine.
-*   AdventureWorks SQL Server: The single source of truth.
-*   Gemini: Translates natural language into SQL and generates insights.
-*   Gradio: Delivers data and visualizations interactively.
+*Note: This flow is provided to illustrate the intended user experience; you may refine it as needed while preserving the core capability of safe text-to-SQL, execution, visualization, and explanation.*
 
 ## Deliverables
 
@@ -120,8 +129,7 @@ Deliverables include a GitHub repository containing:
 
 *   All code (agents, guardrails, database connector, and UI).
 *   Configuration and prompt templates.
-*   Reproducible setup instructions using **uv** python package manager.
-*   A lightweight test suite that exercises benchmark questions and safety checks.
+*   Reproducible setup instructions using uv python package manager.
 *   A short explanation (one page) describing the architecture, prompts, safety measures, and evaluation procedure.
 
 ## Expected Business Impact
@@ -134,13 +142,13 @@ A single natural-language interface that:
 
 ## Technologies
 
-*   **Python**: The primary programming language.
-*   **Google Gemini**: For the intelligence (LLM).
-*   **Gradio**: To build the user interface.
-*   **Microsoft SQL Server**: The database.
-*   **VS Code**: The primary IDE.
-*   **GitHub**: To store and share your code.
-*   **uv**: For Python package management.
+*   Python: The primary programming language.
+*   Google Gemini: For the intelligence (LLM).
+*   Gradio: To build the user interface.
+*   Microsoft SQL Server: The database.
+*   VS Code: The primary IDE.
+*   GitHub: To store and share your code.
+*   uv: For Python package management.
 
 ## Getting Started
 
