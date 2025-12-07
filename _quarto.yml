@@ -28,12 +28,12 @@ book:
         - mac-setup.qmd
         - mssql-vscode.qmd
         - mssql-connection.qmd
-    # - part: "Agentic AI"
-    #   chapters:
-    #     - agentic-ai.qmd
-    # - part: "Gradio"
-    #   chapters:
-    #     - gradio.qmd        
+    - part: "Agentic AI"
+      chapters:
+        - agentic-introduction.qmd
+        - google-adk.qmd
+        - context-management.qmd
+     
 
 
 number-sections: true
