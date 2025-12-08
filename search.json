@@ -316,7 +316,7 @@
     "href": "agentic-introduction.html",
     "title": "7  Introduction",
     "section": "",
-    "text": "In this section, we will explore the concept of Agentic AI, which refers to artificial intelligence systems capable of autonomous decision-making and actions.\n\n\n\n\n\n\nPlease take a moment to complete the following survey before we begin:\n\nLink to anonymous survey\n\n\n\n\n\nIntroduction to Agentic AI, tooling, and setting up our environment:\n📄 Introduction to AI Agents",
+    "text": "In this section, we will explore the concept of Agentic AI, which refers to artificial intelligence systems capable of autonomous decision-making and actions.\nPlease take a moment to complete the following survey before we begin:\n\nLink to anonymous survey\n\n\nIntroduction to Agentic AI, tooling, and setting up our environment:\n\n\n\n\n\n\n📄 Introduction to AI Agents",
     "crumbs": [
       "Agentic AI",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Introduction</span>"
@@ -338,7 +338,18 @@
     "href": "context-management.html",
     "title": "9  Context Management",
     "section": "",
-    "text": "9.1 What is Context Management?\nContext management is a crucial aspect of building effective AI agents. It involves the strategies and techniques used to provide relevant information to the agent, enabling it to make informed decisions and perform tasks efficiently.\nProper context management ensures that the agent has access to the necessary data, knowledge, and situational awareness required for optimal performance.\n📄 Introduction to context management",
+    "text": "9.1 What is Context Management?\nContext management is a crucial aspect of building effective AI agents. It involves the strategies and techniques used to provide relevant information to the agent, enabling it to make informed decisions and perform tasks efficiently.\nProper context management ensures that the agent has access to the necessary data, knowledge, and situational awareness required for optimal performance.",
+    "crumbs": [
+      "Agentic AI",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Context Management</span>"
+    ]
+  },
+  {
+    "objectID": "context-management.html#what-is-context-management",
+    "href": "context-management.html#what-is-context-management",
+    "title": "9  Context Management",
+    "section": "",
+    "text": "📄 Introduction to context management",
     "crumbs": [
       "Agentic AI",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Context Management</span>"
@@ -349,7 +360,7 @@
     "href": "context-management.html#context-construction",
     "title": "9  Context Management",
     "section": "9.2 Context Construction",
-    "text": "9.2 Context Construction\nSystem Prompt, Prompt Engineering, Success Criteria & Evals:\n📄 Context Construction - Prompting",
+    "text": "9.2 Context Construction\nSystem Prompt, Prompt Engineering, Success Criteria & Evals:\n\n\n\n\n\n\n📄 Context Construction - Prompting",
     "crumbs": [
       "Agentic AI",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Context Management</span>"
