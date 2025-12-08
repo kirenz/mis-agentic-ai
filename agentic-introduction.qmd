@@ -2,20 +2,22 @@
 
 In this section, we will explore the concept of Agentic AI, which refers to artificial intelligence systems capable of autonomous decision-making and actions. 
 
-::: {.callout-note appearance="minimal"}
+
 
 Please take a moment to complete the following survey before we begin:
 
 - [Link to anonymous survey](https://forms.gle/ZTbXpSPoQeKMmjeZ9)
 
-:::
 
 
 ---
 
 Introduction to Agentic AI, tooling, and setting up our environment:
 
+::: {.callout-note appearance="minimal"}
+
 [📄 Introduction to AI Agents](https://kirenz.github.io/agentic-ai-introduction/introduction.html) 
 
+:::
 
 ---

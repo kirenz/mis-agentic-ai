@@ -9,13 +9,21 @@ Proper context management ensures that the agent has access to the necessary dat
 
 ## What is Context Management?
 
+::: {.callout-note appearance="minimal"}
+
 [📄 Introduction to context management](https://kirenz.github.io/agentic-ai-introduction/context-introduction.html) 
+
+:::
 
 ## Context Construction
 
 System Prompt, Prompt Engineering, Success Criteria & Evals:
 
+::: {.callout-note appearance="minimal"}
+
 [📄 Context Construction - Prompting](https://kirenz.github.io/agentic-ai-introduction/context-construction-prompt.html) 
 
+
+:::
 
 ---
