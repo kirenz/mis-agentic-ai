@@ -32,7 +32,7 @@ book:
       chapters:
         - agentic-introduction.qmd
         - google-adk.qmd
-        - context-management.qmd
+        - context-engineering.qmd
      
 
 

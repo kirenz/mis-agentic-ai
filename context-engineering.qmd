@@ -7,11 +7,11 @@ Proper context management ensures that the agent has access to the necessary dat
 
 ---
 
-## What is Context Management?
+## What is Context Engineering?
 
 ::: {.callout-note appearance="minimal"}
 
-[📄 Introduction to context management](https://kirenz.github.io/agentic-ai-introduction/context-introduction.html) 
+[📄 Introduction to context engineering](https://kirenz.github.io/agentic-ai-introduction/context-introduction.html) 
 
 :::
 
