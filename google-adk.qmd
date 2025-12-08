@@ -6,4 +6,8 @@ It provides tools and libraries that help developers build intelligent agents ca
 
 Get started with Google's Agent Development Kit (ADK) by exploring this starter repository: 
 
-💻 [First Agent Tutorial](https://github.com/kirenz/google-adk-first-agent)
+::: {.callout-tip appearance="minimal"}
+
+[💻  First Agent Tutorial](https://github.com/kirenz/google-adk-first-agent)
+
+:::
