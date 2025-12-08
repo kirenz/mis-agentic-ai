@@ -336,34 +336,34 @@
   {
     "objectID": "context-engineering.html",
     "href": "context-engineering.html",
-    "title": "9  Context Management",
+    "title": "9  Context Engineering",
     "section": "",
-    "text": "9.1 What is Context Engineering?\nContext management is a crucial aspect of building effective AI agents. It involves the strategies and techniques used to provide relevant information to the agent, enabling it to make informed decisions and perform tasks efficiently.\nProper context management ensures that the agent has access to the necessary data, knowledge, and situational awareness required for optimal performance.",
+    "text": "9.1 What is Context Engineering?\nContext engineering is a crucial aspect of building effective AI agents. It involves the strategies and techniques used to provide relevant information to the agent, enabling it to make informed decisions and perform tasks efficiently.\nProper context engineering ensures that the agent has access to the necessary data, knowledge, and situational awareness required for optimal performance.",
     "crumbs": [
       "Agentic AI",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Context Management</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Context Engineering</span>"
     ]
   },
   {
     "objectID": "context-engineering.html#what-is-context-engineering",
     "href": "context-engineering.html#what-is-context-engineering",
-    "title": "9  Context Management",
+    "title": "9  Context Engineering",
     "section": "",
     "text": "📄 Introduction to context engineering",
     "crumbs": [
       "Agentic AI",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Context Management</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Context Engineering</span>"
     ]
   },
   {
     "objectID": "context-engineering.html#context-construction",
     "href": "context-engineering.html#context-construction",
-    "title": "9  Context Management",
+    "title": "9  Context Engineering",
     "section": "9.2 Context Construction",
     "text": "9.2 Context Construction\nSystem Prompt, Prompt Engineering, Success Criteria & Evals:\n\n\n\n\n\n\n📄 Context Construction - Prompting",
     "crumbs": [
       "Agentic AI",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Context Management</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Context Engineering</span>"
     ]
   }
 ]
