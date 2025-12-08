@@ -14,9 +14,13 @@ Proper context engineering ensures that the agent has access to the necessary da
 
 :::
 
+**Recommended reading:**
+
+[Rajasekaran, P., Dixon, E., Ryan, C., & Hadfield, J. (2025). Effective context engineering for AI agents. Anthropic.](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
+
 ## Context Construction
 
-System Prompt, Prompt Engineering, Success Criteria & Evals:
+System Prompt & Prompt Engineering:
 
 ::: {.callout-note appearance="minimal"}
 
