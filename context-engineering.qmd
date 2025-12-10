@@ -24,8 +24,7 @@ System Prompt & Prompt Engineering:
 
 ::: {.callout-note appearance="minimal"}
 
-[📄 Context Construction - Prompting](https://kirenz.github.io/agentic-ai-introduction/context-construction-prompt.html) 
-
+[📄 Context Construction - Prompt Engineering](https://kirenz.github.io/agentic-ai-introduction/prompt-engineering.html) 
 
 :::
 
