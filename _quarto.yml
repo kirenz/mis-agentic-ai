@@ -33,6 +33,8 @@ book:
         - agentic-introduction.qmd
         - google-adk.qmd
         - context-engineering.qmd
+        - gradio.qmd
+        - bi-agent.qmd
      
 
 

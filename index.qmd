@@ -132,6 +132,15 @@ Deliverables include a GitHub repository containing:
 *   Reproducible setup instructions using uv python package manager.
 *   A short explanation (one page) describing the architecture, prompts, safety measures, and evaluation procedure.
 
+
+:::{.callout-note appearance="minimal"}
+You will be provided a template BI-Agent repository to get started quickly. 
+
+It's your responsibility to extend and adapt it to meet the project requirements. Especially focus on prompt engineering, Agent design (tool usage) safety measures, and user experience.
+
+Optimize the user interface to display all required outputs (SQL, data table, visualization, explanation) in a clear and user-friendly manner.
+:::
+
 ## Expected Business Impact
 
 A single natural-language interface that:
@@ -143,7 +152,7 @@ A single natural-language interface that:
 ## Technologies
 
 *   Python: The primary programming language.
-*   Google Gemini: For the intelligence (LLM).
+*   Google Gemini (Agent Development Kit): For the intelligence (LLM).
 *   Gradio: To build the user interface.
 *   Microsoft SQL Server: The database.
 *   VS Code: The primary IDE.

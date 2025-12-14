@@ -1,0 +1,24 @@
+# BI Agent
+
+This is an example starter template that demonstrates the use of a Business Intelligence (BI) agent for data analysis and visualization.
+
+
+## BI-Agent Template 
+
+:::{.callout-note appearance="minimal"}
+You will be provided a template BI-Agent repository to get started quickly. 
+
+It's your responsibility to extend and adapt it to meet the project requirements. Especially focus on prompt engineering, Agent design (tool usage) safety measures, and user experience.
+
+Optimize the user interface to display all required outputs (SQL, data table, visualization, explanation) in a clear and user-friendly manner.
+:::
+
+
+The template uses Googles ADK and Gradio.
+
+::: {.callout-tip appearance="minimal"}
+
+- [💻 GitHub Repo](https://github.com/kirenz/gradio-adk-agent)
+
+:::
+

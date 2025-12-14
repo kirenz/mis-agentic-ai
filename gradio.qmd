@@ -1,21 +1,42 @@
 # Gradio 
 
-Gradio is an open-source Python library that allows you to quickly create and share customizable web applications. 
+[Gradio](https://www.gradio.app/) is an open-source Python library that allows you to quickly create and share customizable machine learning web applications in Python. 
+
+
+![](images/gradio.png)
 
 It provides an easy-to-use interface for building interactive demos, enabling users to test and visualize model outputs in real-time.
 
-## Starter examples
+---
+
+## First Steps in Gradio 
 
 Learn more about Gradio by exploring this Gradio starter guide:
 
-- [GitHub Repo](https://github.com/kirenz/gradio-intro).
+::: {.callout-tip appearance="minimal"}
 
-## Gradio with Gemini
+- [💻 GitHub Repo](https://github.com/kirenz/gradio-first-steps).
 
-Example applications that combine Gradio with Gemini for natural language querying and data exploration:
+:::
 
-- [GitHub Repo](https://github.com/kirenz/gradio-gemini)
+---
 
+
+## Gradio with Google's ADK
+
+Example application that combines Gradio with a Google ADK agent ("time agent") to create an interactive web app:
+
+
+::: {.callout-tip appearance="minimal"}
+
+- [💻 GitHub Repo](https://github.com/kirenz/gradio-adk-intro)
+
+:::
+
+---
+
+
+<!-- 
 ## Gemini and SQL Server
 
 Explore these code examples that demonstrate how to use Gradio for various tasks:
@@ -28,4 +49,4 @@ Explore these code examples that demonstrate how to use Gradio for various tasks
 | SQL Assistant | Chat with your data, auto-generate SQL, optional plots & speech. | 
 | Sales Forecasting Lab | Filter, forecast (SARIMAX), and export artefacts. | 
 | PDF Briefing | Parameterised Quarto + Typst report with Gemini commentary. | 
-| PPT Deck | Placeholder for a Quarto → PowerPoint workflow. |
+| PPT Deck | Placeholder for a Quarto → PowerPoint workflow. | -->
