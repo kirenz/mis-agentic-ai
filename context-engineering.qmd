@@ -20,7 +20,7 @@ Proper context engineering ensures that the agent has access to the necessary da
 
 ## Context Construction
 
-System Prompt & Prompt Engineering:
+### Prompt Engineering:
 
 ::: {.callout-note appearance="minimal"}
 
@@ -28,4 +28,24 @@ System Prompt & Prompt Engineering:
 
 :::
 
----
+
+### Tool Integration
+
+::: {.callout-note appearance="minimal"}
+
+[📄 Tools - Introduction](https://kirenz.github.io/agentic-ai-introduction/tools-introduction.html)    
+
+:::
+
+
+::: {.callout-note appearance="minimal"}
+
+[📄 Tools - Functions, APIs, Built-in Tools](https://kirenz.github.io/agentic-ai-introduction/tools-functions-apis.html)  
+
+:::
+
+::: {.callout-note appearance="minimal"}
+
+[📄 Tools - Agents as Tools and Subagents](https://kirenz.github.io/agentic-ai-introduction/tools-agents-subagents.html) 
+
+:::

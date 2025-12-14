@@ -4,10 +4,56 @@ The Google Agent Development Kit (ADK) is a framework designed to facilitate the
 
 It provides tools and libraries that help developers build intelligent agents capable of performing complex tasks autonomously.
 
+## First Agent Tutorial
+
 Get started with Google's Agent Development Kit (ADK) by exploring this starter repository: 
 
 ::: {.callout-tip appearance="minimal"}
 
 [💻  First Agent Tutorial](https://github.com/kirenz/google-adk-first-agent)
+
+:::
+
+## Introduction and Core Concepts
+
+In this section, you'll find an introduction to the Google ADK along with its core components:
+
+::: {.callout-note appearance="minimal"}
+[Introduction](https://kirenz.github.io/agentic-ai-introduction/google-adk-introduction.html) 
+:::
+
+::: {.callout-note appearance="minimal"}
+
+[Core Components](https://kirenz.github.io/agentic-ai-introduction/google-adk-core-components.html) 
+:::
+
+
+## Agent Types and Workflows
+
+Learn about the different types of agents and workflows supported by the Google ADK:
+
+::: {.callout-note appearance="minimal"}
+[Large Language Agent](https://kirenz.github.io/agentic-ai-introduction/google-adk-llm.html) 
+:::
+
+::: {.callout-note appearance="minimal"}
+
+[Workflow Agents](https://kirenz.github.io/agentic-ai-introduction/google-adk-workflow-agents.html)
+:::
+
+
+## Advanced Usage
+
+This section covers advanced topics for using the Google ADK:
+
+::: {.callout-note appearance="minimal"}
+
+[Running Your Agent Programmatically](https://kirenz.github.io/agentic-ai-introduction/google-adk-llm-run.html) 
+:::
+
+
+::: {.callout-note appearance="minimal"}
+
+[Advanced Agent Configuration](https://kirenz.github.io/agentic-ai-introduction/google-adk-advanced-configuration.html)
 
 :::
