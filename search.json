@@ -327,7 +327,51 @@
     "href": "google-adk.html",
     "title": "8  Google ADK",
     "section": "",
-    "text": "The Google Agent Development Kit (ADK) is a framework designed to facilitate the creation, deployment, and management of AI agents.\nIt provides tools and libraries that help developers build intelligent agents capable of performing complex tasks autonomously.\nGet started with Google’s Agent Development Kit (ADK) by exploring this starter repository:\n\n\n\n\n\n\n💻 First Agent Tutorial",
+    "text": "8.1 First Agent Tutorial\nThe Google Agent Development Kit (ADK) is a framework designed to facilitate the creation, deployment, and management of AI agents.\nIt provides tools and libraries that help developers build intelligent agents capable of performing complex tasks autonomously.\nGet started with Google’s Agent Development Kit (ADK) by exploring this starter repository:",
+    "crumbs": [
+      "Agentic AI",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Google ADK</span>"
+    ]
+  },
+  {
+    "objectID": "google-adk.html#first-agent-tutorial",
+    "href": "google-adk.html#first-agent-tutorial",
+    "title": "8  Google ADK",
+    "section": "",
+    "text": "💻 First Agent Tutorial",
+    "crumbs": [
+      "Agentic AI",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Google ADK</span>"
+    ]
+  },
+  {
+    "objectID": "google-adk.html#introduction-and-core-concepts",
+    "href": "google-adk.html#introduction-and-core-concepts",
+    "title": "8  Google ADK",
+    "section": "8.2 Introduction and Core Concepts",
+    "text": "8.2 Introduction and Core Concepts\nIn this section, you’ll find an introduction to the Google ADK along with its core components:\n\n\n\n\n\n\nIntroduction\n\n\n\n\n\n\n\n\n\nCore Components",
+    "crumbs": [
+      "Agentic AI",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Google ADK</span>"
+    ]
+  },
+  {
+    "objectID": "google-adk.html#agent-types-and-workflows",
+    "href": "google-adk.html#agent-types-and-workflows",
+    "title": "8  Google ADK",
+    "section": "8.3 Agent Types and Workflows",
+    "text": "8.3 Agent Types and Workflows\nLearn about the different types of agents and workflows supported by the Google ADK:\n\n\n\n\n\n\nLarge Language Agent\n\n\n\n\n\n\n\n\n\nWorkflow Agents",
+    "crumbs": [
+      "Agentic AI",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Google ADK</span>"
+    ]
+  },
+  {
+    "objectID": "google-adk.html#advanced-usage",
+    "href": "google-adk.html#advanced-usage",
+    "title": "8  Google ADK",
+    "section": "8.4 Advanced Usage",
+    "text": "8.4 Advanced Usage\nThis section covers advanced topics for using the Google ADK:\n\n\n\n\n\n\nRunning Your Agent Programmatically\n\n\n\n\n\n\n\n\n\nAdvanced Agent Configuration",
     "crumbs": [
       "Agentic AI",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Google ADK</span>"
@@ -360,7 +404,7 @@
     "href": "context-engineering.html#context-construction",
     "title": "9  Context Engineering",
     "section": "9.2 Context Construction",
-    "text": "9.2 Context Construction\nSystem Prompt & Prompt Engineering:\n\n\n\n\n\n\n📄 Context Construction - Prompt Engineering",
+    "text": "9.2 Context Construction\n\n9.2.1 Prompt Engineering:\n\n\n\n\n\n\n📄 Context Construction - Prompt Engineering\n\n\n\n\n\n9.2.2 Tool Integration\n\n\n\n\n\n\n📄 Tools - Introduction\n\n\n\n\n\n\n\n\n\n📄 Tools - Functions, APIs, Built-in Tools\n\n\n\n\n\n\n\n\n\n📄 Tools - Agents as Tools and Subagents",
     "crumbs": [
       "Agentic AI",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Context Engineering</span>"
