@@ -8,7 +8,7 @@
 
 <meta name="author" content="Jan Kirenz">
 
-<title>2&nbsp; Accounts – Agentic AI</title>
+<title>10&nbsp; Gradio – Agentic AI</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./windows-setup.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./bi-agent.html" rel="next">
+<link href="./context-engineering.html" rel="prev">
 <link href=".//images/logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -91,7 +91,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./accounts.html">Preparation</a></li><li class="breadcrumb-item"><a href="./accounts.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Accounts</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./agentic-introduction.html">Agentic AI</a></li><li class="breadcrumb-item"><a href="./gradio.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Gradio</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -131,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./accounts.html" class="sidebar-item-text sidebar-link active">
+  <a href="./accounts.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Accounts</span></span></a>
   </div>
 </li>
@@ -190,7 +190,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./gradio.html" class="sidebar-item-text sidebar-link">
+  <a href="./gradio.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Gradio</span></span></a>
   </div>
 </li>
@@ -212,18 +212,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#google-account" id="toc-google-account" class="nav-link active" data-scroll-target="#google-account"><span class="header-section-number">2.1</span> Google Account</a></li>
-  <li><a href="#google-api-key" id="toc-google-api-key" class="nav-link" data-scroll-target="#google-api-key"><span class="header-section-number">2.2</span> Google API Key</a></li>
-  <li><a href="#github-account" id="toc-github-account" class="nav-link" data-scroll-target="#github-account"><span class="header-section-number">2.3</span> GitHub Account</a></li>
+  <li><a href="#first-steps-in-gradio" id="toc-first-steps-in-gradio" class="nav-link active" data-scroll-target="#first-steps-in-gradio"><span class="header-section-number">10.1</span> First Steps in Gradio</a></li>
+  <li><a href="#gradio-with-googles-adk" id="toc-gradio-with-googles-adk" class="nav-link" data-scroll-target="#gradio-with-googles-adk"><span class="header-section-number">10.2</span> Gradio with Google’s ADK</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./accounts.html">Preparation</a></li><li class="breadcrumb-item"><a href="./accounts.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Accounts</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./agentic-introduction.html">Agentic AI</a></li><li class="breadcrumb-item"><a href="./gradio.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Gradio</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Accounts</span></h1>
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Gradio</span></h1>
 </div>
 
 
@@ -240,41 +239,57 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>To be ready for our first session, please ensure you have the following accounts.</p>
-<section id="google-account" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="google-account"><span class="header-section-number">2.1</span> Google Account</h2>
-<p>You will need a Google account to access Google’s AI tools:</p>
-<ul>
-<li><a href="https://www.google.com/intl/en/account/about/">Create Google Account</a></li>
-</ul>
-</section>
-<section id="google-api-key" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="google-api-key"><span class="header-section-number">2.2</span> Google API Key</h2>
-<p>To use Google’s AI model Gemini, you need an API key.</p>
-<ul>
-<li>Go to <a href="https://aistudio.google.com/app/apikey">Google AI Studio</a></li>
-<li>Click “Create API key” (at the bottom left of the page).</li>
-<li>Follow the instructions to create the API key.</li>
-</ul>
-<p>We come back to this step in a later chapter.</p>
-</section>
-<section id="github-account" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="github-account"><span class="header-section-number">2.3</span> GitHub Account</h2>
-<p>You will need a GitHub account to access GitHub.</p>
-<div class="callout callout-style-simple callout-note">
+<p><a href="https://www.gradio.app/">Gradio</a> is an open-source Python library that allows you to quickly create and share customizable machine learning web applications in Python.</p>
+<p><img src="images/gradio.png" class="img-fluid"></p>
+<p>It provides an easy-to-use interface for building interactive demos, enabling users to test and visualize model outputs in real-time.</p>
+<hr>
+<section id="first-steps-in-gradio" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="first-steps-in-gradio"><span class="header-section-number">10.1</span> First Steps in Gradio</h2>
+<p>Learn more about Gradio by exploring this Gradio starter guide:</p>
+<div class="callout callout-style-simple callout-tip no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>Use your KMITL e-mail address to create a GitHub account. If you already have an account, simply add your KMITL e-mail address to your account. This will allow you to apply for the GitHub Student Developer Pack.</p>
-</div>
-</div>
-</div>
 <ul>
-<li><p><a href="https://github.com/join">Create GitHub Account</a></p></li>
-<li><p>You may also sign up for the <a href="https://education.github.com/pack">GitHub Student Developer Pack</a> to get access to GitHub Pro for free and additional benefits like GitHub Copilot.</p></li>
+<li><a href="https://github.com/kirenz/gradio-first-steps">💻 GitHub Repo</a>.</li>
 </ul>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="gradio-with-googles-adk" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="gradio-with-googles-adk"><span class="header-section-number">10.2</span> Gradio with Google’s ADK</h2>
+<p>Example application that combines Gradio with a Google ADK agent (“time agent”) to create an interactive web app:</p>
+<div class="callout callout-style-simple callout-tip no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<ul>
+<li><a href="https://github.com/kirenz/gradio-adk-intro">💻 GitHub Repo</a></li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+<!-- 
+## Gemini and SQL Server
+
+Explore these code examples that demonstrate how to use Gradio for various tasks:
+
+- [GitHub Repo](https://github.com/kirenz/gradio-mssql-gemini)
+
+
+| Experience | What happens | 
+| --- | --- | 
+| SQL Assistant | Chat with your data, auto-generate SQL, optional plots & speech. | 
+| Sales Forecasting Lab | Filter, forecast (SARIMAX), and export artefacts. | 
+| PDF Briefing | Parameterised Quarto + Typst report with Gemini commentary. | 
+| PPT Deck | Placeholder for a Quarto → PowerPoint workflow. | -->
 
 
 </section>
@@ -682,13 +697,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Syllabus">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Syllabus</span></span>
+      <a href="./context-engineering.html" class="pagination-link" aria-label="Context Engineering">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Context Engineering</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./windows-setup.html" class="pagination-link" aria-label="Windows">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Windows</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./bi-agent.html" class="pagination-link" aria-label="BI Agent">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">BI Agent</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

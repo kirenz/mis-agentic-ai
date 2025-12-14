@@ -34,7 +34,7 @@
     "href": "index.html#deliverables",
     "title": "Agentic AI",
     "section": "1.3 Deliverables",
-    "text": "1.3 Deliverables\nDeliverables include a GitHub repository containing:\n\nAll code (agents, guardrails, database connector, and UI).\nConfiguration and prompt templates.\nReproducible setup instructions using uv python package manager.\nA short explanation (one page) describing the architecture, prompts, safety measures, and evaluation procedure.",
+    "text": "1.3 Deliverables\nDeliverables include a GitHub repository containing:\n\nAll code (agents, guardrails, database connector, and UI).\nConfiguration and prompt templates.\nReproducible setup instructions using uv python package manager.\nA short explanation (one page) describing the architecture, prompts, safety measures, and evaluation procedure.\n\n\n\n\n\n\n\nYou will be provided a template BI-Agent repository to get started quickly.\nIt’s your responsibility to extend and adapt it to meet the project requirements. Especially focus on prompt engineering, Agent design (tool usage) safety measures, and user experience.\nOptimize the user interface to display all required outputs (SQL, data table, visualization, explanation) in a clear and user-friendly manner.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Syllabus</span>"
     ]
@@ -54,7 +54,7 @@
     "href": "index.html#technologies",
     "title": "Agentic AI",
     "section": "1.5 Technologies",
-    "text": "1.5 Technologies\n\nPython: The primary programming language.\nGoogle Gemini: For the intelligence (LLM).\nGradio: To build the user interface.\nMicrosoft SQL Server: The database.\nVS Code: The primary IDE.\nGitHub: To store and share your code.\nuv: For Python package management.",
+    "text": "1.5 Technologies\n\nPython: The primary programming language.\nGoogle Gemini (Agent Development Kit): For the intelligence (LLM).\nGradio: To build the user interface.\nMicrosoft SQL Server: The database.\nVS Code: The primary IDE.\nGitHub: To store and share your code.\nuv: For Python package management.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Syllabus</span>"
     ]
@@ -364,6 +364,61 @@
     "crumbs": [
       "Agentic AI",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Context Engineering</span>"
+    ]
+  },
+  {
+    "objectID": "gradio.html",
+    "href": "gradio.html",
+    "title": "10  Gradio",
+    "section": "",
+    "text": "10.1 First Steps in Gradio\nGradio is an open-source Python library that allows you to quickly create and share customizable machine learning web applications in Python.\nIt provides an easy-to-use interface for building interactive demos, enabling users to test and visualize model outputs in real-time.\nLearn more about Gradio by exploring this Gradio starter guide:",
+    "crumbs": [
+      "Agentic AI",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Gradio</span>"
+    ]
+  },
+  {
+    "objectID": "gradio.html#first-steps-in-gradio",
+    "href": "gradio.html#first-steps-in-gradio",
+    "title": "10  Gradio",
+    "section": "",
+    "text": "💻 GitHub Repo.",
+    "crumbs": [
+      "Agentic AI",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Gradio</span>"
+    ]
+  },
+  {
+    "objectID": "gradio.html#gradio-with-googles-adk",
+    "href": "gradio.html#gradio-with-googles-adk",
+    "title": "10  Gradio",
+    "section": "10.2 Gradio with Google’s ADK",
+    "text": "10.2 Gradio with Google’s ADK\nExample application that combines Gradio with a Google ADK agent (“time agent”) to create an interactive web app:\n\n\n\n\n\n\n\n💻 GitHub Repo",
+    "crumbs": [
+      "Agentic AI",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Gradio</span>"
+    ]
+  },
+  {
+    "objectID": "bi-agent.html",
+    "href": "bi-agent.html",
+    "title": "11  BI Agent",
+    "section": "",
+    "text": "11.1 BI-Agent Template\nThis is an example starter template that demonstrates the use of a Business Intelligence (BI) agent for data analysis and visualization.\nThe template uses Googles ADK and Gradio.",
+    "crumbs": [
+      "Agentic AI",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>BI Agent</span>"
+    ]
+  },
+  {
+    "objectID": "bi-agent.html#bi-agent-template",
+    "href": "bi-agent.html#bi-agent-template",
+    "title": "11  BI Agent",
+    "section": "",
+    "text": "You will be provided a template BI-Agent repository to get started quickly.\nIt’s your responsibility to extend and adapt it to meet the project requirements. Especially focus on prompt engineering, Agent design (tool usage) safety measures, and user experience.\nOptimize the user interface to display all required outputs (SQL, data table, visualization, explanation) in a clear and user-friendly manner.\n\n\n\n\n\n\n\n\n\n\n\n💻 GitHub Repo",
+    "crumbs": [
+      "Agentic AI",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>BI Agent</span>"
     ]
   }
 ]

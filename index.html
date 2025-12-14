@@ -190,6 +190,18 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Context Engineering</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./gradio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Gradio</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bi-agent.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">BI Agent</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -397,6 +409,18 @@ flowchart LR
 <li>Reproducible setup instructions using uv python package manager.</li>
 <li>A short explanation (one page) describing the architecture, prompts, safety measures, and evaluation procedure.</li>
 </ul>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>You will be provided a template BI-Agent repository to get started quickly.</p>
+<p>It’s your responsibility to extend and adapt it to meet the project requirements. Especially focus on prompt engineering, Agent design (tool usage) safety measures, and user experience.</p>
+<p>Optimize the user interface to display all required outputs (SQL, data table, visualization, explanation) in a clear and user-friendly manner.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="expected-business-impact" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="expected-business-impact"><span class="header-section-number">1.4</span> Expected Business Impact</h2>
@@ -411,7 +435,7 @@ flowchart LR
 <h2 data-number="1.5" class="anchored" data-anchor-id="technologies"><span class="header-section-number">1.5</span> Technologies</h2>
 <ul>
 <li>Python: The primary programming language.</li>
-<li>Google Gemini: For the intelligence (LLM).</li>
+<li>Google Gemini (Agent Development Kit): For the intelligence (LLM).</li>
 <li>Gradio: To build the user interface.</li>
 <li>Microsoft SQL Server: The database.</li>
 <li>VS Code: The primary IDE.</li>
