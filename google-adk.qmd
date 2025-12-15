@@ -4,6 +4,10 @@ The Google Agent Development Kit (ADK) is a framework designed to facilitate the
 
 It provides tools and libraries that help developers build intelligent agents capable of performing complex tasks autonomously.
 
+
+Official documentation: [Google ADK Documentation](https://google.github.io/adk-docs/)
+
+
 ## First Agent Tutorial
 
 Get started with Google's Agent Development Kit (ADK) by exploring this starter repository: 
@@ -51,6 +55,11 @@ This section covers advanced topics for using the Google ADK:
 [Running Your Agent Programmatically](https://kirenz.github.io/agentic-ai-introduction/google-adk-llm-run.html) 
 :::
 
+<p class="text-center">
+  <a class="btn btn-primary" href="your-notebook.ipynb" download role="button">
+    <i class="bi bi-journal-code"></i> Download Notebook
+  </a>
+</p>
 
 ::: {.callout-note appearance="minimal"}
 
