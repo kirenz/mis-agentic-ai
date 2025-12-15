@@ -327,7 +327,7 @@
     "href": "google-adk.html",
     "title": "8  Google ADK",
     "section": "",
-    "text": "8.1 First Agent Tutorial\nThe Google Agent Development Kit (ADK) is a framework designed to facilitate the creation, deployment, and management of AI agents.\nIt provides tools and libraries that help developers build intelligent agents capable of performing complex tasks autonomously.\nOfficial documentation: Google ADK Documentation\nGet started with Google’s Agent Development Kit (ADK) by exploring this starter repository:",
+    "text": "8.1 First Agent Tutorial\nThe Google Agent Development Kit (ADK) is a framework designed to facilitate the creation, deployment, and management of AI agents.\nIt provides tools and libraries that help developers build intelligent agents capable of performing complex tasks autonomously.\nGet started with Google’s Agent Development Kit (ADK) by exploring this starter repository:",
     "crumbs": [
       "Agentic AI",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Google ADK</span>"
