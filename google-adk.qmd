@@ -33,17 +33,21 @@ In this section, you'll find an introduction to the Google ADK along with its co
 :::
 
 
-## Agent Types and Workflows
+## Agent Types, Multi-Agents and Workflows
 
-Learn about the different types of agents and workflows supported by the Google ADK:
+Learn about the different types of agents and workflows supported by the Google ADK.
+
+The basic building block is the Large Language Agent (LLM Agent), which can be extended with various tools and capabilities.
+
+Workflow Agents allow you to create more complex agents by orchestrating multiple steps and actions. They include:
+
+- SequentialAgent 
+- ParallelAgent 
+- LoopAgent 
+
 
 ::: {.callout-note appearance="minimal"}
-[Large Language Agent](https://kirenz.github.io/agentic-ai-introduction/google-adk-llm.html) 
-:::
-
-::: {.callout-note appearance="minimal"}
-
-[Workflow Agents](https://kirenz.github.io/agentic-ai-introduction/google-adk-workflow-agents.html)
+[Agent Types](https://kirenz.github.io/agentic-ai-introduction/google-adk-llm.html) 
 :::
 
 
