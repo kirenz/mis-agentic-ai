@@ -356,11 +356,11 @@
     ]
   },
   {
-    "objectID": "google-adk.html#agent-types-and-workflows",
-    "href": "google-adk.html#agent-types-and-workflows",
+    "objectID": "google-adk.html#agent-types-multi-agents-and-workflows",
+    "href": "google-adk.html#agent-types-multi-agents-and-workflows",
     "title": "8  Google ADK",
-    "section": "8.3 Agent Types and Workflows",
-    "text": "8.3 Agent Types and Workflows\nLearn about the different types of agents and workflows supported by the Google ADK:\n\n\n\n\n\n\nLarge Language Agent\n\n\n\n\n\n\n\n\n\nWorkflow Agents",
+    "section": "8.3 Agent Types, Multi-Agents and Workflows",
+    "text": "8.3 Agent Types, Multi-Agents and Workflows\nLearn about the different types of agents and workflows supported by the Google ADK.\nThe basic building block is the Large Language Agent (LLM Agent), which can be extended with various tools and capabilities.\nWorkflow Agents allow you to create more complex agents by orchestrating multiple steps and actions. They include:\n\nSequentialAgent\nParallelAgent\nLoopAgent\n\n\n\n\n\n\n\nAgent Types",
     "crumbs": [
       "Agentic AI",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Google ADK</span>"
