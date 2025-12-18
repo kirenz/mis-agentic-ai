@@ -46,6 +46,7 @@ Workflow Agents allow you to create more complex agents by orchestrating multipl
 - LoopAgent 
 
 
+
 ::: {.callout-note appearance="minimal"}
 [Agent Types](https://kirenz.github.io/agentic-ai-introduction/google-adk-llm.html) 
 :::
